@@ -1,0 +1,116 @@
+.custom-tabs-section {
+  margin: 60px auto;
+}
+
+.custom-tabs__navigation {
+  display: flex;
+  gap: 16px;
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.custom-tabs__tab-button {
+  padding: 16px 24px;
+  background: var(--tab-background-color);
+  color: var(--tab-text-color);
+  border: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.custom-tabs__tab-button.is-active {
+  border-bottom-color: var(--active-tab-text-color);
+  background: var(--active-tab-background-color);
+  color: var(--active-tab-text-color);
+  font-weight: 500;
+}
+
+.custom-tabs__tab-content {
+  display: none;
+}
+
+.custom-tabs__tab-content.is-active {
+  display: block;
+}
+
+.custom-tabs__content-item {
+  margin-bottom: 40px;
+}
+
+.custom-tabs__content-item:last-child {
+  margin-bottom: 0;
+}
+
+.custom-tabs__title {
+  margin-bottom: 16px;
+  color: rgb(var(--color-base-text));
+}
+
+.custom-tabs__subtitle {
+  margin-bottom: 24px;
+  color: rgba(var(--color-base-text), 0.75);
+}
+
+.custom-tabs__content-grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(var(--desktop-columns, 3), 1fr);
+}
+
+@media screen and (max-width: 989px) {
+  .custom-tabs__content-grid {
+    grid-template-columns: repeat(var(--tablet-columns, 2), 1fr);
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .custom-tabs__content-grid {
+    grid-template-columns: repeat(var(--mobile-columns, 1), 1fr);
+  }
+}
+
+.custom-tabs__content-block {
+  height: 100%;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #000;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.custom-tabs__image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Estilos para el contenido de texto */
+.custom-tabs__content-block.rte {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.custom-tabs__content-block.rte > :first-child {
+  margin-top: 0;
+}
+
+.custom-tabs__content-block.rte > :last-child {
+  margin-bottom: 0;
+}
+
