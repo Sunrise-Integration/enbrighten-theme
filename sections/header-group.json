@@ -18,7 +18,7 @@
           "type": "announcement",
           "settings": {
             "icon": "heart",
-            "text": "50% Of Net Profits Given to Charity",
+            "text": "<strong>50% Of Net Profits Given to Charity</strong>",
             "link": "",
             "hide_icon_mobile": false,
             "text_mobile": "",
@@ -30,7 +30,7 @@
           "type": "announcement",
           "settings": {
             "icon": "truck",
-            "text": "Free Shipping Over $50",
+            "text": "<strong>Free Shipping Over $50</strong>",
             "link": "",
             "hide_icon_mobile": false,
             "text_mobile": "",
@@ -42,7 +42,7 @@
           "type": "announcement",
           "settings": {
             "icon": "email",
-            "text": "A question? Visit our contact page",
+            "text": "<strong>A question? Visit our contact page</strong>",
             "link": "",
             "hide_icon_mobile": false,
             "text_mobile": "",
