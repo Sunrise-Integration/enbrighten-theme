@@ -14903,9 +14903,3 @@ video-media:not([playing]) .deferred-poster .play-button .icon:last-child:not(:o
 }
 
 
-:root {
-  --font-heading-family: 'GothamRounded_medium', sans-serif !important;
-  --font-body-family: 'GothamRounded_light', sans-serif !important;
-  --font-button-family: 'GothamRounded_medium', sans-serif !important;
-  --font-navigation-family: 'GothamRounded_medium', sans-serif !important;
-}
