@@ -23,8 +23,8 @@
     "color_shadow": "#a8e8e2",
     "color_image_background": "#ffffff",
     "color_price": "#171717",
-    "color_sale_price": "#00aeef",
-    "color_sale_tag": "#be123c",
+    "color_sale_price": "#e11d48",
+    "color_sale_tag": "#e11d48",
     "color_sale_tag_text": "#ffffff",
     "color_rating": "#f59e0b",
     "color_button_text": "#ffffff",
@@ -59,7 +59,7 @@
     "type_button_size": 16,
     "type_button_capitalize": false,
     "type_product_font": "body",
-    "type_product_weight": "700",
+    "type_product_weight": "500",
     "type_product_size": 16,
     "type_product_capitalize": false,
     "icon_weight": 1.5,
@@ -97,7 +97,7 @@
     "product_countdown": true,
     "product_quick_add": true,
     "product_quick_view": true,
-    "product_color_swatches": false,
+    "product_color_swatches": true,
     "product_max_color_swatches": 4,
     "product_color_swatch_type": "file",
     "product_save_amount": true,
@@ -506,5 +506,12 @@
         }
       }
     }
+  },
+  "platform_customizations": {
+    "custom_css": [
+      "@font-face {font-family: \"GothamRounded_medium\"; src: url(\"https://cdn.shopify.com/s/files/1/0898/6889/4512/files/Gotham-Rounded-Medium.woff?v=1738864809\");}",
+      "@font-face {font-family: \"GothamRounded_light\"; src: url(\"https://cdn.shopify.com/s/files/1/0898/6889/4512/files/Gotham-Rounded-Light.woff?v=1738865472\");}",
+      ":root {--font-heading-family: 'GothamRounded_medium', sans-serif !important; --font-body-family: 'GothamRounded_light', sans-serif !important; --font-button-family: 'GothamRounded_medium', sans-serif !important; --font-navigation-family: 'GothamRounded_medium', sans-serif !important;}"
+    ]
   }
 }
