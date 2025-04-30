@@ -1,1 +1,334 @@
-{"sections":{"main":{"type":"main-page","disabled":true,"settings":{"heading_size":"title-xl tracking-heading","heading_alignment":"text-left","heading_tag":"h1","text_size":"text-base","padding_top":72,"padding_bottom":120,"divider":false,"narrow":true,"rounded":false}},"image_with_text_pgEKDB":{"type":"image-with-text","blocks":{"heading_zDXYTh":{"type":"heading","settings":{"heading":"Become an Affiliate","heading_size":"title-md","heading_tag":"h2","highlighted_text":"none","highlighted_scribble":"circle"}},"text_k8rmpy":{"type":"text","settings":{"text":"<h3>Join us today!<\/h3>","text_size":"subtext-md","text_max_size":48,"text_font":"body","secondary_color":false,"highlighted_text":"none","highlighted_scribble":"circle"}},"button_mYgag3":{"type":"button","settings":{"button_label":"Sign Up","button_link":"https:\/\/www.shareasale.com\/shareasale.cfm?merchantID=144647","button_style":"primary","button_size":"md","button_external":false,"button_icon":true}}},"block_order":["heading_zDXYTh","text_k8rmpy","button_mYgag3"],"settings":{"image":"shopify:\/\/shop_images\/Become-Affiliate-Image.png","image_height":"adapt","image_width":"small","layout":"image_first","text_alignment":"left","content_position":"align-self-center","image_height_mobile":"auto","text_alignment_mobile":"left","color_text":"","color_background":"","gradient_background":"","color_background_2":"","gradient_background_2":"","color_highlight":"","gradient_highlight":"","color_button_text":"","color_button_background":"","color_button_gradient":"","padding_top":72,"padding_bottom":72,"divider":false,"full_width":false,"rounded":false,"enable_parallax":true,"parallax_direction":"vertical"}},"image_with_text_fhRrcU":{"type":"image-with-text","blocks":{"heading_AXaWpL":{"type":"heading","settings":{"heading":"SELLING IS SIMPLE","heading_size":"title-md","heading_tag":"h2","highlighted_text":"none","highlighted_scribble":"circle"}},"text_RnPxNr":{"type":"text","settings":{"text":"<p>To help you achieve optimal results we will provide exclusive coupons, banners, popular deals and access to a broad catalog of productsPair these resources with your affiliate links in blog articles, social media posts, email newsletters, banner ads, and other digital content to help drive your business.<\/p>","text_size":"subtext-md","text_max_size":32,"text_font":"body","secondary_color":false,"highlighted_text":"none","highlighted_scribble":"circle"}}},"block_order":["heading_AXaWpL","text_RnPxNr"],"settings":{"image":"shopify:\/\/shop_images\/Affiliate-Mobile-App_7b3b5e9c-562f-42df-8fcb-de9b07226b5d.png","image_height":"adapt","image_width":"small","layout":"text_first","text_alignment":"left","content_position":"align-self-center","image_height_mobile":"auto","text_alignment_mobile":"left","color_text":"","color_background":"#f9f9f9","gradient_background":"","color_background_2":"","gradient_background_2":"","color_highlight":"","gradient_highlight":"","color_button_text":"","color_button_background":"","color_button_gradient":"","padding_top":72,"padding_bottom":72,"divider":false,"full_width":false,"rounded":false,"enable_parallax":true,"parallax_direction":"vertical"}},"multicolumn_ezTBTL":{"type":"multicolumn","blocks":{"column_4dD8wp":{"type":"column","settings":{"show_border":false,"text_alignment":"center","text_alignment_mobile":"left","image":"shopify:\/\/shop_images\/Avergage-order-value.svg","image_ratio":"adapt","heading":"$120 AverageOrder Value","heading_size":"text-lg-2xl","text":"<p>With a wide range of industry-leading, high-value products that people love, there's something for everyone in your audience.<\/p>","button_label":"","button_link":"","button_style":"secondary","button_external":false,"button_icon":true,"highlighted_text":"none","highlighted_scribble":"circle"}},"column_fVipGt":{"type":"column","settings":{"show_border":false,"text_alignment":"center","text_alignment_mobile":"left","image":"shopify:\/\/shop_images\/Commission-Icon.svg","image_ratio":"adapt","heading":"Up to 8% Commission","heading_size":"text-lg-2xl","text":"<p>When you join ourAffiliate Program on Shareasale.com you'll get commission rates of up to 8% on every referred sale you generate.<\/p>","button_label":"","button_link":"","button_style":"secondary","button_external":false,"button_icon":true,"highlighted_text":"none","highlighted_scribble":"circle"}},"column_4f9LDQ":{"type":"column","settings":{"show_border":false,"text_alignment":"center","text_alignment_mobile":"left","image":"shopify:\/\/shop_images\/30-day-cookie.svg","image_ratio":"adapt","heading":"30 Day Cookie","heading_size":"text-lg-2xl","text":"<p>Once you generate your own affiliate links, we will give you a generous 30-day window to earn commissions on all referred sales during that time.<\/p>","button_label":"","button_link":"","button_style":"secondary","button_external":false,"button_icon":true,"highlighted_text":"none","highlighted_scribble":"circle"}}},"block_order":["column_4dD8wp","column_fVipGt","column_4f9LDQ"],"settings":{"gap":"large","columns":3,"columns_mobile":"1","swipe_on_mobile":true,"heading":"How It Works","heading_size":"title-md","heading_alignment":"text-center md:items-center","heading_tag":"h2","subheading":"","description":"","button_label":"","button_link":"","button_external":false,"button_icon":true,"highlighted_text":"none","highlighted_scribble":"circle","color_text":"","color_background":"","gradient_background":"","color_highlight":"","gradient_highlight":"","color_button_text":"","color_button_background":"","color_button_gradient":"","padding_top":72,"padding_bottom":72,"divider":false,"full_width":false,"rounded":false}},"image_with_text_3ncpj8":{"type":"image-with-text","blocks":{"heading_C9mBqX":{"type":"heading","settings":{"heading":"CALLING ALL CONTENT CREATORS, INFLUENCERS, REVIEWERS..","heading_size":"title-sm","heading_tag":"h2","highlighted_text":"none","highlighted_scribble":"circle"}},"text_rRhCcy":{"type":"text","settings":{"text":"<p>Submit your application through our affiliate platform, Share A Sale. We take time to review each and every application. Once approved, you can access our resource center of promotional materials, create your own unique trackable links, and begin spreading the word.<\/p>","text_size":"subtext-md","text_max_size":32,"text_font":"body","secondary_color":false,"highlighted_text":"none","highlighted_scribble":"circle"}},"button_GGhLHi":{"type":"button","settings":{"button_label":"Apply Today","button_link":"https:\/\/www.shareasale.com\/shareasale.cfm?merchantID=144647","button_style":"primary","button_size":"md","button_external":false,"button_icon":true}}},"block_order":["heading_C9mBqX","text_rRhCcy","button_GGhLHi"],"settings":{"image":"shopify:\/\/shop_images\/affiliate-apply-today.png","image_height":"adapt","image_width":"large","layout":"image_first","text_alignment":"left","content_position":"align-self-center","image_height_mobile":"auto","text_alignment_mobile":"left","color_text":"","color_background":"#f9f9f9","gradient_background":"","color_background_2":"","gradient_background_2":"","color_highlight":"","gradient_highlight":"","color_button_text":"","color_button_background":"","color_button_gradient":"","padding_top":72,"padding_bottom":72,"divider":false,"full_width":false,"rounded":false,"enable_parallax":true,"parallax_direction":"vertical"}}},"order":["main","image_with_text_pgEKDB","image_with_text_fhRrcU","multicolumn_ezTBTL","image_with_text_3ncpj8"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "heading_size": "title-xl tracking-heading",
+        "heading_alignment": "text-left",
+        "heading_tag": "h1",
+        "text_size": "text-base",
+        "padding_top": 72,
+        "padding_bottom": 120,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
+    "image_with_text_pgEKDB": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_zDXYTh": {
+          "type": "heading",
+          "settings": {
+            "heading": "Become an Affiliate",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_k8rmpy": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Join us today!</h3>",
+            "text_size": "subtext-md",
+            "text_max_size": 48,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "button_mYgag3": {
+          "type": "button",
+          "settings": {
+            "button_label": "Sign Up",
+            "button_link": "https://www.shareasale.com/shareasale.cfm?merchantID=144647",
+            "button_style": "primary",
+            "button_size": "md",
+            "button_external": false,
+            "button_icon": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_zDXYTh",
+        "text_k8rmpy",
+        "button_mYgag3"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Become-Affiliate-Image.png",
+        "image_height": "adapt",
+        "image_width": "small",
+        "layout": "image_first",
+        "text_alignment": "left",
+        "content_position": "align-self-center",
+        "image_height_mobile": "auto",
+        "text_alignment_mobile": "left",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_background_2": "",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": true,
+        "parallax_direction": "vertical"
+      }
+    },
+    "image_with_text_fhRrcU": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_AXaWpL": {
+          "type": "heading",
+          "settings": {
+            "heading": "SELLING IS SIMPLE",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_RnPxNr": {
+          "type": "text",
+          "settings": {
+            "text": "<p>To help you achieve optimal results we will provide exclusive coupons, banners, popular deals and access to a broad catalog of productsPair these resources with your affiliate links in blog articles, social media posts, email newsletters, banner ads, and other digital content to help drive your business.</p>",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_AXaWpL",
+        "text_RnPxNr"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Affiliate-Mobile-App_7b3b5e9c-562f-42df-8fcb-de9b07226b5d.png",
+        "image_height": "adapt",
+        "image_width": "small",
+        "layout": "text_first",
+        "text_alignment": "left",
+        "content_position": "align-self-center",
+        "image_height_mobile": "auto",
+        "text_alignment_mobile": "left",
+        "color_text": "",
+        "color_background": "#f9f9f9",
+        "gradient_background": "",
+        "color_background_2": "",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": true,
+        "parallax_direction": "vertical"
+      }
+    },
+    "multicolumn_ezTBTL": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_4dD8wp": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "center",
+            "text_alignment_mobile": "left",
+            "image": "shopify://shop_images/Avergage-order-value.svg",
+            "image_ratio": "adapt",
+            "heading": "$120 Average Order Value",
+            "heading_size": "text-lg-2xl",
+            "text": "<p>With a wide range of industry-leading, high-value products that people love, there's something for everyone in your audience.</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "secondary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_fVipGt": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "center",
+            "text_alignment_mobile": "left",
+            "image": "shopify://shop_images/Commission-Icon.svg",
+            "image_ratio": "adapt",
+            "heading": "Up to 8% Commission",
+            "heading_size": "text-lg-2xl",
+            "text": "<p>When you join ourAffiliate Program on Shareasale.com you'll get commission rates of up to 8% on every referred sale you generate.</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "secondary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_4f9LDQ": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "center",
+            "text_alignment_mobile": "left",
+            "image": "shopify://shop_images/30-day-cookie.svg",
+            "image_ratio": "adapt",
+            "heading": "30 Day Cookie",
+            "heading_size": "text-lg-2xl",
+            "text": "<p>Once you generate your own affiliate links, we will give you a generous 30-day window to earn commissions on all referred sales during that time.</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "secondary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "column_4dD8wp",
+        "column_fVipGt",
+        "column_4f9LDQ"
+      ],
+      "settings": {
+        "gap": "large",
+        "columns": 3,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "How It Works",
+        "heading_size": "title-md",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "image_with_text_3ncpj8": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_C9mBqX": {
+          "type": "heading",
+          "settings": {
+            "heading": "CALLING ALL CONTENT CREATORS, INFLUENCERS, REVIEWERS..",
+            "heading_size": "title-sm",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_rRhCcy": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Submit your application through our affiliate platform, Share A Sale. We take time to review each and every application. Once approved, you can access our resource center of promotional materials, create your own unique trackable links, and begin spreading the word.</p>",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "button_GGhLHi": {
+          "type": "button",
+          "settings": {
+            "button_label": "Apply Today",
+            "button_link": "https://app.later.com/campaigns/64952/login",
+            "button_style": "primary",
+            "button_size": "md",
+            "button_external": false,
+            "button_icon": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_C9mBqX",
+        "text_rRhCcy",
+        "button_GGhLHi"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/affiliate-apply-today.png",
+        "image_height": "adapt",
+        "image_width": "large",
+        "layout": "image_first",
+        "text_alignment": "left",
+        "content_position": "align-self-center",
+        "image_height_mobile": "auto",
+        "text_alignment_mobile": "left",
+        "color_text": "",
+        "color_background": "#f9f9f9",
+        "gradient_background": "",
+        "color_background_2": "",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": true,
+        "parallax_direction": "vertical"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_pgEKDB",
+    "image_with_text_fhRrcU",
+    "multicolumn_ezTBTL",
+    "image_with_text_3ncpj8"
+  ]
+}

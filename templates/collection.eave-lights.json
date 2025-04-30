@@ -1,1 +1,143 @@
-{"sections":{"main-collection-banner":{"type":"main-collection-banner","blocks":{"breadcrumb":{"type":"breadcrumb","disabled":true,"settings":{"show_collections_link":true}},"title":{"type":"title","settings":{"title_size":"title-md"}}},"block_order":["breadcrumb","title"],"settings":{"transparent_header":true,"show_image":true,"image":"{{ collection.image }}","image_height":"adapt","content_position":"md:items-end md:justify-start","text_alignment":"left","image_height_mobile":"250px","content_position_mobile":"items-end justify-start","text_alignment_mobile":"left","color_text":"#ffffff","color_overlay":"#000000","overlay_opacity":40,"padding_top":0,"padding_bottom":0,"divider":false,"full_width":true,"rounded":false,"enable_parallax":false,"parallax_direction":"vertical"}},"main-collection":{"type":"main-collection","blocks":{"subcollections":{"type":"subcollections","settings":{"menu":"","per_row":5,"show_count":true}}},"block_order":["subcollections"],"settings":{"products_per_page":16,"columns":4,"columns_mobile":"1","pagination":"paginated","enable_filtering":true,"filter_collapsed":false,"filter_type":"sidebar","filter_color_swatches":true,"enable_sorting":true,"padding_top":40,"padding_bottom":100,"divider":false,"full_width":false,"rounded":true}},"video_3mHBf7":{"type":"video","settings":{"transparent_header":false,"video_url":"https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc","description":"","enable_video_autoplay":false,"enable_video_looping":false,"image_height":"adapt","video_url_mobile":"","image_height_mobile":"auto","padding_top":0,"padding_bottom":0,"divider":false,"full_width":true,"rounded":false}},"recently-viewed":{"type":"recently-viewed","settings":{"product_limit":6,"columns":4,"carousel_on_desktop":true,"columns_mobile":"1","swipe_on_mobile":true,"heading":"Recently Viewed","heading_size":"title-md","heading_alignment":"text-left md:items-end md:flex-row","heading_tag":"h2","subheading":"","description":"","highlighted_text":"none","highlighted_scribble":"circle","color_text":"","color_background":"","gradient_background":"","color_highlight":"","gradient_highlight":"","color_button_text":"","color_button_background":"","color_button_gradient":"","padding_top":72,"padding_bottom":80,"divider":false,"full_width":false,"rounded":true}}},"order":["main-collection-banner","main-collection","video_3mHBf7","recently-viewed"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main-collection-banner": {
+      "type": "main-collection-banner",
+      "blocks": {
+        "breadcrumb": {
+          "type": "breadcrumb",
+          "disabled": true,
+          "settings": {
+            "show_collections_link": true
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "title-md"
+          }
+        }
+      },
+      "block_order": [
+        "breadcrumb",
+        "title"
+      ],
+      "settings": {
+        "transparent_header": true,
+        "show_image": true,
+        "image": "{{ collection.image }}",
+        "image_height": "adapt",
+        "content_position": "md:items-end md:justify-start",
+        "text_alignment": "left",
+        "image_height_mobile": "250px",
+        "content_position_mobile": "items-end justify-start",
+        "text_alignment_mobile": "left",
+        "color_text": "#ffffff",
+        "color_overlay": "#000000",
+        "overlay_opacity": 40,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "subcollections": {
+          "type": "subcollections",
+          "settings": {
+            "menu": "",
+            "per_row": 5,
+            "show_count": true
+          }
+        }
+      },
+      "block_order": [
+        "subcollections"
+      ],
+      "settings": {
+        "products_per_page": 16,
+        "columns": 4,
+        "columns_mobile": "1",
+        "pagination": "paginated",
+        "enable_filtering": true,
+        "filter_collapsed": true,
+        "filter_type": "sidebar",
+        "filter_color_swatches": true,
+        "enable_sorting": true,
+        "padding_top": 40,
+        "padding_bottom": 100,
+        "divider": false,
+        "full_width": false,
+        "rounded": true
+      }
+    },
+    "video_3mHBf7": {
+      "type": "video",
+      "settings": {
+        "transparent_header": false,
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "image_height": "adapt",
+        "video_url_mobile": "",
+        "image_height_mobile": "auto",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": false
+      }
+    },
+    "recently-viewed": {
+      "type": "recently-viewed",
+      "settings": {
+        "product_limit": 6,
+        "columns": 4,
+        "carousel_on_desktop": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "Recently Viewed",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 80,
+        "divider": false,
+        "full_width": false,
+        "rounded": true
+      }
+    }
+  },
+  "order": [
+    "main-collection-banner",
+    "main-collection",
+    "video_3mHBf7",
+    "recently-viewed"
+  ]
+}

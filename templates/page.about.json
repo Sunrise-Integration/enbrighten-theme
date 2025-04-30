@@ -1,1 +1,1005 @@
-{"sections":{"main":{"type":"main-page","disabled":true,"settings":{"heading_size":"title-xl tracking-heading","heading_alignment":"text-left","heading_tag":"h1","text_size":"text-base","padding_top":72,"padding_bottom":120,"divider":false,"narrow":true,"rounded":false}},"image-with-text-overlay":{"type":"image-with-text-overlay","settings":{"transparent_header":false,"image":"shopify:\/\/shop_images\/OUR-STORY-ENBRIGHTEN_jpg.webp","image_height":"adapt","content_width":"large","content_position":"md:items-center md:justify-center","text_alignment":"center","image_height_mobile":"auto","content_position_mobile":"items-end justify-start","text_alignment_mobile":"left","color_text":"#ffffff","color_highlight":"#e0a580","gradient_highlight":"","color_button_text":"#171717","color_button_background":"#ffffff","color_button_gradient":"","color_overlay":"#000000","overlay_opacity":0,"padding_top":0,"padding_bottom":0,"divider":false,"full_width":true,"rounded":false,"enable_parallax":true,"parallax_direction":"vertical"}},"rich_text_wnTznR":{"type":"rich-text","blocks":{"text_qfYQGL":{"type":"text","settings":{"text":"<p>At Enbrighten we believe everyone deserves high-quality lighting solutions at affordable prices. We embrace innovation, provide best-in-class quality, while allowing you to define your space.<\/p>","text_size":"subtext-xl","text_max_size":32,"text_font":"body","secondary_color":false,"highlighted_text":"none","highlighted_scribble":"circle"}}},"block_order":["text_qfYQGL"],"settings":{"text_alignment":"center","text_alignment_mobile":"center","heading":"","heading_size":"title-md","heading_alignment":"text-left md:items-end md:flex-row","heading_width":"small","heading_tag":"h2","subheading":"","description":"","button_label":"","button_link":"","button_external":false,"button_icon":true,"highlighted_text":"none","highlighted_scribble":"circle","color_text":"","color_background":"","gradient_background":"","color_highlight":"","gradient_highlight":"","color_button_text":"","color_button_background":"","color_button_gradient":"","padding_top":72,"padding_bottom":72,"divider":false,"narrow":true,"rounded":false}},"image_with_text_4pgiaA":{"type":"image-with-text","blocks":{"heading_nD3QFV":{"type":"heading","settings":{"heading":"GET TO KNOW US","heading_size":"title-md","heading_tag":"h2","highlighted_text":"none","highlighted_scribble":"circle"}},"text_JLifcQ":{"type":"text","settings":{"text":"<p>Enbrighten is committed to enhancing your spaces with premium innovative lighting while making the world brighter. We believe in the power of light to personalize atmosphere, evoke emotions and simply make life better.<\/p><p> <\/p><p>Our mission is to provide our customers with top-tier luxurious lighting while supporting global humanitarian efforts through every purchase.<\/p>","text_size":"subtext-md","text_max_size":32,"text_font":"body","secondary_color":false,"highlighted_text":"none","highlighted_scribble":"circle"}},"button_NVRtxz":{"type":"button","settings":{"button_label":"Learn More","button_link":"https:\/\/wwr0m6-nb.myshopify.com\/pages\/give-your-way","button_style":"primary","button_size":"md","button_external":false,"button_icon":true}}},"block_order":["heading_nD3QFV","text_JLifcQ","button_NVRtxz"],"settings":{"image":"shopify:\/\/shop_images\/Enbrighten_-_About_Us_Page_Graphics_png.webp","image_height":"adapt","image_width":"medium","layout":"image_first","text_alignment":"right","content_position":"align-self-center","image_mobile":"shopify:\/\/shop_images\/Enbrighten_-_About_Us_Page_Graphics_png.webp","image_height_mobile":"auto","text_alignment_mobile":"left","color_text":"","color_background":"","gradient_background":"","color_background_2":"","gradient_background_2":"","color_highlight":"","gradient_highlight":"","color_button_text":"","color_button_background":"#00aeef","color_button_gradient":"","padding_top":72,"padding_bottom":72,"divider":false,"full_width":false,"rounded":false,"enable_parallax":true,"parallax_direction":"vertical"}},"rich_text_wj8Cnn":{"type":"rich-text","blocks":{"text_qqrUXC":{"type":"text","settings":{"text":"<p>We donate <a href=\"https:\/\/wwr0m6-nb.myshopify.com\/pages\/give-your-way\" title=\"https:\/\/wwr0m6-nb.myshopify.com\/pages\/give-your-way\"><strong>50% of our net profits <\/strong><\/a>to humanitarian causes around the world - changing lives beyond our products.<\/p>","text_size":"subtext-xl","text_max_size":32,"text_font":"body","secondary_color":false,"highlighted_text":"none","highlighted_scribble":"circle"}}},"block_order":["text_qqrUXC"],"settings":{"text_alignment":"center","text_alignment_mobile":"center","heading":"","heading_size":"title-md","heading_alignment":"text-left md:items-end md:flex-row","heading_width":"small","heading_tag":"h2","subheading":"","description":"","button_label":"","button_link":"","button_external":false,"button_icon":true,"highlighted_text":"none","highlighted_scribble":"circle","color_text":"","color_background":"","gradient_background":"","color_highlight":"","gradient_highlight":"","color_button_text":"","color_button_background":"","color_button_gradient":"","padding_top":56,"padding_bottom":56,"divider":false,"narrow":true,"rounded":false}},"multicolumn_yt3Tdz":{"type":"multicolumn","blocks":{"column_TzaTka":{"type":"column","settings":{"show_border":false,"text_alignment":"center","text_alignment_mobile":"center","image":"shopify:\/\/shop_images\/GYW_Charity_Blocks_3__png.webp","image_ratio":"adapt","heading":"WATER","heading_size":"text-lg-2xl","text":"<p>Water4<\/p>","button_label":"","button_link":"https:\/\/wwr0m6-nb.myshopify.com\/pages\/water","button_style":"secondary","button_external":false,"button_icon":true,"highlighted_text":"none","highlighted_scribble":"circle"}},"column_9zFEzp":{"type":"column","settings":{"show_border":false,"text_alignment":"center","text_alignment_mobile":"center","image":"shopify:\/\/shop_images\/GYW_Charity_Blocks_4__png.webp","image_ratio":"adapt","heading":"FOOD","heading_size":"text-lg-2xl","text":"<p>Food for the Hungry<\/p>","button_label":"","button_link":"https:\/\/wwr0m6-nb.myshopify.com\/pages\/food","button_style":"secondary","button_external":false,"button_icon":true,"highlighted_text":"none","highlighted_scribble":"circle"}},"column_MEzB6H":{"type":"column","settings":{"show_border":false,"text_alignment":"center","text_alignment_mobile":"center","image":"shopify:\/\/shop_images\/Untitled_design_46__png.webp","image_ratio":"adapt","heading":"SHELTER","heading_size":"text-lg-2xl","text":"<p>Habitat for Humanity<\/p>","button_label":"","button_link":"https:\/\/wwr0m6-nb.myshopify.com\/pages\/shelter","button_style":"secondary","button_external":false,"button_icon":true,"highlighted_text":"none","highlighted_scribble":"circle"}},"column_XdrhB7":{"type":"column","settings":{"show_border":false,"text_alignment":"center","text_alignment_mobile":"center","image":"shopify:\/\/shop_images\/GYW_Charity_Blocks_1__png.webp","image_ratio":"adapt","heading":"DISASTER RELIEF","heading_size":"text-lg-2xl","text":"<p>Convoy of Hope<\/p>","button_label":"","button_link":"https:\/\/wwr0m6-nb.myshopify.com\/pages\/disaster-relief","button_style":"secondary","button_external":false,"button_icon":true,"highlighted_text":"none","highlighted_scribble":"circle"}}},"block_order":["column_TzaTka","column_9zFEzp","column_MEzB6H","column_XdrhB7"],"settings":{"gap":"large","columns":4,"columns_mobile":"1","swipe_on_mobile":true,"heading":"YOUR PURCHASE SAVES LIVES.","heading_size":"title-sm","heading_alignment":"text-center md:items-center","heading_tag":"h2","subheading":"","description":"","button_label":"","button_link":"","button_external":false,"button_icon":true,"highlighted_text":"none","highlighted_scribble":"circle","color_text":"","color_background":"","gradient_background":"","color_highlight":"","gradient_highlight":"","color_button_text":"","color_button_background":"","color_button_gradient":"","padding_top":72,"padding_bottom":32,"divider":false,"full_width":false,"rounded":false}},"rich_text_Pbqn6f":{"type":"rich-text","blocks":{"button_MMtXDA":{"type":"button","settings":{"button_label":"Get Involved","button_link":"shopify:\/\/pages\/give-your-way","button_style":"primary","button_size":"md","button_external":false,"button_icon":true}}},"block_order":["button_MMtXDA"],"settings":{"text_alignment":"center","text_alignment_mobile":"center","heading":"","heading_size":"title-md","heading_alignment":"text-left md:items-end md:flex-row","heading_width":"small","heading_tag":"h2","subheading":"","description":"","button_label":"","button_link":"","button_external":false,"button_icon":true,"highlighted_text":"none","highlighted_scribble":"circle","color_text":"","color_background":"","gradient_background":"","color_highlight":"","gradient_highlight":"","color_button_text":"","color_button_background":"#00aeef","color_button_gradient":"","padding_top":20,"padding_bottom":72,"divider":false,"narrow":true,"rounded":false}},"image_with_text_overlay_kUCp7i":{"type":"image-with-text-overlay","settings":{"transparent_header":false,"image":"shopify:\/\/shop_images\/Bright_Lights_Good_Vibes_1__1_jpg.webp","image_height":"adapt","content_width":"small","content_position":"md:items-end md:justify-start","text_alignment":"left","image_height_mobile":"auto","content_position_mobile":"items-end justify-start","text_alignment_mobile":"left","color_text":"#ffffff","color_highlight":"#e0a580","gradient_highlight":"","color_button_text":"#171717","color_button_background":"#ffffff","color_button_gradient":"","color_overlay":"#171717","overlay_opacity":70,"padding_top":0,"padding_bottom":0,"divider":false,"full_width":true,"rounded":false,"enable_parallax":false,"parallax_direction":"vertical"}},"multicolumn_RxdkML":{"type":"multicolumn","blocks":{"column_xirDPx":{"type":"column","settings":{"show_border":false,"text_alignment":"center","text_alignment_mobile":"center","image":"shopify:\/\/shop_images\/9_83f8e432-2a57-49bb-80a2-0a121d8021fa.svg","image_ratio":"adapt","heading":"<strong>Years in Business<\/strong>","heading_size":"text-lg-2xl","text":"<p>Enbrighten brand launched in 2015. Enbrighten App launched in 2020.<\/p>","button_label":"","button_link":"","button_style":"secondary","button_external":false,"button_icon":true,"highlighted_text":"none","highlighted_scribble":"circle"}},"column_rxkFdD":{"type":"column","settings":{"show_border":false,"text_alignment":"center","text_alignment_mobile":"center","image":"shopify:\/\/shop_images\/200_907bd387-b782-4724-ad8d-af43c8a9419a.svg","image_ratio":"adapt","heading":"<strong>Products in the Market<\/strong>","heading_size":"text-lg-2xl","text":"<p>We feature an incredible lineup of innovative café lights, landscape lights, under-cabinet lights, night lights, lanterns and more.<\/p>","button_label":"","button_link":"","button_style":"secondary","button_external":false,"button_icon":true,"highlighted_text":"none","highlighted_scribble":"circle"}},"column_LYdU9K":{"type":"column","settings":{"show_border":false,"text_alignment":"center","text_alignment_mobile":"center","image":"shopify:\/\/shop_images\/17_9c46da6f-165f-4874-b316-ec89b63f920b.svg","image_ratio":"adapt","heading":"<strong>Stores Carry Enbrighten<\/strong>","heading_size":"text-lg-2xl","text":"<p>Enbrighten is carried in over 17,000+ active stores amongst 15 retailers across the United States.<\/p>","button_label":"","button_link":"","button_style":"secondary","button_external":false,"button_icon":true,"highlighted_text":"none","highlighted_scribble":"circle"}}},"block_order":["column_xirDPx","column_rxkFdD","column_LYdU9K"],"settings":{"gap":"large","columns":3,"columns_mobile":"1","swipe_on_mobile":true,"heading":"","heading_size":"title-md","heading_alignment":"text-center md:items-center","heading_tag":"h2","subheading":"","description":"","button_label":"","button_link":"","button_external":false,"button_icon":true,"highlighted_text":"none","highlighted_scribble":"circle","color_text":"","color_background":"","gradient_background":"","color_highlight":"","gradient_highlight":"","color_button_text":"","color_button_background":"","color_button_gradient":"","padding_top":72,"padding_bottom":72,"divider":false,"full_width":false,"rounded":false}},"logo_list_7BBhKe":{"type":"logo-list","blocks":{"logo_eGYeJM":{"type":"logo","settings":{"image":"shopify:\/\/shop_images\/amazon-ar21.svg","height":80,"link":""}},"logo_nHMmYA":{"type":"logo","settings":{"image":"shopify:\/\/shop_images\/walmart-ar21.svg","height":80,"link":""}},"logo_na8R9m":{"type":"logo","settings":{"image":"shopify:\/\/shop_images\/Costco-Logo.wine_1.svg","height":80,"link":""}},"logo_hdkVXA":{"type":"logo","settings":{"image":"shopify:\/\/shop_images\/image_3fcafab9-3fe8-4f5f-8054-4d43443eb026.svg","height":48,"link":""}},"logo_DpJN6n":{"type":"logo","settings":{"image":"shopify:\/\/shop_images\/wayfair.svg","height":80,"link":""}},"logo_mALerK":{"type":"logo","settings":{"image":"shopify:\/\/shop_images\/image.svg","height":80,"link":""}},"logo_yPQfAF":{"type":"logo","settings":{"image":"shopify:\/\/shop_images\/lowes.svg","height":80,"link":""}},"logo_R9YHJk":{"type":"logo","settings":{"image":"shopify:\/\/shop_images\/image.png","height":80,"link":""}}},"block_order":["logo_eGYeJM","logo_nHMmYA","logo_na8R9m","logo_hdkVXA","logo_DpJN6n","logo_mALerK","logo_yPQfAF","logo_R9YHJk"],"settings":{"layout":"marquee","grid_horizontal":70,"direction":"left","speed":5,"heading":"Available at","heading_size":"title-md","heading_alignment":"text-center md:items-center","heading_tag":"h2","subheading":"","description":"","button_label":"","button_link":"","button_external":false,"button_icon":true,"highlighted_text":"none","highlighted_scribble":"circle","color_text":"","color_background":"","gradient_background":"","color_highlight":"","gradient_highlight":"","color_button_text":"","color_button_background":"","color_button_gradient":"","padding_top":72,"padding_bottom":72,"divider":false,"full_width":false,"rounded":false}},"multicolumn_XbqXJm":{"type":"multicolumn","blocks":{"column_a9DAqG":{"type":"column","settings":{"show_border":false,"text_alignment":"right","text_alignment_mobile":"center","image":"shopify:\/\/shop_images\/Group.svg","image_ratio":"adapt","heading":"","heading_size":"text-lg-2xl","text":"","button_label":"","button_link":"https:\/\/apps.apple.com\/co\/app\/enbrighten\/id1499828123","button_style":"secondary","button_external":true,"button_icon":true,"highlighted_text":"none","highlighted_scribble":"circle"}},"column_CEhJde":{"type":"column","settings":{"show_border":false,"text_alignment":"left","text_alignment_mobile":"center","image":"shopify:\/\/shop_images\/Group_352047337.svg","image_ratio":"adapt","heading":"","heading_size":"text-lg-2xl","text":"","button_label":"","button_link":"https:\/\/play.google.com\/store\/apps\/details?id=com.enbrighten.smart&hl=en_US&gl=US&pli=1","button_style":"secondary","button_external":true,"button_icon":true,"highlighted_text":"none","highlighted_scribble":"circle"}}},"block_order":["column_a9DAqG","column_CEhJde"],"settings":{"gap":"small","columns":2,"columns_mobile":"1","swipe_on_mobile":true,"heading":"<strong>DOWNLOAD OUR TOP RATED APP<\/strong>","heading_size":"title-sm","heading_alignment":"text-center md:items-center","heading_tag":"h2","subheading":"","description":"","button_label":"","button_link":"","button_external":false,"button_icon":false,"highlighted_text":"none","highlighted_scribble":"circle","color_text":"","color_background":"","gradient_background":"","color_highlight":"","gradient_highlight":"","color_button_text":"","color_button_background":"","color_button_gradient":"","padding_top":32,"padding_bottom":32,"divider":false,"full_width":false,"rounded":false}},"image_with_text_overlay_P3tGbW":{"type":"image-with-text-overlay","custom_css":[],"settings":{"transparent_header":false,"image":"shopify:\/\/shop_images\/Group_352047338_2c07ab30-9fa1-4651-be86-52d04fa4a24b.png","image_height":"adapt","content_width":"medium","content_position":"md:items-center md:justify-start","text_alignment":"left","image_mobile":"shopify:\/\/shop_images\/Group_352047338_c0ac228b-39f4-4fee-a445-900a47392253.png","image_height_mobile":"auto","content_position_mobile":"items-center justify-start","text_alignment_mobile":"left","color_text":"#ffffff","color_highlight":"#e0a580","gradient_highlight":"","color_button_text":"#171717","color_button_background":"#ffffff","color_button_gradient":"","color_overlay":"#171717","overlay_opacity":0,"padding_top":0,"padding_bottom":0,"divider":false,"full_width":true,"rounded":false,"enable_parallax":false,"parallax_direction":"zoom"}},"rich_text_Q8g86N":{"type":"rich-text","blocks":{"button_AYi4eC":{"type":"button","settings":{"button_label":"Get App Tips","button_link":"https:\/\/wwr0m6-nb.myshopify.com\/pages\/enbrighten-wifi-app-qr-code","button_style":"primary","button_size":"md","button_external":false,"button_icon":true}}},"block_order":["button_AYi4eC"],"settings":{"text_alignment":"center","text_alignment_mobile":"center","heading":"","heading_size":"title-md","heading_alignment":"text-left md:items-end md:flex-row","heading_width":"small","heading_tag":"h2","subheading":"","description":"","button_label":"","button_link":"","button_external":false,"button_icon":true,"highlighted_text":"none","highlighted_scribble":"circle","color_text":"","color_background":"","gradient_background":"","color_highlight":"","gradient_highlight":"","color_button_text":"","color_button_background":"#00aeef","color_button_gradient":"","padding_top":32,"padding_bottom":32,"divider":false,"narrow":true,"rounded":false}},"multicolumn_rpDcFy":{"type":"multicolumn","blocks":{"column_WEeY8g":{"type":"column","settings":{"show_border":false,"text_alignment":"center","text_alignment_mobile":"center","image_ratio":"adapt","heading":"<strong>CNET<\/strong>","heading_size":"text-lg-2xl","text":"<p><em>\"Out of all the options we tested, our favorite outdoor string light is the Enbrighten Classic LED Cafe Light.\"<\/em><\/p>","button_label":"Read More","button_link":"https:\/\/www.cnet.com\/home\/yard-and-outdoors\/best-outdoor-string-lights\/","button_style":"link","button_external":false,"button_icon":true,"highlighted_text":"none","highlighted_scribble":"circle"}},"column_AECA8E":{"type":"column","settings":{"show_border":false,"text_alignment":"center","text_alignment_mobile":"center","image_ratio":"adapt","heading":"<strong>GearBrain<\/strong>","heading_size":"text-lg-2xl","text":"<p><em>\"With the Enbrighten mobile app, users can dive into a world of color, setting the mood for any occasion with millions of hues, dynamic modes, and effects.\"<\/em><\/p>","button_label":"Read More","button_link":"https:\/\/www.gearbrain.com\/jasco-enbrighten-eternity-lights-outdoor-2667896409.html","button_style":"link","button_external":false,"button_icon":true,"highlighted_text":"none","highlighted_scribble":"circle"}},"column_9zgXg7":{"type":"column","settings":{"show_border":false,"text_alignment":"center","text_alignment_mobile":"center","image_ratio":"adapt","heading":"<strong>TechHive<\/strong>","heading_size":"text-lg-2xl","text":"<p><em>\"..very pretty, highly customizable, and exceptionally durable for year-round outdoor installations.\"<\/em><\/p>","button_label":"Read More","button_link":"https:\/\/www.pcworld.com\/article\/582523\/best-smart-bulbs.html","button_style":"link","button_external":false,"button_icon":true,"highlighted_text":"none","highlighted_scribble":"circle"}},"column_Fk4Lai":{"type":"column","settings":{"show_border":false,"text_alignment":"center","text_alignment_mobile":"center","image_ratio":"adapt","heading":"<strong>AndroidGuys<\/strong>","heading_size":"text-lg-2xl","text":"<p><em>\"Engineered to meet the toughest outdoor standards, these lights are unbeatable in performance, safety, and longevity ensuring year-round enjoyment no matter the weather.\"<\/em><\/p>","button_label":"Read More","button_link":"https:\/\/androidguys.com\/featured\/power-up-cool-down-rock-out-must-have-gadgets-this-weekend\/#google_vignette","button_style":"link","button_external":false,"button_icon":true,"highlighted_text":"none","highlighted_scribble":"circle"}},"column_CwLniX":{"type":"column","settings":{"show_border":false,"text_alignment":"center","text_alignment_mobile":"center","image_ratio":"adapt","heading":"<strong>The Gadget Flow<\/strong>","heading_size":"text-lg-2xl","text":"<p><em>\"Eternity Permanent Outdoor Lights are not just durable; they are an extension of your personality, crafted to elevate your home’s ambiance, whatever the occasion.\"<\/em><\/p>","button_label":"Read More","button_link":"https:\/\/thegadgetflow.com\/product\/enbrighten-eternity-permanent-outdoor-lights\/","button_style":"link","button_external":false,"button_icon":true,"highlighted_text":"none","highlighted_scribble":"circle"}},"column_yD6MMf":{"type":"column","settings":{"show_border":false,"text_alignment":"center","text_alignment_mobile":"center","image_ratio":"adapt","heading":"<strong>ZD Net<\/strong>","heading_size":"text-lg-2xl","text":"<p><em>\"These smart string lights can stay up all year and are cheaper than the competition.\"<\/em><\/p>","button_label":"Read More","button_link":"https:\/\/www.zdnet.com\/home-and-office\/smart-home\/these-smart-string-lights-can-stay-up-all-year-and-are-cheaper-than-the-competition\/","button_style":"link","button_external":false,"button_icon":true,"highlighted_text":"none","highlighted_scribble":"circle"}}},"block_order":["column_WEeY8g","column_AECA8E","column_9zgXg7","column_Fk4Lai","column_CwLniX","column_yD6MMf"],"settings":{"gap":"large","columns":3,"columns_mobile":"1","swipe_on_mobile":true,"heading":"WORD ON THE STREET...","heading_size":"title-sm","heading_alignment":"text-center md:items-center","heading_tag":"h2","subheading":"","description":"","button_label":"","button_link":"","button_external":false,"button_icon":true,"highlighted_text":"none","highlighted_scribble":"circle","color_text":"","color_background":"","gradient_background":"","color_highlight":"","gradient_highlight":"","color_button_text":"","color_button_background":"","color_button_gradient":"","padding_top":32,"padding_bottom":32,"divider":false,"full_width":false,"rounded":false}},"featured_collection_Dbnctq":{"type":"featured-collection","settings":{"collection":"deals","products":[],"product_limit":6,"columns":4,"carousel_on_desktop":true,"show_view_all":false,"columns_mobile":"1","swipe_on_mobile":true,"heading":"Featured collection","heading_size":"title-md","heading_alignment":"text-left md:items-end md:flex-row","heading_tag":"h2","subheading":"","description":"","highlighted_text":"none","highlighted_scribble":"circle","color_text":"","color_background":"","gradient_background":"","color_highlight":"","gradient_highlight":"","color_button_text":"","color_button_background":"","color_button_gradient":"","padding_top":32,"padding_bottom":72,"divider":false,"full_width":false,"rounded":false}}},"order":["main","image-with-text-overlay","rich_text_wnTznR","image_with_text_4pgiaA","rich_text_wj8Cnn","multicolumn_yt3Tdz","rich_text_Pbqn6f","image_with_text_overlay_kUCp7i","multicolumn_RxdkML","logo_list_7BBhKe","multicolumn_XbqXJm","image_with_text_overlay_P3tGbW","rich_text_Q8g86N","multicolumn_rpDcFy","featured_collection_Dbnctq"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "heading_size": "title-xl tracking-heading",
+        "heading_alignment": "text-left",
+        "heading_tag": "h1",
+        "text_size": "text-base",
+        "padding_top": 72,
+        "padding_bottom": 120,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
+    "image-with-text-overlay": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "transparent_header": false,
+        "image": "shopify://shop_images/OUR-STORY-ENBRIGHTEN_jpg.webp",
+        "image_height": "adapt",
+        "content_width": "large",
+        "content_position": "md:items-center md:justify-center",
+        "text_alignment": "center",
+        "image_height_mobile": "auto",
+        "content_position_mobile": "items-end justify-start",
+        "text_alignment_mobile": "left",
+        "color_text": "#ffffff",
+        "color_highlight": "#e0a580",
+        "gradient_highlight": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#000000",
+        "overlay_opacity": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": false,
+        "enable_parallax": true,
+        "parallax_direction": "vertical"
+      }
+    },
+    "rich_text_wnTznR": {
+      "type": "rich-text",
+      "blocks": {
+        "text_qfYQGL": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At Enbrighten we believe everyone deserves high-quality lighting solutions at affordable prices. We embrace innovation, provide best-in-class quality, while allowing you to define your space.</p>",
+            "text_size": "subtext-xl",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "text_qfYQGL"
+      ],
+      "settings": {
+        "text_alignment": "center",
+        "text_alignment_mobile": "center",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
+    "image_with_text_4pgiaA": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_nD3QFV": {
+          "type": "heading",
+          "settings": {
+            "heading": "GET TO KNOW US",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_JLifcQ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Enbrighten is committed to enhancing your spaces with premium innovative lighting while making the world brighter. We believe in the power of light to personalize atmosphere, evoke emotions and simply make life better.</p><p> </p><p>Our mission is to provide our customers with top-tier luxurious lighting while supporting global humanitarian efforts through every purchase.</p>",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "button_NVRtxz": {
+          "type": "button",
+          "settings": {
+            "button_label": "Learn More",
+            "button_link": "https://wwr0m6-nb.myshopify.com/pages/give-your-way",
+            "button_style": "primary",
+            "button_size": "md",
+            "button_external": false,
+            "button_icon": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_nD3QFV",
+        "text_JLifcQ",
+        "button_NVRtxz"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Enbrighten_-_About_Us_Page_Graphics_png.webp",
+        "image_height": "adapt",
+        "image_width": "medium",
+        "layout": "image_first",
+        "text_alignment": "right",
+        "content_position": "align-self-center",
+        "image_mobile": "shopify://shop_images/Enbrighten_-_About_Us_Page_Graphics_png.webp",
+        "image_height_mobile": "auto",
+        "text_alignment_mobile": "left",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_background_2": "",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "#00aeef",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": true,
+        "parallax_direction": "vertical"
+      }
+    },
+    "rich_text_wj8Cnn": {
+      "type": "rich-text",
+      "blocks": {
+        "text_qqrUXC": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We donate <a href=\"https://wwr0m6-nb.myshopify.com/pages/give-your-way\" title=\"https://wwr0m6-nb.myshopify.com/pages/give-your-way\"><strong>50% of our net profits </strong></a>to humanitarian causes around the world - changing lives beyond our products.</p>",
+            "text_size": "subtext-xl",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "text_qqrUXC"
+      ],
+      "settings": {
+        "text_alignment": "center",
+        "text_alignment_mobile": "center",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 56,
+        "padding_bottom": 56,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
+    "multicolumn_yt3Tdz": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_TzaTka": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "image": "shopify://shop_images/GYW_Charity_Blocks_3__png.webp",
+            "image_ratio": "adapt",
+            "heading": "WATER",
+            "heading_size": "text-lg-2xl",
+            "text": "<p>Water4</p>",
+            "button_label": "",
+            "button_link": "https://wwr0m6-nb.myshopify.com/pages/water",
+            "button_style": "secondary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_9zFEzp": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "image": "shopify://shop_images/GYW_Charity_Blocks_4__png.webp",
+            "image_ratio": "adapt",
+            "heading": "FOOD",
+            "heading_size": "text-lg-2xl",
+            "text": "<p>Food for the Hungry</p>",
+            "button_label": "",
+            "button_link": "https://wwr0m6-nb.myshopify.com/pages/food",
+            "button_style": "secondary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_MEzB6H": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "image": "shopify://shop_images/Untitled_design_46__png.webp",
+            "image_ratio": "adapt",
+            "heading": "SHELTER",
+            "heading_size": "text-lg-2xl",
+            "text": "<p>Habitat for Humanity</p>",
+            "button_label": "",
+            "button_link": "https://wwr0m6-nb.myshopify.com/pages/shelter",
+            "button_style": "secondary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_XdrhB7": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "image": "shopify://shop_images/GYW_Charity_Blocks_1__png.webp",
+            "image_ratio": "adapt",
+            "heading": "DISASTER RELIEF",
+            "heading_size": "text-lg-2xl",
+            "text": "<p>Convoy of Hope</p>",
+            "button_label": "",
+            "button_link": "https://wwr0m6-nb.myshopify.com/pages/disaster-relief",
+            "button_style": "secondary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "column_TzaTka",
+        "column_9zFEzp",
+        "column_MEzB6H",
+        "column_XdrhB7"
+      ],
+      "settings": {
+        "gap": "large",
+        "columns": 4,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "YOUR PURCHASE SAVES LIVES.",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 32,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "rich_text_Pbqn6f": {
+      "type": "rich-text",
+      "blocks": {
+        "button_MMtXDA": {
+          "type": "button",
+          "settings": {
+            "button_label": "Get Involved",
+            "button_link": "shopify://pages/give-your-way",
+            "button_style": "primary",
+            "button_size": "md",
+            "button_external": false,
+            "button_icon": true
+          }
+        }
+      },
+      "block_order": [
+        "button_MMtXDA"
+      ],
+      "settings": {
+        "text_alignment": "center",
+        "text_alignment_mobile": "center",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "#00aeef",
+        "color_button_gradient": "",
+        "padding_top": 20,
+        "padding_bottom": 72,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
+    "image_with_text_overlay_kUCp7i": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "transparent_header": false,
+        "image": "shopify://shop_images/Bright_Lights_Good_Vibes_1__1_jpg.webp",
+        "image_height": "adapt",
+        "content_width": "small",
+        "content_position": "md:items-end md:justify-start",
+        "text_alignment": "left",
+        "image_height_mobile": "auto",
+        "content_position_mobile": "items-end justify-start",
+        "text_alignment_mobile": "left",
+        "color_text": "#ffffff",
+        "color_highlight": "#e0a580",
+        "gradient_highlight": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 70,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "multicolumn_RxdkML": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_xirDPx": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "image_ratio": "adapt",
+            "heading": "<em><strong>10</strong></em><strong> Years in Business</strong>",
+            "heading_size": "text-2xl lg:text-3xl",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "secondary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "text",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_rxkFdD": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "image_ratio": "adapt",
+            "heading": "<em><strong>200</strong></em><strong> Products in the Market</strong>",
+            "heading_size": "text-2xl lg:text-3xl",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "secondary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "text",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_LYdU9K": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "image_ratio": "adapt",
+            "heading": "<em><strong>17K+</strong></em><strong> Stores Carry Enbrighten</strong>",
+            "heading_size": "text-2xl lg:text-3xl",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "secondary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "text",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "column_xirDPx",
+        "column_rxkFdD",
+        "column_LYdU9K"
+      ],
+      "settings": {
+        "gap": "large",
+        "columns": 3,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "logo_list_7BBhKe": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_eGYeJM": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/amazon-ar21.svg",
+            "height": 80,
+            "link": ""
+          }
+        },
+        "logo_nHMmYA": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/walmart-ar21.svg",
+            "height": 80,
+            "link": ""
+          }
+        },
+        "logo_na8R9m": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/Costco-Logo.wine_1.svg",
+            "height": 80,
+            "link": ""
+          }
+        },
+        "logo_hdkVXA": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/image_3fcafab9-3fe8-4f5f-8054-4d43443eb026.svg",
+            "height": 48,
+            "link": ""
+          }
+        },
+        "logo_DpJN6n": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/wayfair.svg",
+            "height": 80,
+            "link": ""
+          }
+        },
+        "logo_mALerK": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/image.svg",
+            "height": 80,
+            "link": ""
+          }
+        },
+        "logo_yPQfAF": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/lowes.svg",
+            "height": 80,
+            "link": ""
+          }
+        },
+        "logo_R9YHJk": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/image.png",
+            "height": 80,
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_eGYeJM",
+        "logo_nHMmYA",
+        "logo_na8R9m",
+        "logo_hdkVXA",
+        "logo_DpJN6n",
+        "logo_mALerK",
+        "logo_yPQfAF",
+        "logo_R9YHJk"
+      ],
+      "settings": {
+        "layout": "marquee",
+        "grid_horizontal": 70,
+        "direction": "left",
+        "speed": 5,
+        "heading": "Available at",
+        "heading_size": "title-md",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "multicolumn_XbqXJm": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_a9DAqG": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "right",
+            "text_alignment_mobile": "center",
+            "image": "shopify://shop_images/Group.svg",
+            "image_ratio": "adapt",
+            "heading": "",
+            "heading_size": "text-lg-2xl",
+            "text": "",
+            "button_label": "",
+            "button_link": "https://apps.apple.com/us/app/enbrighten/id1499828123",
+            "button_style": "secondary",
+            "button_external": true,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_CEhJde": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "center",
+            "image": "shopify://shop_images/Group_352047337.svg",
+            "image_ratio": "adapt",
+            "heading": "",
+            "heading_size": "text-lg-2xl",
+            "text": "",
+            "button_label": "",
+            "button_link": "https://play.google.com/store/apps/details?id=com.enbrighten.smart&hl=en_US&gl=US&pli=1",
+            "button_style": "secondary",
+            "button_external": true,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "column_a9DAqG",
+        "column_CEhJde"
+      ],
+      "settings": {
+        "gap": "small",
+        "columns": 2,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "<strong>DOWNLOAD OUR TOP RATED APP</strong>",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": false,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 32,
+        "padding_bottom": 32,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "image_with_text_overlay_P3tGbW": {
+      "type": "image-with-text-overlay",
+      "custom_css": [],
+      "settings": {
+        "transparent_header": false,
+        "image": "shopify://shop_images/Group_352047338_2c07ab30-9fa1-4651-be86-52d04fa4a24b.png",
+        "image_height": "adapt",
+        "content_width": "medium",
+        "content_position": "md:items-center md:justify-start",
+        "text_alignment": "left",
+        "image_mobile": "shopify://shop_images/Group_352047338_c0ac228b-39f4-4fee-a445-900a47392253.png",
+        "image_height_mobile": "auto",
+        "content_position_mobile": "items-center justify-start",
+        "text_alignment_mobile": "left",
+        "color_text": "#ffffff",
+        "color_highlight": "#e0a580",
+        "gradient_highlight": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "zoom"
+      }
+    },
+    "rich_text_Q8g86N": {
+      "type": "rich-text",
+      "blocks": {
+        "button_AYi4eC": {
+          "type": "button",
+          "settings": {
+            "button_label": "Get App Tips",
+            "button_link": "shopify://pages/app-tips",
+            "button_style": "primary",
+            "button_size": "md",
+            "button_external": false,
+            "button_icon": true
+          }
+        }
+      },
+      "block_order": [
+        "button_AYi4eC"
+      ],
+      "settings": {
+        "text_alignment": "center",
+        "text_alignment_mobile": "center",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "#00aeef",
+        "color_button_gradient": "",
+        "padding_top": 32,
+        "padding_bottom": 32,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
+    "multicolumn_rpDcFy": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_WEeY8g": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "image_ratio": "adapt",
+            "heading": "<strong>CNET</strong>",
+            "heading_size": "text-lg-2xl",
+            "text": "<p><em>\"Out of all the options we tested, our favorite outdoor string light is the Enbrighten Classic LED Cafe Light.\"</em></p>",
+            "button_label": "Read More",
+            "button_link": "https://www.cnet.com/home/yard-and-outdoors/best-outdoor-string-lights/",
+            "button_style": "link",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_AECA8E": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "image_ratio": "adapt",
+            "heading": "<strong>GearBrain</strong>",
+            "heading_size": "text-lg-2xl",
+            "text": "<p><em>\"With the Enbrighten mobile app, users can dive into a world of color, setting the mood for any occasion with millions of hues, dynamic modes, and effects.\"</em></p>",
+            "button_label": "Read More",
+            "button_link": "https://www.gearbrain.com/jasco-enbrighten-eternity-lights-outdoor-2667896409.html",
+            "button_style": "link",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_9zgXg7": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "image_ratio": "adapt",
+            "heading": "<strong>TechHive</strong>",
+            "heading_size": "text-lg-2xl",
+            "text": "<p><em>\"..very pretty, highly customizable, and exceptionally durable for year-round outdoor installations.\"</em></p>",
+            "button_label": "Read More",
+            "button_link": "https://www.pcworld.com/article/582523/best-smart-bulbs.html",
+            "button_style": "link",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_Fk4Lai": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "image_ratio": "adapt",
+            "heading": "<strong>AndroidGuys</strong>",
+            "heading_size": "text-lg-2xl",
+            "text": "<p><em>\"Engineered to meet the toughest outdoor standards, these lights are unbeatable in performance, safety, and longevity ensuring year-round enjoyment no matter the weather.\"</em></p>",
+            "button_label": "Read More",
+            "button_link": "https://androidguys.com/featured/power-up-cool-down-rock-out-must-have-gadgets-this-weekend/#google_vignette",
+            "button_style": "link",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_CwLniX": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "image_ratio": "adapt",
+            "heading": "<strong>The Gadget Flow</strong>",
+            "heading_size": "text-lg-2xl",
+            "text": "<p><em>\"Eternity Permanent Outdoor Lights are not just durable; they are an extension of your personality, crafted to elevate your home’s ambiance, whatever the occasion.\"</em></p>",
+            "button_label": "Read More",
+            "button_link": "https://thegadgetflow.com/product/enbrighten-eternity-permanent-outdoor-lights/",
+            "button_style": "link",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_yD6MMf": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "image_ratio": "adapt",
+            "heading": "<strong>ZD Net</strong>",
+            "heading_size": "text-lg-2xl",
+            "text": "<p><em>\"These smart string lights can stay up all year and are cheaper than the competition.\"</em></p>",
+            "button_label": "Read More",
+            "button_link": "https://www.zdnet.com/home-and-office/smart-home/these-smart-string-lights-can-stay-up-all-year-and-are-cheaper-than-the-competition/",
+            "button_style": "link",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "column_WEeY8g",
+        "column_AECA8E",
+        "column_9zgXg7",
+        "column_Fk4Lai",
+        "column_CwLniX",
+        "column_yD6MMf"
+      ],
+      "settings": {
+        "gap": "large",
+        "columns": 3,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "WORD ON THE STREET...",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 32,
+        "padding_bottom": 32,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "featured_collection_Dbnctq": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "deals",
+        "products": [],
+        "product_limit": 6,
+        "columns": 4,
+        "carousel_on_desktop": true,
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "Featured collection",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 32,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image-with-text-overlay",
+    "rich_text_wnTznR",
+    "image_with_text_4pgiaA",
+    "rich_text_wj8Cnn",
+    "multicolumn_yt3Tdz",
+    "rich_text_Pbqn6f",
+    "image_with_text_overlay_kUCp7i",
+    "multicolumn_RxdkML",
+    "logo_list_7BBhKe",
+    "multicolumn_XbqXJm",
+    "image_with_text_overlay_P3tGbW",
+    "rich_text_Q8g86N",
+    "multicolumn_rpDcFy",
+    "featured_collection_Dbnctq"
+  ]
+}

@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "general": {
     "accessibility": {
@@ -455,6 +464,7 @@
       "view_product": "Vezi produsul",
       "pre_order": "Pre-comanda",
       "add_to_bundle": "Adăugați la pachet",
+      "shop_the_look": "Cumpără Look-ul",
       "vendor": "Furnizor",
       "include_taxes": "Taxe incluse.",
       "shipping_policy_html": "<a href=\"&lt;span%20class=\" notranslate>{{ link }} '&gt;Livrarea</a> calculată la finalizarea comenzii.",

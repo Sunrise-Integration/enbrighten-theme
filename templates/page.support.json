@@ -1,1 +1,571 @@
-{"sections":{"main":{"type":"main-page","disabled":true,"settings":{"heading_size":"title-xl tracking-heading","heading_alignment":"text-left","heading_tag":"h1","text_size":"text-base","padding_top":72,"padding_bottom":120,"divider":false,"narrow":true,"rounded":false}},"image_with_text_overlay_hPYgii":{"type":"image-with-text-overlay","settings":{"transparent_header":false,"image":"shopify:\/\/shop_images\/Alan-QI2A9953.jpg","image_height":"650px","content_width":"small","content_position":"md:items-end md:justify-start","text_alignment":"left","image_mobile":"shopify:\/\/shop_images\/Alan-QI2A9953.jpg","image_height_mobile":"auto","content_position_mobile":"items-end justify-start","text_alignment_mobile":"left","color_text":"#ffffff","color_highlight":"#e0a580","gradient_highlight":"","color_button_text":"#171717","color_button_background":"#ffffff","color_button_gradient":"","color_overlay":"#171717","overlay_opacity":70,"padding_top":0,"padding_bottom":0,"divider":false,"full_width":true,"rounded":false,"enable_parallax":true,"parallax_direction":"vertical"}},"rich_text_BxiNqf":{"type":"rich-text","blocks":{"heading_GiKthK":{"type":"heading","settings":{"heading":"<strong>GET IN TOUCH WITH US<\/strong>","heading_size":"title-md","heading_tag":"h2","highlighted_text":"none","highlighted_scribble":"circle"}},"text_BcgYn4":{"type":"text","settings":{"text":"<h3>WE'RE HERE TO HELP<\/h3>","text_size":"subtext-sm","text_max_size":32,"text_font":"body","secondary_color":false,"highlighted_text":"none","highlighted_scribble":"circle"}}},"block_order":["heading_GiKthK","text_BcgYn4"],"settings":{"text_alignment":"center","text_alignment_mobile":"center","heading":"","heading_size":"title-md","heading_alignment":"text-left md:items-end md:flex-row","heading_width":"small","heading_tag":"h2","subheading":"","description":"","button_label":"","button_link":"","button_external":false,"button_icon":true,"highlighted_text":"none","highlighted_scribble":"circle","color_text":"","color_background":"","gradient_background":"","color_highlight":"","gradient_highlight":"","color_button_text":"","color_button_background":"","color_button_gradient":"","padding_top":72,"padding_bottom":32,"divider":false,"narrow":true,"rounded":false}},"multicolumn_6NyFRD":{"type":"multicolumn","blocks":{"column_7Njgr9":{"type":"column","settings":{"show_border":false,"text_alignment":"center","text_alignment_mobile":"center","image_ratio":"adapt","heading":"<strong>Find Your Answer<\/strong>","heading_size":"text-lg-2xl","text":"<p>Discover the information you're looking for by checking out our FAQs below or watching <a href=\"http:\/\/www.enbrightenme.com\/videos\">demonstration videos<\/a>. For order-specific inquiries, check out these <a href=\"https:\/\/wwr0m6-nb.myshopify.com\/pages\/order-support-faq\" title=\"https:\/\/wwr0m6-nb.myshopify.com\/pages\/order-support-faq\">helpful FAQs<\/a>.<\/p>","button_label":"","button_link":"","button_style":"secondary","button_external":false,"button_icon":true,"highlighted_text":"none","highlighted_scribble":"circle"}},"column_RNQTBH":{"type":"column","settings":{"show_border":false,"text_alignment":"center","text_alignment_mobile":"center","image_ratio":"adapt","heading":"<strong>Give Us a Call<\/strong>","heading_size":"text-lg-2xl","text":"<p>For immediate assistance, please reach out to our Consumer Care team by phone at 1-800-654-8483 during our operating hours of 7am-6pm CST Monday through Friday.<\/p><p><em>(Please note - you will be getting in touch with Enbrighten's parent company \"Jasco Products.\")<\/em><\/p>","button_label":"","button_link":"","button_style":"secondary","button_external":false,"button_icon":true,"highlighted_text":"none","highlighted_scribble":"circle"}}},"block_order":["column_7Njgr9","column_RNQTBH"],"settings":{"gap":"large","columns":2,"columns_mobile":"1","swipe_on_mobile":true,"heading":"","heading_size":"title-md","heading_alignment":"text-center md:items-center","heading_tag":"h2","subheading":"","description":"","button_label":"","button_link":"","button_external":false,"button_icon":true,"highlighted_text":"none","highlighted_scribble":"circle","color_text":"","color_background":"#eaeaea","gradient_background":"","color_highlight":"","gradient_highlight":"","color_button_text":"","color_button_background":"","color_button_gradient":"","padding_top":72,"padding_bottom":72,"divider":false,"full_width":false,"rounded":false}},"rich_text_ifbjrD":{"type":"rich-text","blocks":{"text_YRBtaH":{"type":"text","settings":{"text":"<p>Questions about Your Product?<\/p>","text_size":"subtext-custom","text_max_size":40,"text_font":"body","secondary_color":false,"highlighted_text":"none","highlighted_scribble":"circle"}},"text_6bKNwx":{"type":"text","settings":{"text":"<p>Explore FAQs by Category<\/p>","text_size":"subtext-md","text_max_size":32,"text_font":"body","secondary_color":false,"highlighted_text":"none","highlighted_scribble":"circle"}}},"block_order":["text_YRBtaH","text_6bKNwx"],"settings":{"text_alignment":"center","text_alignment_mobile":"center","heading":"","heading_size":"title-md","heading_alignment":"text-left md:items-end md:flex-row","heading_width":"small","heading_tag":"h2","subheading":"","description":"","button_label":"","button_link":"","button_external":false,"button_icon":true,"highlighted_text":"none","highlighted_scribble":"circle","color_text":"","color_background":"","gradient_background":"","color_highlight":"","gradient_highlight":"","color_button_text":"","color_button_background":"","color_button_gradient":"","padding_top":60,"padding_bottom":60,"divider":false,"narrow":true,"rounded":false}},"custom_liquid_6Kxr6q":{"type":"custom-liquid","disabled":true,"settings":{"liquid":"","color_text":"","color_background":"","gradient_background":"","color_button_text":"","color_button_background":"","color_button_gradient":"","padding_top":72,"padding_bottom":72,"divider":false,"narrow":false,"rounded":false}},"multicolumn_YezGch":{"type":"multicolumn","blocks":{"column_LLXMdt":{"type":"column","settings":{"show_border":false,"text_alignment":"center","text_alignment_mobile":"center","image":"shopify:\/\/shop_images\/UCF-Black.jpg_1_22bf33bc-d62d-4917-9f11-098a79509028.png","image_ratio":"adapt","heading":"<a href=\"https:\/\/enbrightenme.com\/support\/under-cabinet-light-fixtures-faq\">Under Cabinet Lights<\/a>","heading_size":"text-lg-2xl","text":"","button_label":"","button_link":"https:\/\/wwr0m6-nb.myshopify.com\/pages\/under-cabinet-light-fixtures-faq","button_style":"secondary","button_external":false,"button_icon":true,"highlighted_text":"none","highlighted_scribble":"circle"}},"column_HYRKg4":{"type":"column","settings":{"show_border":false,"text_alignment":"center","text_alignment_mobile":"center","image":"shopify:\/\/shop_images\/WiFi-Black.jpg_1_cf99aa04-a20e-4977-8fdb-9db23f690b25.png","image_ratio":"adapt","heading":"<a href=\"https:\/\/enbrightenme.com\/z-wave-faq\">Z-Wave<\/a>","heading_size":"text-lg-2xl","text":"","button_label":"","button_link":"https:\/\/wwr0m6-nb.myshopify.com\/pages\/z-wave-faqs","button_style":"secondary","button_external":false,"button_icon":true,"highlighted_text":"none","highlighted_scribble":"circle"}},"column_c3QEiy":{"type":"column","settings":{"show_border":false,"text_alignment":"center","text_alignment_mobile":"center","image":"shopify:\/\/shop_images\/Landscape-Black.jpg_1_464b419f-ad06-4e32-b397-cecfaecf2f50.png","image_ratio":"adapt","heading":"<a href=\"https:\/\/enbrightenme.com\/support\/landscape-lights-faq\">Landscape Lights<\/a>","heading_size":"text-lg-2xl","text":"","button_label":"","button_link":"https:\/\/wwr0m6-nb.myshopify.com\/pages\/landscape-lights-faq","button_style":"secondary","button_external":false,"button_icon":true,"highlighted_text":"none","highlighted_scribble":"circle"}},"column_PWyGLL":{"type":"column","settings":{"show_border":false,"text_alignment":"center","text_alignment_mobile":"center","image":"shopify:\/\/shop_images\/Caf_Lights_B-Black.jpg_1_17a4a9a5-2809-4113-87e1-a255073393fd.png","image_ratio":"adapt","heading":"<a href=\"https:\/\/enbrightenme.com\/support\/enbrighten-cafe-lights-faq\">Cafe Lights<\/a>","heading_size":"text-lg-2xl","text":"","button_label":"","button_link":"https:\/\/wwr0m6-nb.myshopify.com\/pages\/cafe-lights-faq","button_style":"secondary","button_external":false,"button_icon":true,"highlighted_text":"none","highlighted_scribble":"circle"}},"column_8xDPVc":{"type":"column","settings":{"show_border":false,"text_alignment":"center","text_alignment_mobile":"center","image":"shopify:\/\/shop_images\/Eternity_Lights-Black.jpg_1_ef63e4f8-01cc-4883-8164-ca4b8b0ad428.png","image_ratio":"adapt","heading":"<a href=\"https:\/\/enbrightenme.com\/eternity-lights-faq\">Eternity Lights<\/a>","heading_size":"text-lg-2xl","text":"","button_label":"","button_link":"https:\/\/wwr0m6-nb.myshopify.com\/pages\/eternity-lights-faq","button_style":"secondary","button_external":false,"button_icon":true,"highlighted_text":"none","highlighted_scribble":"circle"}}},"block_order":["column_LLXMdt","column_HYRKg4","column_c3QEiy","column_PWyGLL","column_8xDPVc"],"settings":{"gap":"small","columns":5,"columns_mobile":"2","swipe_on_mobile":true,"heading":"","heading_size":"title-md","heading_alignment":"text-center md:items-center","heading_tag":"h2","subheading":"","description":"","button_label":"","button_link":"","button_external":false,"button_icon":true,"highlighted_text":"none","highlighted_scribble":"circle","color_text":"#00aeef","color_background":"","gradient_background":"","color_highlight":"","gradient_highlight":"","color_button_text":"","color_button_background":"","color_button_gradient":"","padding_top":72,"padding_bottom":40,"divider":false,"full_width":false,"rounded":false}},"image_with_text_aYYpcx":{"type":"image-with-text","blocks":{"heading_4nMANN":{"type":"heading","settings":{"heading":"<strong>Enbrighten WiFi Support<\/strong>","heading_size":"title-md","heading_tag":"h2","highlighted_text":"none","highlighted_scribble":"circle"}},"text_cRFpGP":{"type":"text","settings":{"text":"<p>We want you to get the most out of the features and benefits of Enbrighten VIBE products. Explore an array of support resources like user manuals, instructional videos, app tips and more.<\/p>","text_size":"subtext-md","text_max_size":32,"text_font":"body","secondary_color":false,"highlighted_text":"none","highlighted_scribble":"circle"}},"button_9ByaLm":{"type":"button","settings":{"button_label":"Find WiFi Help","button_link":"https:\/\/wwr0m6-nb.myshopify.com\/pages\/enbrighten-wi-fi-support","button_style":"link","button_size":"md","button_external":false,"button_icon":true}}},"block_order":["heading_4nMANN","text_cRFpGP","button_9ByaLm"],"settings":{"image":"shopify:\/\/shop_images\/Untitled_design_53__png.webp","image_height":"adapt","image_width":"medium","layout":"image_first","text_alignment":"left","content_position":"align-self-center","image_height_mobile":"auto","text_alignment_mobile":"left","color_text":"","color_background":"","gradient_background":"","color_background_2":"","gradient_background_2":"","color_highlight":"","gradient_highlight":"","color_button_text":"#00aeef","color_button_background":"#ffffff","color_button_gradient":"","padding_top":72,"padding_bottom":72,"divider":false,"full_width":false,"rounded":false,"enable_parallax":false,"parallax_direction":"vertical"}},"image_with_text_txcYRT":{"type":"image-with-text","blocks":{"heading_hKzJRA":{"type":"heading","settings":{"heading":"<strong>Returns<\/strong>","heading_size":"title-md","heading_tag":"h2","highlighted_text":"none","highlighted_scribble":"circle"}},"text_qytpiV":{"type":"text","settings":{"text":"<p>Items purchased through our website are eligible for return within 30 days of order placement. All clearance items are final sale and cannot be returned. <\/p><p>Have an Enbrighten product from a local retail store? If beyond retailer's return policy date, but still within the product warranty, call our Consumer Care Team at 800-654-8483.<\/p>","text_size":"subtext-md","text_max_size":32,"text_font":"body","secondary_color":false,"highlighted_text":"none","highlighted_scribble":"circle"}},"button_JmXFYG":{"type":"button","settings":{"button_label":"Start a Return","button_link":"","button_style":"link","button_size":"md","button_external":false,"button_icon":true}}},"block_order":["heading_hKzJRA","text_qytpiV","button_JmXFYG"],"settings":{"image":"shopify:\/\/shop_images\/enbrightenme_com-onlineshopping_png.webp","image_height":"adapt","image_width":"medium","layout":"text_first","text_alignment":"left","content_position":"align-self-center","image_height_mobile":"auto","text_alignment_mobile":"left","color_text":"","color_background":"","gradient_background":"","color_background_2":"","gradient_background_2":"","color_highlight":"","gradient_highlight":"","color_button_text":"#00aeef","color_button_background":"","color_button_gradient":"","padding_top":72,"padding_bottom":72,"divider":false,"full_width":false,"rounded":false,"enable_parallax":false,"parallax_direction":"vertical"}}},"order":["main","image_with_text_overlay_hPYgii","rich_text_BxiNqf","multicolumn_6NyFRD","rich_text_ifbjrD","custom_liquid_6Kxr6q","multicolumn_YezGch","image_with_text_aYYpcx","image_with_text_txcYRT"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "heading_size": "title-xl tracking-heading",
+        "heading_alignment": "text-left",
+        "heading_tag": "h1",
+        "text_size": "text-base",
+        "padding_top": 72,
+        "padding_bottom": 120,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
+    "image_with_text_overlay_hPYgii": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "transparent_header": false,
+        "image": "shopify://shop_images/Alan-QI2A9953.jpg",
+        "image_height": "650px",
+        "content_width": "small",
+        "content_position": "md:items-end md:justify-start",
+        "text_alignment": "left",
+        "image_mobile": "shopify://shop_images/Alan-QI2A9953.jpg",
+        "image_height_mobile": "auto",
+        "content_position_mobile": "items-end justify-start",
+        "text_alignment_mobile": "left",
+        "color_text": "#ffffff",
+        "color_highlight": "#e0a580",
+        "gradient_highlight": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 70,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": false,
+        "enable_parallax": true,
+        "parallax_direction": "vertical"
+      }
+    },
+    "rich_text_BxiNqf": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_GiKthK": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>GET IN TOUCH WITH US</strong>",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_BcgYn4": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>WE'RE HERE TO HELP</h3>",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_GiKthK",
+        "text_BcgYn4"
+      ],
+      "settings": {
+        "text_alignment": "center",
+        "text_alignment_mobile": "center",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 32,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
+    "multicolumn_6NyFRD": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_7Njgr9": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "image_ratio": "adapt",
+            "heading": "<strong>Find Your Answer</strong>",
+            "heading_size": "text-lg-2xl",
+            "text": "<p>Discover the information you're looking for by checking out our FAQs below or watching <a href=\"http://www.enbrightenme.com/videos\">demonstration videos</a>. For order-specific inquiries, check out these <a href=\"https://wwr0m6-nb.myshopify.com/pages/order-support-faq\" title=\"https://wwr0m6-nb.myshopify.com/pages/order-support-faq\">helpful FAQs</a>.</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "secondary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_RNQTBH": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "image_ratio": "adapt",
+            "heading": "<strong>Give Us a Call</strong>",
+            "heading_size": "text-lg-2xl",
+            "text": "<p>For immediate assistance, please reach out to our Consumer Care team by phone at 1-800-654-8483 during our operating hours of 7am-6pm CST Monday through Friday.</p><p><em>(Please note - you will be getting in touch with Enbrighten's parent company \"Jasco Products.\")</em></p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "secondary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "column_7Njgr9",
+        "column_RNQTBH"
+      ],
+      "settings": {
+        "gap": "large",
+        "columns": 2,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "#eaeaea",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "rich_text_ifbjrD": {
+      "type": "rich-text",
+      "blocks": {
+        "text_YRBtaH": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Questions about Your Product?</p>",
+            "text_size": "subtext-custom",
+            "text_max_size": 40,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_6bKNwx": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Explore FAQs by Category</p>",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "text_YRBtaH",
+        "text_6bKNwx"
+      ],
+      "settings": {
+        "text_alignment": "center",
+        "text_alignment_mobile": "center",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
+    "custom_liquid_6Kxr6q": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "liquid": "",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "narrow": false,
+        "rounded": false
+      }
+    },
+    "multicolumn_YezGch": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_LLXMdt": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "image": "shopify://shop_images/UCF-Black.jpg_1_22bf33bc-d62d-4917-9f11-098a79509028.png",
+            "image_ratio": "adapt",
+            "heading": "<a href=\"https://enbrightenme.com/support/under-cabinet-light-fixtures-faq\">Under Cabinet Lights</a>",
+            "heading_size": "text-lg-2xl",
+            "text": "",
+            "button_label": "",
+            "button_link": "https://wwr0m6-nb.myshopify.com/pages/under-cabinet-light-fixtures-faq",
+            "button_style": "secondary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_HYRKg4": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "image": "shopify://shop_images/WiFi-Black.jpg_1_cf99aa04-a20e-4977-8fdb-9db23f690b25.png",
+            "image_ratio": "adapt",
+            "heading": "<a href=\"https://enbrightenme.com/z-wave-faq\">Z-Wave</a>",
+            "heading_size": "text-lg-2xl",
+            "text": "",
+            "button_label": "",
+            "button_link": "https://wwr0m6-nb.myshopify.com/pages/z-wave-faqs",
+            "button_style": "secondary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_c3QEiy": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "image": "shopify://shop_images/Landscape-Black.jpg_1_464b419f-ad06-4e32-b397-cecfaecf2f50.png",
+            "image_ratio": "adapt",
+            "heading": "<a href=\"https://enbrightenme.com/support/landscape-lights-faq\">Landscape Lights</a>",
+            "heading_size": "text-lg-2xl",
+            "text": "",
+            "button_label": "",
+            "button_link": "https://wwr0m6-nb.myshopify.com/pages/landscape-lights-faq",
+            "button_style": "secondary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_PWyGLL": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "image": "shopify://shop_images/Caf_Lights_B-Black.jpg_1_17a4a9a5-2809-4113-87e1-a255073393fd.png",
+            "image_ratio": "adapt",
+            "heading": "<a href=\"https://enbrightenme.com/support/enbrighten-cafe-lights-faq\">Cafe Lights</a>",
+            "heading_size": "text-lg-2xl",
+            "text": "",
+            "button_label": "",
+            "button_link": "https://wwr0m6-nb.myshopify.com/pages/cafe-lights-faq",
+            "button_style": "secondary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_8xDPVc": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "image": "shopify://shop_images/Eternity_Lights-Black.jpg_1_ef63e4f8-01cc-4883-8164-ca4b8b0ad428.png",
+            "image_ratio": "adapt",
+            "heading": "<a href=\"https://enbrightenme.com/eternity-lights-faq\">Eternity Lights</a>",
+            "heading_size": "text-lg-2xl",
+            "text": "",
+            "button_label": "",
+            "button_link": "https://wwr0m6-nb.myshopify.com/pages/eternity-lights-faq",
+            "button_style": "secondary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "column_LLXMdt",
+        "column_HYRKg4",
+        "column_c3QEiy",
+        "column_PWyGLL",
+        "column_8xDPVc"
+      ],
+      "settings": {
+        "gap": "small",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "#00aeef",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 40,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "image_with_text_aYYpcx": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_4nMANN": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Enbrighten WiFi Support</strong>",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_cRFpGP": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We want you to get the most out of the features and benefits of Enbrighten VIBE products. Explore an array of support resources like user manuals, instructional videos, app tips and more.</p>",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "button_9ByaLm": {
+          "type": "button",
+          "settings": {
+            "button_label": "Find WiFi Help",
+            "button_link": "https://wwr0m6-nb.myshopify.com/pages/enbrighten-wi-fi-support",
+            "button_style": "link",
+            "button_size": "md",
+            "button_external": false,
+            "button_icon": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_4nMANN",
+        "text_cRFpGP",
+        "button_9ByaLm"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Untitled_design_53__png.webp",
+        "image_height": "adapt",
+        "image_width": "medium",
+        "layout": "image_first",
+        "text_alignment": "left",
+        "content_position": "align-self-center",
+        "image_height_mobile": "auto",
+        "text_alignment_mobile": "left",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_background_2": "",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "#00aeef",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "image_with_text_txcYRT": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_hKzJRA": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Returns</strong>",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_qytpiV": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Items purchased through our website are eligible for return within 30 days of order placement. All clearance items are final sale and cannot be returned. </p><p>Have an Enbrighten product from a local retail store? If beyond retailer's return policy date, but still within the product warranty, call our Consumer Care Team at 800-654-8483.</p>",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "button_JmXFYG": {
+          "type": "button",
+          "settings": {
+            "button_label": "Start a Return",
+            "button_link": "",
+            "button_style": "link",
+            "button_size": "md",
+            "button_external": false,
+            "button_icon": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_hKzJRA",
+        "text_qytpiV",
+        "button_JmXFYG"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/enbrightenme_com-onlineshopping_png.webp",
+        "image_height": "adapt",
+        "image_width": "medium",
+        "layout": "text_first",
+        "text_alignment": "left",
+        "content_position": "align-self-center",
+        "image_height_mobile": "auto",
+        "text_alignment_mobile": "left",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_background_2": "",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "#00aeef",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_overlay_hPYgii",
+    "rich_text_BxiNqf",
+    "multicolumn_6NyFRD",
+    "rich_text_ifbjrD",
+    "custom_liquid_6Kxr6q",
+    "multicolumn_YezGch",
+    "image_with_text_aYYpcx",
+    "image_with_text_txcYRT"
+  ]
+}

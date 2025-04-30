@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "general": {
     "accessibility": {
@@ -455,6 +464,7 @@
       "view_product": "Med produktet",
       "pre_order": "Forudbestil",
       "add_to_bundle": "Tilføj til bundt",
+      "shop_the_look": "Køb looket",
       "vendor": "Sælger",
       "include_taxes": "Skat inkluderet.",
       "shipping_policy_html": "<a href=\"{{ link }}\">Levering</a> beregnes ved betaling.",
