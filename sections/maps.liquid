@@ -212,7 +212,7 @@
               <ul class="help-list grid gap-4 md:gap-5" is="g-map-locations" aria-controls="GMap-{{ section.id }}" data-parent>
                 {%- for block in section.blocks -%}
                   {%- if block.settings.map_address != blank -%}
-                    <li class="help-list__item grid gap-2 md:gap-3 cursor-pointer{% if forloop.first %} active{% endif %}" data-map-address="{{ block.settings.map_address | escape }}" {{ block.shopify_attributes }}>
+                    <li class="help-list__item grid gap-2 md:gap-3 cursor-pointer{% if forloop.first %} active{% endif %}" data-map-address="{{ block.settings.map_address | escape }}" data-index="{{ forloop.index0 }}" {{ block.shopify_attributes }}>
                       {%- if block.settings.heading != blank -%}
                         <p class="h4 font-medium leading-tight md:text-lg">{{ block.settings.heading | escape }}</p>
                       {%- endif -%}
@@ -647,6 +647,7 @@
       "label": "t:sections.global.settings.highlighted_text.label"
     },
     {
+      "visible_if": "{{ section.settings.highlighted_text == 'scribble' }}",
       "type": "select",
       "id": "highlighted_scribble",
       "options": [
@@ -769,6 +770,7 @@
       "default": true
     },
     {
+      "visible_if": "{{ section.settings.enable_parallax == true }}",
       "type": "select",
       "id": "parallax_direction",
       "label": "t:sections.global.settings.parallax_direction.label",
@@ -832,6 +834,7 @@
           "label": "t:sections.global.settings.button_link.label"
         },
         {
+          "visible_if": "{{ block.settings.button_label != blank }}",
           "type": "select",
           "id": "button_style",
           "options": [
@@ -852,6 +855,7 @@
           "label": "t:sections.global.settings.button_style.label"
         },
         {
+          "visible_if": "{{ block.settings.button_label != blank }}",
           "type": "select",
           "id": "button_size",
           "options": [
@@ -872,12 +876,14 @@
           "label": "t:sections.global.settings.button_size.label"
         },
         {
+          "visible_if": "{{ block.settings.button_label != blank }}",
           "type": "checkbox",
           "id": "button_external",
           "label": "t:sections.global.settings.button_external.label",
           "default": false
         },
         {
+          "visible_if": "{{ block.settings.button_label != blank }}",
           "type": "checkbox",
           "id": "button_icon",
           "label": "t:sections.global.settings.button_icon.label",
