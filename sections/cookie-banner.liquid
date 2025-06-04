@@ -8,18 +8,13 @@
     --color-highlight: {{ section.settings.color_drawer_highlight.rgb }};
   }
 
-  #shopify-pc__banner,
-  #shopify-pc__banner[style*="display: block"] {
+  #shopify-pc__banner {
     display: none !important;
   }
 </style>
 
-{%- unless request.design_mode -%}
-  <link rel="stylesheet" href="{{ 'cookie-banner.css' | asset_url }}" media="print" onload="this.media='all'">
-  <noscript>{{ 'cookie-banner.css' | asset_url | stylesheet_tag }}</noscript>
-{%- else -%}
-  {{ 'cookie-banner.css' | asset_url | stylesheet_tag }}
-{%- endunless -%}
+<link rel="stylesheet" href="{{ 'cookie-banner.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript>{{ 'cookie-banner.css' | asset_url | stylesheet_tag }}</noscript>
 <script src="{{ 'cookie-banner.js' | asset_url }}" defer="defer"></script>
 
 <cookie-banner id="CookieBanner" class="x-modal cookie-modal drawer z-35 fixed bottom-0 left-0 h-full w-full pointer-events-none"
@@ -78,7 +73,7 @@
 
               {%- when 'buttons' -%}
                 <div class="cookie__buttons" {{ block.shopify_attributes }}>
-                  <div class="cookie__flex flex flex-wrap gap-4">
+                  <div class="inline-flex gap-4">
                     {%- if block.settings.button_label_1 != blank -%}
                       <button type="button" name="accept" class="button button--primary icon-with-text" is="hover-button">
                         <span class="btn-fill" data-fill></span>
@@ -367,7 +362,6 @@
           "label": "t:sections.global.settings.highlighted_text.label"
         },
         {
-          "visible_if": "{{ block.settings.highlighted_text == 'scribble' }}",
           "type": "select",
           "id": "highlighted_scribble",
           "options": [
@@ -437,7 +431,6 @@
           "label": "t:sections.global.settings.text_size.label"
         },
         {
-          "visible_if": "{{ block.settings.text_size == 'subtext-custom' }}",
           "type": "range",
           "id": "text_max_size",
           "default": 32,
@@ -511,7 +504,6 @@
           "label": "t:sections.global.settings.highlighted_text.label"
         },
         {
-          "visible_if": "{{ block.settings.highlighted_text == 'scribble' }}",
           "type": "select",
           "id": "highlighted_scribble",
           "options": [
@@ -813,7 +805,7 @@
           "id": "icon_width",
           "label": "t:sections.global.settings.icon_width.label",
           "default": 48,
-          "min": 10,
+          "min": 20,
           "max": 120,
           "step": 2,
           "unit": "px"
@@ -846,7 +838,6 @@
           "label": "t:sections.global.settings.image_width.label"
         },
         {
-          "visible_if": "{{ block.settings.image_width == 'custom' }}",
           "type": "range",
           "id": "image_max_width",
           "label": "t:sections.global.settings.image_max_width.label",
@@ -857,7 +848,6 @@
           "unit": "px"
         },
         {
-          "visible_if": "{{ block.settings.image_width == 'custom' }}",
           "type": "range",
           "id": "image_max_width_mobile",
           "label": "t:sections.global.settings.image_max_width_mobile.label",

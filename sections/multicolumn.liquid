@@ -46,7 +46,7 @@
                   <video-media class="block" style="--aspect-ratio: {{ block.settings.video.aspect_ratio }}" autoplay>
                     {{- poster -}}
                     <template>
-                      {{- block.settings.video | video_tag: playsinline: true, muted: true, autoplay: true, loop: true, controls: false, preload: 'none', image_size: '400x' -}}
+                      {{- block.settings.video | video_tag: playsinline: true, muted: true, autoplay: true, loop: true, controls: false, preload: 'none', image_size: '800x' -}}
                     </template>
                   </video-media>
                 </a>
@@ -120,7 +120,7 @@
       "type": "range",
       "id": "columns",
       "min": 2,
-      "max": 4,
+      "max": 6,
       "step": 1,
       "default": 3,
       "label": "t:sections.global.settings.columns.label"
@@ -272,14 +272,12 @@
       "label": "t:sections.global.settings.button_link.label"
     },
     {
-      "visible_if": "{{ section.settings.button_label != blank }}",
       "type": "checkbox",
       "id": "button_external",
       "label": "t:sections.global.settings.button_external.label",
       "default": false
     },
     {
-      "visible_if": "{{ section.settings.button_label != blank }}",
       "type": "checkbox",
       "id": "button_icon",
       "label": "t:sections.global.settings.button_icon.label",
@@ -327,7 +325,6 @@
       "label": "t:sections.global.settings.highlighted_text.label"
     },
     {
-      "visible_if": "{{ section.settings.highlighted_text == 'scribble' }}",
       "type": "select",
       "id": "highlighted_scribble",
       "options": [
@@ -540,8 +537,7 @@
         {
           "type": "text",
           "id": "button_label",
-          "label": "t:sections.global.settings.button_label.label",
-          "info": "t:sections.global.settings.button_label.info"
+          "label": "t:sections.global.settings.button_label.label"
         },
         {
           "type": "url",
@@ -549,7 +545,6 @@
           "label": "t:sections.global.settings.button_link.label"
         },
         {
-          "visible_if": "{{ block.settings.button_label != blank }}",
           "type": "select",
           "id": "button_style",
           "options": [
@@ -570,14 +565,12 @@
           "label": "t:sections.global.settings.button_style.label"
         },
         {
-          "visible_if": "{{ block.settings.button_label != blank }}",
           "type": "checkbox",
           "id": "button_external",
           "label": "t:sections.global.settings.button_external.label",
           "default": false
         },
         {
-          "visible_if": "{{ block.settings.button_label != blank }}",
           "type": "checkbox",
           "id": "button_icon",
           "label": "t:sections.global.settings.button_icon.label",
@@ -625,7 +618,6 @@
           "label": "t:sections.global.settings.highlighted_text.label"
         },
         {
-          "visible_if": "{{ block.settings.highlighted_text == 'scribble' }}",
           "type": "select",
           "id": "highlighted_scribble",
           "options": [

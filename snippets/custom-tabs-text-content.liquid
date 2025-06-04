@@ -1,0 +1,12 @@
+{%- for i in (1..4) -%}
+  {%- capture text_content_key -%}text_content_{{ i }}{%- endcapture -%}
+  {%- capture text_align_key -%}text_content_{{ i }}_align{%- endcapture -%}
+  {%- assign text_content = block.settings[text_content_key] -%}
+  {%- assign text_align = block.settings[text_align_key] -%}
+  {%- if text_content != blank -%}
+    <div class="custom-tabs__content-block rte" style="text-align: {{ text_align }};">
+      {{ text_content }}
+    </div>
+  {%- endif -%}
+{%- endfor -%}
+

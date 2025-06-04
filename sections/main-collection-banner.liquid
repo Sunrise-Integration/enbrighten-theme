@@ -149,14 +149,12 @@
       "default": true
     },
     {
-      "visible_if": "{{ section.settings.show_image == true }}",
       "type": "image_picker",
       "id": "image",
       "label": "t:sections.global.settings.image.label",
       "info": "t:sections.main-collection-banner.settings.image.info"
     },
     {
-      "visible_if": "{{ section.settings.show_image == true }}",
       "type": "select",
       "id": "image_height",
       "options": [
@@ -267,14 +265,12 @@
       "content": "t:sections.global.settings.header__mobile.content"
     },
     {
-      "visible_if": "{{ section.settings.show_image == true }}",
       "type": "image_picker",
       "id": "image_mobile",
       "label": "t:sections.global.settings.image_mobile.label",
       "info": "t:sections.main-collection-banner.settings.image.info"
     },
     {
-      "visible_if": "{{ section.settings.show_image == true }}",
       "type": "select",
       "id": "image_height_mobile",
       "options": [
@@ -444,7 +440,6 @@
       "default": true
     },
     {
-      "visible_if": "{{ section.settings.enable_parallax == true }}",
       "type": "select",
       "id": "parallax_direction",
       "label": "t:sections.global.settings.parallax_direction.label",
@@ -531,7 +526,6 @@
           "label": "t:sections.global.settings.text_size.label"
         },
         {
-          "visible_if": "{{ block.settings.text_size == 'subtext-custom' }}",
           "type": "range",
           "id": "text_max_size",
           "default": 32,

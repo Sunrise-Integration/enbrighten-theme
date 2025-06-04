@@ -1,0 +1,42 @@
+<div class="custom-tabs__content">
+  {%- assign tabs = section.blocks | where: "type", "tab" -%}
+  {%- for tab in tabs -%}
+    <div
+      id="tab-{{ tab.settings.tab_id }}-content"
+      class="custom-tabs__tab-content{% if forloop.first %} is-active{% endif %}"
+      role="tabpanel"
+      aria-labelledby="tab-{{ tab.settings.tab_id }}-trigger"
+      {% unless forloop.first %}hidden{% endunless %}
+      {{ tab.shopify_attributes }}
+    >
+      {%- for block in section.blocks -%}
+        {%- if block.type != "tab" and block.settings.tab_id == tab.settings.tab_id -%}
+          <div class="custom-tabs__content-item" {{ block.shopify_attributes }}>
+            {% render 'custom-tabs-item-header', block: block %}
+            
+            <div class="custom-tabs__content-grid"
+                 style="
+                   --desktop-columns: {{ block.settings.columns_desktop }};
+                   --tablet-columns: {{ block.settings.columns_tablet }};
+                   --mobile-columns: {{ block.settings.columns_mobile }};
+                 ">
+              {% case block.type %}
+                {% when 'text_item' %}
+                  {% render 'custom-tabs-text-content', block: block %}
+                {% when 'video_item' %}
+                  {% render 'custom-tabs-video-content', block: block %}
+                {% when 'image_item' %}
+                  {% render 'custom-tabs-image-content', block: block %}
+                {% when 'mixed_item' %}
+                  {% render 'custom-tabs-text-content', block: block %}
+                  {% render 'custom-tabs-video-content', block: block %}
+                  {% render 'custom-tabs-image-content', block: block %}
+              {% endcase %}
+            </div>
+          </div>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+  {%- endfor -%}
+</div>
+
