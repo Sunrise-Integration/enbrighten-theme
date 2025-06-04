@@ -35,4 +35,18 @@
       -%}
     </span>
   {%- endif -%}
+  {% comment %}
+  {% assign three_months_ago = 'now' | date: "%s" | minus: 78000 %}
+  {% assign published_at_seconds = product.published_at | date: "%s" | minus: 1 %}
+  {%- if published_at_seconds < three_months_ago -%}
+    {%- capture styles -%}
+        --badge-background: red; --badge-foreground: white;
+    {%- endcapture -%}
+
+      <span class="badge flex items-center gap-1d5 font-medium leading-none rounded-full"{% if styles != blank %} style="{{ styles }}"{% endif %}>
+        NEW
+      </span>
+
+  {%- endif -%}
+  {% endcomment %}
 </div>

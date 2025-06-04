@@ -8,19 +8,12 @@
   <input type="hidden" name="options[prefix]" value="last" />
   <label class="sr-only" for="SearchFormInput-{{ section_id }}">{{ 'general.search.title' | t }}</label>
   <div class="search__field field flex items-center gap-4 relative">
-    {%- if settings.predictive_search_enabled -%}
-      {%- liquid
-        assign typewriter_effect_enabled = settings.typewriter_effect_enabled
-
-        if context == 'page' and search.terms != blank
-          assign typewriter_effect_enabled = false
-        endif
-      -%}
-      {%- if typewriter_effect_enabled -%}
+    {%- if settings.predictive_search_enabled and settings.typewriter_effect_enabled -%}
+      {%- unless search.terms -%}
         <div class="typed absolute top-0 left-0 w-full h-full flex items-center justify-start gap-2 font-medium text-base md:text-lg leading-none pointer-events-none">
           <search-typed class="flex items-center h-full overflow-hidden whitespace-nowrap" data-delay="0.5" data-first-text="{{ settings.typewriter_starter_text | escape }}" data-last-text="{{ 'general.search.placeholder' | t | escape }}"></search-typed>
         </div>
-      {%- endif -%}
+      {%- endunless -%}
     {%- endif -%}
     <input
       class="input{% if settings.predictive_search_enabled or settings.predictive_search_recommendation != blank %} search__input{% endif %}"
@@ -102,8 +95,6 @@
               {%- for product in predictive_search.resources.products -%}
                 {%- render 'product-card-horizontal',
                   product: product,
-                  product_id: product.id,
-                  section_id: section_id,
                   image_ratio: settings.product_image_ratio,
                   image_fill: settings.product_image_fill,
                   show_vendor: settings.predictive_search_show_vendor,

@@ -35,6 +35,7 @@
   {%- if page_description -%}
     <meta name="description" content="{{ page_description | escape }}">
   {%- endif -%}
+
   {%- liquid
     render 'social-meta-tags'
     
@@ -48,6 +49,7 @@
 
   <link rel="stylesheet" href="{{ 'apps.css' | asset_url }}" media="print" fetchpriority="low" onload="this.media='all'">
 
+  
   {{ content_for_header }}
 
   <script src="{{ 'vendor.js' | asset_url }}" defer="defer"></script>

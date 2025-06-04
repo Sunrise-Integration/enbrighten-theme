@@ -60,7 +60,11 @@
             {%- endif -%}
 
             <p class="h3 text-xl {{ section.settings.newsletter_heading_size }} leading-none tracking-none font-medium lg:font-heading">{{ section.settings.newsletter_heading | escape }}</p>
-            {%- render 'newsletter-form', section_id: section.id, context: 'footer' -%}
+            {% if section.settings.newsletter_custom_form != blank %}
+              {{ section.settings.newsletter_custom_form }}
+            {% else %}
+              {%- render 'newsletter-form', section_id: section.id, context: 'footer' -%}
+            {% endif %}
 
             {%- if section.settings.newsletter_text != blank -%}
               <div class="rte text-sm leading-tight">{{ section.settings.newsletter_text }}</div>
@@ -160,6 +164,12 @@
       "max": 120,
       "step": 1,
       "unit": "px"
+    },
+    {
+      "type":"liquid",
+      "id":"newsletter_custom_form",
+      "label":"Custom form code",
+      "info":"Custom form code to replace default form."
     },
     {
       "type": "header",

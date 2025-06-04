@@ -8,6 +8,12 @@
  * ------------------------------------------------------------
  */
 {
+   "cart": {
+    "general": {
+      "discount_code": "Discount code",
+      "apply_discount": "Apply discount"
+    }
+  },
   "general": {
     "accessibility": {
       "skip_to_content": "Skip to content",
@@ -464,7 +470,6 @@
       "view_product": "View product",
       "pre_order": "Pre-order",
       "add_to_bundle": "Add to bundle",
-      "shop_the_look": "Shop the Look",
       "vendor": "Vendor",
       "include_taxes": "Tax included.",
       "shipping_policy_html": "<a href='{{ link }}'>Shipping</a> calculated at checkout.",

@@ -33,6 +33,64 @@ class TabList extends HTMLUListElement {
 }
 customElements.define('tab-list', TabList, { extends: 'ul' });
 
+// Discount code handler
+document.addEventListener('DOMContentLoaded', function() {
+  const discountForm = document.getElementById('discount-form');
+  
+  if (discountForm) {
+    discountForm.addEventListener('submit', function(event) {
+      event.preventDefault();
+      
+      const discountCode = document.getElementById('discount-code').value;
+      const submitButton = discountForm.querySelector('button[type="submit"]');
+      const originalButtonText = submitButton.querySelector('.btn-text').textContent;
+      
+      // Change button text to loading state
+      submitButton.querySelector('.btn-text').textContent = 'Applying...';
+      submitButton.disabled = true;
+      
+      // Create form data
+      const formData = new FormData();
+      formData.append('discount', discountCode);
+      formData.append('commit', 'Apply discount');
+      
+      // Send AJAX request
+      fetch('/cart', {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'X-Requested-With': 'XMLHttpRequest'
+        }
+      })
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.text();
+      })
+      .then(html => {
+        // Verificar si el descuento se aplicó correctamente
+        if (html.includes('discount_application')) {
+          // Refresh the page to show updated cart with discount
+          window.location.reload();
+        } else {
+          // Si no hay descuento aplicado, podría ser un código inválido
+          console.log('Discount code may be invalid or expired');
+          submitButton.querySelector('.btn-text').textContent = originalButtonText;
+          submitButton.disabled = false;
+          // Opcional: mostrar un mensaje de error
+          alert('The discount code may be invalid or expired. Please try again.');
+        }
+      })
+      .catch(error => {
+        console.error('Error applying discount:', error);
+        submitButton.querySelector('.btn-text').textContent = originalButtonText;
+        submitButton.disabled = false;
+      });
+    });
+  }
+});
+
 class CartDrawer extends DrawerElement {
   constructor() {
     super();
@@ -360,21 +418,13 @@ class ShippingCalculator extends HTMLFormElement {
   constructor() {
     super();
 
-    this.onSubmitHandler = this.onSubmit.bind(this);
-  }
-
-  connectedCallback() {
     this.submitButton = this.querySelector('[type="submit"]');
     this.resultsElement = this.lastElementChild;
 
-    this.submitButton.addEventListener('click', this.onSubmitHandler);
+    this.submitButton.addEventListener('click', this.handleFormSubmit.bind(this));
   }
 
-  disconnectedCallback() {
-    this.submitButton.removeEventListener('click', this.onSubmitHandler);
-  }
-
-  onSubmit(event) {
+  handleFormSubmit(event) {
     event.preventDefault();
 
     this.abortController?.abort();
@@ -416,6 +466,7 @@ class ShippingCalculator extends HTMLFormElement {
         this.resultsElement.hidden = false;
         this.submitButton.removeAttribute('aria-busy');
       });
+
   }
 
   formatError(errors) {

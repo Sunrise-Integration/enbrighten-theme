@@ -2,11 +2,11 @@ class CookieBanner extends ModalElement {
   constructor() {
     super();
 
-    if (!theme.config.isTouch || Shopify.designMode) {
-      this.init();
+    if (theme.config.isTouch) {
+      new theme.initWhenVisible(this.init.bind(this));
     }
     else {
-      new theme.initWhenVisible(theme.utils.throttle(this.init.bind(this)));
+      this.init();
     }
   }
 
@@ -27,9 +27,6 @@ class CookieBanner extends ModalElement {
   }
 
   init() {
-    if (this.initialized) return;
-    this.initialized = true;
-
     if (this.testMode) {
       this.load(this.delay);
       return;
@@ -43,7 +40,7 @@ class CookieBanner extends ModalElement {
   }
 
   load(delay) {
-    if (Shopify.designMode) return;
+    if (Shopify && Shopify.designMode) return;
 
     setTimeout(() => this.show(), delay * 1000);
 
