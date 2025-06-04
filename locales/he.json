@@ -304,7 +304,7 @@
     "country_label": "מדינה/אזור",
     "language_label": "שפה",
     "update_language": "עדכון שפה",
-    "update_country": "עדכון מדינה/אזור",
+    "update_country": "עדכון מדינה/אזור"
   },
   "contact": {
     "form": {
@@ -365,7 +365,7 @@
       "return": "חזרה לחנות",
       "guest_title": "המשך כאורח",
       "guest_continue": "המשך",
-      "alternate_provider_separator": "או",
+      "alternate_provider_separator": "או"
     },
     "orders": {
       "title": "היסטוריית הזמנות",
@@ -455,6 +455,7 @@
       "view_product": "צפייה במוצר",
       "pre_order": "הזמנה מוקדמת",
       "add_to_bundle": "הוספה לחבילה",
+      "shop_the_look": "קנה את המראה",
       "vendor": "ספק",
       "include_taxes": "כולל מס",
       "shipping_policy_html": "<a href=\"{{ link }}\"> משלוח </a> מחושב בתשלום.",
