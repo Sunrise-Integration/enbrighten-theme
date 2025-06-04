@@ -1,1 +1,1424 @@
-{"sections":{"slideshow":{"type":"slideshow","blocks":{"video_bjjLUk":{"type":"video","settings":{"video":"shopify:\/\/files\/videos\/zMarch - animation - white - smoothed.mp4","video_url":"https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc","description":"","video_url_mobile":"","heading":"Bring Your Home to Life","heading_size":"title-md","heading_tag":"h2","button_label":"Shop Outdoor Lighting","button_link":"shopify:\/\/collections\/outdoor-lighting","button_style":"primary","button_external":false,"button_icon":false}},"slide-2":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/Lifestyle-Desktop-2.jpg","image_mobile":"shopify:\/\/shop_images\/Lifestyle-Mobile-2.jpg","heading":"Create the <em><strong>VIBE<\/strong><\/em>","heading_size":"title-sm","heading_tag":"h2","button_label":"Shop WiFi","button_link":"shopify:\/\/collections\/wifi","button_style":"primary","button_external":false,"button_icon":false}},"video_aLkxan":{"type":"video","settings":{"video":"shopify:\/\/files\/videos\/Wall light breakout for web.mp4","video_url":"https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc","description":"","video_url_mobile":"","heading":"Set the Stage","heading_size":"title-sm","heading_tag":"h2","button_label":"Shop Wall Lights","button_link":"shopify:\/\/collections\/wall-lights","button_style":"primary","button_external":false,"button_icon":false}},"slide-1":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/eternitylandscapelights-2.png","image_mobile":"shopify:\/\/shop_images\/eternitylandscapelights.png","heading":"Check Out What's New","heading_size":"title-sm","heading_tag":"h2","button_label":"Shop Eternity Lights","button_link":"shopify:\/\/collections\/eternity-lights","button_style":"primary","button_external":false,"button_icon":false}}},"block_order":["video_bjjLUk","slide-2","video_aLkxan","slide-1"],"settings":{"autoplay":true,"autoplay_speed":6,"show_navigation":true,"image_height":"700px","content_width":"large","image_height_mobile":"500px","color_text":"#ffffff","color_background":"#231f20","gradient_background":"","color_button_text":"#231f20","color_button_background":"#ffffff","color_button_gradient":"","color_overlay":"#000000","overlay_opacity":25,"padding_top":0,"padding_bottom":24,"divider":false,"full_width":true,"rounded":false,"enable_parallax":false,"parallax_direction":"vertical"}},"rich-text-1":{"type":"rich-text","blocks":{"text":{"type":"text","settings":{"text":"<p>Enbrighten is committed to enhancing your spaces with premium, innovative lighting while making the world brighter. <strong>50% of net profits from your purchase are donated to charity.<\/strong><\/p><p>We believe in the power of light to personalize atmosphere, evoke emotions and simply make life better.<\/p>","text_size":"subtext-lg","text_max_size":42,"text_font":"body","secondary_color":false,"highlighted_text":"text","highlighted_scribble":"sketch-underline"}}},"block_order":["text"],"custom_css":["h2 {color: #00aeef;}"],"settings":{"text_alignment":"left","text_alignment_mobile":"left","heading":"Get to Know Us","heading_size":"title-md","heading_alignment":"text-left md:items-end md:flex-row","heading_width":"small","heading_tag":"h2","subheading":"","description":"","button_label":"Our Story","button_link":"shopify:\/\/pages\/our-story","button_external":false,"button_icon":true,"highlighted_text":"none","highlighted_scribble":"squiggle-underline","color_text":"#231f20","color_background":"","gradient_background":"","color_highlight":"","gradient_highlight":"","color_button_text":"","color_button_background":"","color_button_gradient":"","padding_top":80,"padding_bottom":0,"divider":false,"narrow":false,"rounded":false}},"collection-list":{"type":"collection-list","blocks":{"collection_EAyVbM":{"type":"collection","settings":{"collection":"wifi","title":"","description":"","overlay_content":false,"color_text":"#ffffff","color_overlay":"#000000","overlay_opacity":30}},"collection_KX3fAh":{"type":"collection","settings":{"collection":"cafe-lights","title":"","description":"","overlay_content":false,"color_text":"#ffffff","color_overlay":"#000000","overlay_opacity":30}},"collection-2":{"type":"collection","settings":{"collection":"landscape-lights","title":"","description":"","overlay_content":false,"color_text":"#ffffff","color_overlay":"#000000","overlay_opacity":40}},"collection_GPnGFz":{"type":"collection","settings":{"collection":"night-lights","title":"","description":"","overlay_content":false,"color_text":"#ffffff","color_overlay":"#000000","overlay_opacity":30}},"collection_Jxy7JV":{"type":"collection","settings":{"collection":"rope-lights","title":"","description":"","overlay_content":false,"color_text":"#ffffff","color_overlay":"#000000","overlay_opacity":30}},"collection-3":{"type":"collection","settings":{"collection":"security-lights","title":"","description":"","overlay_content":false,"color_text":"#ffffff","color_overlay":"#000000","overlay_opacity":40}},"collection-4":{"type":"collection","settings":{"collection":"z-wave","title":"","description":"","overlay_content":false,"color_text":"#ffffff","color_overlay":"#000000","overlay_opacity":40}},"collection-6":{"type":"collection","settings":{"collection":"under-cabinet-lighting","title":"","description":"","overlay_content":false,"color_text":"#ffffff","color_overlay":"#000000","overlay_opacity":40}}},"block_order":["collection_EAyVbM","collection_KX3fAh","collection-2","collection_GPnGFz","collection_Jxy7JV","collection-3","collection-4","collection-6"],"settings":{"columns":3,"carousel_on_desktop":true,"image_type":"collection","image_ratio":"adapt","show_products_count":false,"show_view_all":false,"columns_mobile":"1","swipe_on_mobile":true,"heading":"Find the Right Light","heading_size":"title-md","heading_alignment":"text-center md:items-center","heading_tag":"h2","subheading":"","description":"","highlighted_text":"none","highlighted_scribble":"circle","color_text":"","color_background":"","gradient_background":"","color_highlight":"","gradient_highlight":"linear-gradient(224deg, rgba(255, 210, 43, 1) 13%, rgba(0, 174, 239, 1) 77%)","color_button_text":"","color_button_background":"","color_button_gradient":"","padding_top":80,"padding_bottom":80,"divider":false,"full_width":false,"rounded":false}},"video-with-text-overlay":{"type":"video-with-text-overlay","settings":{"transparent_header":false,"video":"shopify:\/\/files\/videos\/Enbrighten Shopify Videos, Home Page, Desktop Dims_D1.mp4","video_url":"","description":"","enable_video_autoplay":true,"enable_video_looping":true,"image_height":"750px","content_width":"medium","content_position":"md:items-center md:justify-center","text_alignment":"center","video_mobile":"shopify:\/\/files\/videos\/Enbrighten Shopify Videos, Home Page, Mobile Dims_D1.mp4","video_url_mobile":"","image_height_mobile":"adapt","content_position_mobile":"items-center justify-center","text_alignment_mobile":"center","color_text":"#ffffff","color_highlight":"#e0a580","gradient_highlight":"","color_button_text":"#171717","color_button_background":"#ffffff","color_button_gradient":"","color_overlay":"#000000","overlay_opacity":0,"padding_top":0,"padding_bottom":12,"divider":false,"full_width":true,"rounded":true}},"featured_product_6fne9e":{"type":"featured-product","blocks":{"title_zqFcEL":{"type":"title","settings":{"title_size":"product-title-md","title_size_mobile":"product-title-md","show_price":true,"show_rating":true}},"description_4hhUgq":{"type":"description","disabled":true,"settings":{"text_size":"text-base"}},"variant_picker_naDDNa":{"type":"variant_picker","settings":{"show_variant_labels":true,"picker_type":"button","enable_color_swatches":true,"color_swatch_type":"color","size_chart":""}},"inventory_cWM6Ut":{"type":"inventory","settings":{"inventory_threshold":5,"show_inventory_transfer":true,"show_inventory_quantity":"low","color_scheme":"accent-1"}},"buy_buttons_axwL4Q":{"type":"buy_buttons","settings":{"show_quantity_selector":true,"show_dynamic_checkout":true,"show_gift_card_recipient":true,"enable_back_in_stock":false,"show_back_in_stock_name":false,"show_back_in_stock_phone":false}},"pickup_availability_bcjV7h":{"type":"pickup_availability","settings":{}},"read_more_XVACCm":{"type":"read_more","settings":{}},"spinning_text_RXGMqJ":{"type":"spinning_text","settings":{"text":"Featured Deal"}}},"block_order":["title_zqFcEL","description_4hhUgq","variant_picker_naDDNa","inventory_cWM6Ut","buy_buttons_axwL4Q","pickup_availability_bcjV7h","read_more_XVACCm","spinning_text_RXGMqJ"],"settings":{"product":"enbrighten-ecoscapes-wifi-vibe-color-changing-led-cafe-lights-12-bulbs-24ft-black-cord-2-pack","enable_sticky_info":false,"media_size":55,"gallery_layout":"thumbnail","thumbnail_position":"beside","image_ratio":"adapt_first","image_zoom":"lightbox","hide_variants":false,"enable_video_autoplay":false,"enable_video_looping":false,"mobile_layout":"partial","image_ratio_mobile":"adapt_first","mobile_thumbnail":false,"padding_top":100,"padding_bottom":0,"divider":false,"full_width":false,"rounded":false}},"scrolling-text-1":{"type":"scrolling-text","blocks":{"text":{"type":"text","settings":{"text":"<em><strong>Free Shipping Over $50<\/strong><\/em>","text_size":36,"text_font":"body","highlighted_text":"text","highlighted_scribble":"squiggle-underline"}}},"block_order":["text"],"settings":{"direction":"left","speed":25,"grid_horizontal":70,"enable_twin":false,"enable_parallax":true,"color_text":"","color_background":"","gradient_background":"","color_highlight":"","gradient_highlight":"linear-gradient(78deg, rgba(0, 174, 239, 1) 26%, rgba(187, 48, 254, 1) 99%)","padding_top":28,"padding_bottom":28,"divider":false,"rounded":false}},"shop-the-look":{"type":"shop-the-look","blocks":{"product-1":{"type":"product","settings":{"product":"enbrighten-wifi-vibe-color-changing-led-landscape-lights-12-lights-110ft-black-cord","color_text":"#ffffff","vertical":85,"horizontal":14,"vertical_mobile":25,"horizontal_mobile":25}},"product-2":{"type":"product","settings":{"product":"enbrighten-wifi-vibe-color-changing-permanent-outdoor-eternity-eave-lights-72-lights-100ft-white-cord","color_text":"#ffffff","vertical":20,"horizontal":32,"vertical_mobile":75,"horizontal_mobile":65}},"product-3":{"type":"product","settings":{"product":"enbrighten-wifi-vibe-indoor-outdoor-color-changing-led-flex-light-8ft","color_text":"#ffffff","vertical":39,"horizontal":62,"vertical_mobile":50,"horizontal_mobile":50}},"product_DcArL6":{"type":"product","settings":{"product":"enbrighten-vibe-24in-led-wifi-light-fixture-white","color_text":"#ffffff","vertical":69,"horizontal":40,"vertical_mobile":50,"horizontal_mobile":50}},"product_wYnVKy":{"type":"product","settings":{"product":"enbrighten-wifi-vibe-color-changing-led-tabletop-lamp-with-usb-charging-black","color_text":"#ffffff","vertical":50,"horizontal":37,"vertical_mobile":50,"horizontal_mobile":50}},"product_tX8Ktf":{"type":"product","settings":{"product":"enbrighten-wifi-vibe-usb-powered-led-color-changing-gaming-light-bars-2-pack-black","color_text":"#ffffff","vertical":46,"horizontal":67,"vertical_mobile":50,"horizontal_mobile":50}}},"block_order":["product-1","product-2","product-3","product_DcArL6","product_wYnVKy","product_tX8Ktf"],"settings":{"image":"shopify:\/\/shop_images\/Shoppable-Image-Desktop-1.jpg","heading":"Lighting Meets Lifestyle","heading_size":"title-md","heading_alignment":"text-center md:items-center","heading_tag":"h2","subheading":"","description":"<p><strong>From cozy to cool - transform any room with Enbrighten lights that match your mood, decor and more.<\/strong><\/p>","button_label":"","button_link":"","button_external":false,"button_icon":true,"highlighted_text":"text","highlighted_scribble":"circle","color_text":"rgba(0,0,0,0)","color_background":"","gradient_background":"","color_highlight":"rgba(0,0,0,0)","gradient_highlight":"","color_button_text":"","color_button_background":"","color_button_gradient":"","color_overlay":"#171717","overlay_opacity":0,"padding_top":100,"padding_bottom":100,"divider":true,"full_width":true,"rounded":true}},"featured-collections":{"type":"featured-collections","blocks":{"collection-1":{"type":"collection","settings":{"collection":"wifi","products":["enbrighten-wifi-vibe-color-changing-permanent-outdoor-eternity-eave-lights-72-lights-100ft-white-cord","enbrighten-wifi-vibe-color-changing-permanent-outdoor-eternity-eave-lights-72-lights-100ft-black-cord","enbrighten-wifi-vibe-vintage-color-changing-led-cafe-lights-24-bulbs-48ft-black-cord","enbrighten-wifi-vibe-color-changing-led-landscape-lights-6-lights-50ft-black-cord","enbrighten-wifi-vibe-spectrum-color-changing-adjustable-accent-lamp","enbrighten-outdoor-2-head-motion-sensing-security-light-with-led-night-light-black","enbrighten-wifi-vibe-indoor-outdoor-color-changing-led-flex-light-24ft"],"title":"Best Sellers"}},"collection_KrEWbz":{"type":"collection","settings":{"collection":"night-lights","products":[],"title":"Trending Now"}},"collection_7XUfRb":{"type":"collection","settings":{"collection":"new-arrivals","products":[],"title":""}}},"block_order":["collection-1","collection_KrEWbz","collection_7XUfRb"],"settings":{"product_limit":6,"columns":4,"carousel_on_desktop":true,"show_view_all":false,"columns_mobile":"1","swipe_on_mobile":true,"heading":"Shop by Category","heading_size":"title-md","heading_alignment":"text-left md:items-end md:flex-row","heading_tag":"h2","subheading":"","description":"","highlighted_text":"none","highlighted_scribble":"circle","color_text":"","color_background":"#ececec","gradient_background":"","color_highlight":"","gradient_highlight":"","color_button_text":"","color_button_background":"#231f20","color_button_gradient":"","padding_top":100,"padding_bottom":100,"divider":false,"full_width":false,"rounded":true}},"rich_text_7Dhikp":{"type":"rich-text","blocks":{"heading_zt6MkF":{"type":"heading","settings":{"heading":"See What People Are Saying About Enbrighten","heading_size":"title-md","heading_tag":"h2","highlighted_text":"none","highlighted_scribble":"circle"}}},"block_order":["heading_zt6MkF"],"settings":{"text_alignment":"center","text_alignment_mobile":"center","heading":"","heading_size":"title-sm","heading_alignment":"text-center md:items-center","heading_width":"small","heading_tag":"h2","subheading":"","description":"","button_label":"","button_link":"","button_external":false,"button_icon":true,"highlighted_text":"none","highlighted_scribble":"circle","color_text":"#ffffff","color_background":"#160b14","gradient_background":"","color_highlight":"","gradient_highlight":"","color_button_text":"","color_button_background":"","color_button_gradient":"","padding_top":44,"padding_bottom":44,"divider":false,"narrow":true,"rounded":false}},"testimonials-banner":{"type":"testimonials-banner","blocks":{"testimonial-1":{"type":"testimonial","settings":{"icon":"quote","text":"<p><strong>The lights that make people drive past slower to admire.<\/strong><\/p>","author":"Sandor Clegane","author_info":"","author_url":"","image_ratio":"rounded","highlighted_text":"none","highlighted_scribble":"circle"}},"testimonial-2":{"type":"testimonial","settings":{"icon":"quote","text":"<p>A fun and flexible outdoor lighting upgrade - great for holidays or everyday use.<\/p>","author":"SoCalDogfather","author_info":"","author_url":"","image_ratio":"rounded","highlighted_text":"none","highlighted_scribble":"circle"}},"testimonial_7Rkeq9":{"type":"testimonial","settings":{"icon":"quote","text":"<p>Exceeded my expectations by a mile.<\/p>","author":"TarheelinVA","author_info":"","author_url":"","image_ratio":"rounded","highlighted_text":"none","highlighted_scribble":"circle"}},"testimonial-3":{"type":"testimonial","settings":{"icon":"quote","text":"<p>If you’re looking for lights to help replace the hassle of putting up lights around Christmas time, these (Eave Lights) are perfect.<\/p>","author":"Shane A. Heck","author_info":"","author_url":"","image_ratio":"rounded","highlighted_text":"none","highlighted_scribble":"circle"}},"testimonial_YJLztK":{"type":"testimonial","settings":{"icon":"quote","text":"<p>I bought this (Galaxy Projector) for my 14 year old son for his room and he loves it. The problem is, everyone else loves it too and wants one for themselves.<\/p>","author":"Mainiac","author_info":"","author_url":"","image_ratio":"rounded","highlighted_text":"none","highlighted_scribble":"circle"}}},"block_order":["testimonial-1","testimonial-2","testimonial_7Rkeq9","testimonial-3","testimonial_YJLztK"],"settings":{"transparent_header":false,"image":"shopify:\/\/shop_images\/Enbrighten_Background.jpg","image_height":"750px","content_position":"md:items-center md:justify-center","image_height_mobile":"500px","content_position_mobile":"items-center justify-center","color_text":"#ffffff","color_highlight":"","gradient_highlight":"","color_overlay":"#171717","overlay_opacity":19,"padding_top":0,"padding_bottom":0,"divider":false,"rounded":true,"enable_parallax":true,"parallax_direction":"vertical"}},"image-comparison":{"type":"image-comparison","blocks":{"image-1":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/accent-eave-lights-enbrighten-white.jpg","subheading":"","heading":"","content_position":"end","color_text":"#ffffff"}},"image-2":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/accent-eave-lights-enbrighten-color.jpg","subheading":"","heading":"","content_position":"end","color_text":"#ffffff"}}},"block_order":["image-1","image-2"],"settings":{"layout":"horizontal","image_height":"adapt","image_height_mobile":"adapt","heading":"<em>Create Magic Moments.<\/em>","heading_size":"title-md","heading_alignment":"text-center md:items-center","heading_tag":"h2","subheading":"","description":"<p><strong>Experience a seamless transition from everyday timeless whites to holiday modes and more.<\/strong><\/p>","button_label":"","button_link":"","button_external":false,"button_icon":true,"highlighted_text":"text","highlighted_scribble":"circle","color_text":"","color_background":"","gradient_background":"","color_highlight":"","gradient_highlight":"linear-gradient(90deg, rgba(0, 174, 239, 1), rgba(0, 174, 239, 1) 100%)","color_button_text":"","color_button_background":"","color_button_gradient":"","padding_top":100,"padding_bottom":0,"divider":false,"full_width":false,"rounded":false}},"collage_zmzHyL":{"type":"collage","blocks":{"image_LcAbt7":{"type":"image","settings":{"subheading":"","heading":"","link":"shopify:\/\/collections\/cafe-lights","invert_subheading_heading":false,"image":"shopify:\/\/shop_images\/amandasok.png","image_ratio":"portrait","content_position":"md:items-end md:justify-end","text_alignment":"left","image_ratio_mobile":"portrait","content_position_mobile":"items-end justify-start","text_alignment_mobile":"left","highlighted_text":"none","highlighted_scribble":"circle","color_text":"#ffffff","color_highlight":"","gradient_highlight":"","color_overlay":"#171717","overlay_opacity":10}},"image_Npk8yn":{"type":"image","settings":{"subheading":"","heading":"","link":"shopify:\/\/collections\/cafe-lights","invert_subheading_heading":false,"image":"shopify:\/\/shop_images\/creatiffdiy.png","image_ratio":"portrait","content_position":"md:items-start md:justify-end","text_alignment":"left","image_ratio_mobile":"portrait","content_position_mobile":"items-end justify-start","text_alignment_mobile":"left","highlighted_text":"none","highlighted_scribble":"circle","color_text":"#ffffff","color_highlight":"","gradient_highlight":"","color_overlay":"#171717","overlay_opacity":10}},"image_aLcbb3":{"type":"image","settings":{"subheading":"","heading":"","link":"shopify:\/\/collections\/night-lights","invert_subheading_heading":false,"image":"shopify:\/\/shop_images\/notyouravg_mom.png","image_ratio":"portrait","content_position":"md:items-end md:justify-start","text_alignment":"center","image_ratio_mobile":"portrait","content_position_mobile":"items-end justify-start","text_alignment_mobile":"left","highlighted_text":"none","highlighted_scribble":"circle","color_text":"#ffffff","color_highlight":"","gradient_highlight":"","color_overlay":"#171717","overlay_opacity":10}},"image_6QwQ4M":{"type":"image","settings":{"subheading":"","heading":"","link":"shopify:\/\/collections\/eave-lights","invert_subheading_heading":false,"image":"shopify:\/\/shop_images\/chelseamhaynes.png","image_ratio":"portrait","content_position":"md:items-end md:justify-start","text_alignment":"left","image_ratio_mobile":"portrait","content_position_mobile":"items-end justify-start","text_alignment_mobile":"left","highlighted_text":"none","highlighted_scribble":"circle","color_text":"#ffffff","color_highlight":"","gradient_highlight":"","color_overlay":"#171717","overlay_opacity":10}}},"block_order":["image_LcAbt7","image_Npk8yn","image_aLcbb3","image_6QwQ4M"],"settings":{"heading":"Connect with Us on Social","heading_size":"title-md","heading_alignment":"text-left md:items-end md:flex-row","heading_tag":"h2","subheading":"","description":"<p>Tag us in your photos showing how you use your favorite Enbrighten products for a chance to be featured.<\/p><p>Post your <strong>#enbrightenstyle <\/strong>and mention <strong>@enbrightenbrand <\/strong>in your caption<\/p>","button_label":"","button_link":"","button_external":false,"button_icon":true,"highlighted_text":"none","highlighted_scribble":"circle","color_text":"","color_background":"","gradient_background":"","color_highlight":"","gradient_highlight":"","color_button_text":"","color_button_background":"","color_button_gradient":"","padding_top":44,"padding_bottom":52,"divider":false,"full_width":false,"rounded":false,"enable_parallax":true}},"images_with_text_overlay_h3WXgV":{"type":"images-with-text-overlay","blocks":{"subheading_pKLAEL":{"type":"subheading","settings":{"subheading":"Become An Ambassador","subheading_size":"subtitle-md","secondary_color":true}},"heading_dRyxkU":{"type":"heading","settings":{"heading":"Join Our Team","heading_size":"title-lg tracking-heading","heading_tag":"h2","highlighted_text":"none","highlighted_scribble":"circle"}},"text_AiMzVU":{"type":"text","settings":{"text":"<p>Share our mission, earn competitive commissions and light up your followers' lives with products that enhance any space <em>and <\/em>improve lives around the world through Enbrighten's profit donations.<\/p>","text_size":"subtext-md","text_max_size":32,"text_font":"body","secondary_color":false,"highlighted_text":"none","highlighted_scribble":"circle"}},"button_b3YLNr":{"type":"button","settings":{"button_label":"Learn More","button_link":"shopify:\/\/pages\/ambassador-program","button_style":"secondary","button_size":"md","button_external":false,"button_icon":true}}},"block_order":["subheading_pKLAEL","heading_dRyxkU","text_AiMzVU","button_b3YLNr"],"settings":{"transparent_header":false,"image_height":"650px","content_width":"small","content_position":"md:items-end md:justify-start","text_alignment":"left","image_1":"shopify:\/\/shop_images\/notyouravg_mom--spring2024-enbrighten-v-i-b-e-eternity-lights--2024-06-10-08-21-19--instagram22.jpg","image_2":"shopify:\/\/shop_images\/HappilyHarper--2022-sam-s-club--eco-scapes-cafe-lights-campaign---2022-06-22-01-58-36--facebook5.jpg","image_3":"shopify:\/\/shop_images\/mystylemuse--campaign_unavailable--2022-11-01-06-08-26--instagram2.jpg","image_4":"shopify:\/\/shop_images\/werethewolffs--lowe-s--enbrighten-wi--fi-cafe-lights--2022-08-18-01-38-51--instagram6.jpg","image_5":"shopify:\/\/shop_images\/notyouravg_mom--campaign_unavailable--2022-10-30-09-09-31--instagram2.jpg","image_height_mobile":"auto","content_position_mobile":"items-end justify-start","text_alignment_mobile":"left","color_text":"#ffffff","color_highlight":"#00aeef","gradient_highlight":"","color_button_text":"#171717","color_button_background":"#ffffff","color_button_gradient":"","color_overlay":"#231f20","overlay_opacity":100,"padding_top":0,"padding_bottom":0,"divider":false,"full_width":true,"rounded":true,"enable_parallax":true}},"logo_list_J4CbhH":{"type":"logo-list","blocks":{"logo_ChtDVj":{"type":"logo","settings":{"image":"shopify:\/\/shop_images\/amazon-logo-2.webp","height":100,"link":""}},"logo_zbBTXA":{"type":"logo","settings":{"image":"shopify:\/\/shop_images\/Walmart_logo_svg.png","height":64,"link":""}},"logo_crR9Qw":{"type":"logo","settings":{"image":"shopify:\/\/shop_images\/costco-logo-2.png","height":64,"link":""}},"logo_dcN9dk":{"type":"logo","settings":{"image":"shopify:\/\/shop_images\/sams-club-logo.png","height":80,"link":""}},"logo_tYrNCY":{"type":"logo","settings":{"image":"shopify:\/\/shop_images\/target-logo-red.png","height":24,"link":""}},"logo_DYCUdr":{"type":"logo","settings":{"image":"shopify:\/\/shop_images\/lowes-logo.png","height":80,"link":""}},"logo_jircPg":{"type":"logo","settings":{"image":"shopify:\/\/shop_images\/the-home-depot-logo.jpg","height":80,"link":""}},"logo_QcPhLN":{"type":"logo","settings":{"image":"shopify:\/\/shop_images\/wayfair-logo.png","height":80,"link":""}}},"block_order":["logo_ChtDVj","logo_zbBTXA","logo_crR9Qw","logo_dcN9dk","logo_tYrNCY","logo_DYCUdr","logo_jircPg","logo_QcPhLN"],"settings":{"layout":"marquee","grid_horizontal":70,"direction":"left","speed":10,"heading":"Find us at your favorite retailer.","heading_size":"title-md","heading_alignment":"text-center md:items-center","heading_tag":"h2","subheading":"","description":"","button_label":"","button_link":"","button_external":false,"button_icon":true,"highlighted_text":"none","highlighted_scribble":"circle","color_text":"","color_background":"","gradient_background":"","color_highlight":"","gradient_highlight":"","color_button_text":"","color_button_background":"","color_button_gradient":"","padding_top":84,"padding_bottom":72,"divider":false,"full_width":false,"rounded":false}}},"order":["slideshow","rich-text-1","collection-list","video-with-text-overlay","featured_product_6fne9e","scrolling-text-1","shop-the-look","featured-collections","rich_text_7Dhikp","testimonials-banner","image-comparison","collage_zmzHyL","images_with_text_overlay_h3WXgV","logo_list_J4CbhH"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "video_bjjLUk": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/zMarch - animation - white - smoothed.mp4",
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "description": "",
+            "video_url_mobile": "",
+            "heading": "Bring Your Home to Life",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "button_label": "Shop Outdoor Lighting",
+            "button_link": "shopify://collections/outdoor-lighting",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        },
+        "slide-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Lifestyle-Desktop-2.jpg",
+            "image_mobile": "shopify://shop_images/Lifestyle-Mobile-2.jpg",
+            "heading": "Create the <em><strong>VIBE</strong></em>",
+            "heading_size": "title-sm",
+            "heading_tag": "h2",
+            "button_label": "Shop WiFi",
+            "button_link": "shopify://collections/wifi",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        },
+        "video_aLkxan": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/Wall light breakout for web.mp4",
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "description": "",
+            "video_url_mobile": "",
+            "heading": "Set the Stage",
+            "heading_size": "title-sm",
+            "heading_tag": "h2",
+            "button_label": "Shop Wall Lights",
+            "button_link": "shopify://collections/wall-lights",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        },
+        "slide-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/eternitylandscapelights-2.png",
+            "image_mobile": "shopify://shop_images/eternitylandscapelights.png",
+            "heading": "Check Out What's New",
+            "heading_size": "title-sm",
+            "heading_tag": "h2",
+            "button_label": "Shop Eternity Lights",
+            "button_link": "shopify://collections/eternity-lights",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        }
+      },
+      "block_order": [
+        "video_bjjLUk",
+        "slide-2",
+        "video_aLkxan",
+        "slide-1"
+      ],
+      "settings": {
+        "autoplay": true,
+        "autoplay_speed": 6,
+        "show_navigation": true,
+        "image_height": "700px",
+        "content_width": "large",
+        "image_height_mobile": "500px",
+        "color_text": "#ffffff",
+        "color_background": "#231f20",
+        "gradient_background": "",
+        "color_button_text": "#231f20",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#000000",
+        "overlay_opacity": 25,
+        "padding_top": 0,
+        "padding_bottom": 24,
+        "divider": false,
+        "full_width": true,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "rich-text-1": {
+      "type": "rich-text",
+      "blocks": {
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Enbrighten is committed to enhancing your spaces with premium, innovative lighting while making the world brighter. <strong>50% of net profits from your purchase are donated to charity.</strong></p><p>We believe in the power of light to personalize atmosphere, evoke emotions and simply make life better.</p>",
+            "text_size": "subtext-lg",
+            "text_max_size": 42,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "text",
+            "highlighted_scribble": "sketch-underline"
+          }
+        }
+      },
+      "block_order": [
+        "text"
+      ],
+      "custom_css": [
+        "h2 {color: #00aeef;}"
+      ],
+      "settings": {
+        "text_alignment": "left",
+        "text_alignment_mobile": "left",
+        "heading": "Get to Know Us",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "Our Story",
+        "button_link": "shopify://pages/our-story",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "squiggle-underline",
+        "color_text": "#231f20",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 80,
+        "padding_bottom": 0,
+        "divider": false,
+        "narrow": false,
+        "rounded": false
+      }
+    },
+    "collection-list": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_EAyVbM": {
+          "type": "collection",
+          "settings": {
+            "collection": "wifi",
+            "title": "",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_KX3fAh": {
+          "type": "collection",
+          "settings": {
+            "collection": "cafe-lights",
+            "title": "",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "landscape-lights",
+            "title": "",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 40
+          }
+        },
+        "collection_GPnGFz": {
+          "type": "collection",
+          "settings": {
+            "collection": "night-lights",
+            "title": "",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_Jxy7JV": {
+          "type": "collection",
+          "settings": {
+            "collection": "rope-lights",
+            "title": "",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "security-lights",
+            "title": "",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 40
+          }
+        },
+        "collection-4": {
+          "type": "collection",
+          "settings": {
+            "collection": "z-wave",
+            "title": "",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 40
+          }
+        },
+        "collection-6": {
+          "type": "collection",
+          "settings": {
+            "collection": "under-cabinet-lighting",
+            "title": "",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 40
+          }
+        }
+      },
+      "block_order": [
+        "collection_EAyVbM",
+        "collection_KX3fAh",
+        "collection-2",
+        "collection_GPnGFz",
+        "collection_Jxy7JV",
+        "collection-3",
+        "collection-4",
+        "collection-6"
+      ],
+      "settings": {
+        "columns": 3,
+        "carousel_on_desktop": true,
+        "image_type": "collection",
+        "image_ratio": "adapt",
+        "show_products_count": false,
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "Find the Right Light",
+        "heading_size": "title-md",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "linear-gradient(224deg, rgba(255, 210, 43, 1) 13%, rgba(0, 174, 239, 1) 77%)",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "video-with-text-overlay": {
+      "type": "video-with-text-overlay",
+      "settings": {
+        "transparent_header": false,
+        "video": "shopify://files/videos/Enbrighten Shopify Videos, Home Page, Desktop Dims_D1.mp4",
+        "video_url": "",
+        "description": "",
+        "enable_video_autoplay": true,
+        "enable_video_looping": true,
+        "image_height": "750px",
+        "content_width": "medium",
+        "content_position": "md:items-center md:justify-center",
+        "text_alignment": "center",
+        "video_mobile": "shopify://files/videos/Enbrighten Shopify Videos, Home Page, Mobile Dims_D1.mp4",
+        "video_url_mobile": "",
+        "image_height_mobile": "adapt",
+        "content_position_mobile": "items-center justify-center",
+        "text_alignment_mobile": "center",
+        "color_text": "#ffffff",
+        "color_highlight": "#e0a580",
+        "gradient_highlight": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#000000",
+        "overlay_opacity": 0,
+        "padding_top": 0,
+        "padding_bottom": 12,
+        "divider": false,
+        "full_width": true,
+        "rounded": true
+      }
+    },
+    "featured_product_6fne9e": {
+      "type": "featured-product",
+      "blocks": {
+        "title_zqFcEL": {
+          "type": "title",
+          "settings": {
+            "title_size": "product-title-md",
+            "title_size_mobile": "product-title-md",
+            "show_price": true,
+            "show_rating": true
+          }
+        },
+        "description_4hhUgq": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "text_size": "text-base"
+          }
+        },
+        "variant_picker_naDDNa": {
+          "type": "variant_picker",
+          "settings": {
+            "show_variant_labels": true,
+            "picker_type": "button",
+            "enable_color_swatches": true,
+            "color_swatch_type": "color",
+            "size_chart": ""
+          }
+        },
+        "inventory_cWM6Ut": {
+          "type": "inventory",
+          "settings": {
+            "inventory_threshold": 5,
+            "show_inventory_transfer": true,
+            "show_inventory_quantity": "low",
+            "color_scheme": "accent-1"
+          }
+        },
+        "buy_buttons_axwL4Q": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "show_price": false,
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true,
+            "enable_back_in_stock": false,
+            "show_back_in_stock_name": false,
+            "show_back_in_stock_phone": false
+          }
+        },
+        "pickup_availability_bcjV7h": {
+          "type": "pickup_availability",
+          "settings": {}
+        },
+        "read_more_XVACCm": {
+          "type": "read_more",
+          "settings": {}
+        },
+        "spinning_text_RXGMqJ": {
+          "type": "spinning_text",
+          "settings": {
+            "text": "Featured Deal"
+          }
+        }
+      },
+      "block_order": [
+        "title_zqFcEL",
+        "description_4hhUgq",
+        "variant_picker_naDDNa",
+        "inventory_cWM6Ut",
+        "buy_buttons_axwL4Q",
+        "pickup_availability_bcjV7h",
+        "read_more_XVACCm",
+        "spinning_text_RXGMqJ"
+      ],
+      "settings": {
+        "product": "enbrighten-ecoscapes-wifi-vibe-color-changing-led-cafe-lights-12-bulbs-24ft-black-cord-2-pack",
+        "enable_sticky_info": false,
+        "media_size": 55,
+        "gallery_layout": "thumbnail",
+        "thumbnail_position": "beside",
+        "image_ratio": "adapt_first",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "mobile_layout": "partial",
+        "image_ratio_mobile": "adapt_first",
+        "mobile_thumbnail": false,
+        "padding_top": 100,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "scrolling-text-1": {
+      "type": "scrolling-text",
+      "blocks": {
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<em><strong>Free Shipping Over $50</strong></em>",
+            "text_size": 36,
+            "text_font": "body",
+            "highlighted_text": "text",
+            "highlighted_scribble": "squiggle-underline"
+          }
+        }
+      },
+      "block_order": [
+        "text"
+      ],
+      "settings": {
+        "direction": "left",
+        "speed": 25,
+        "grid_horizontal": 70,
+        "enable_twin": false,
+        "enable_parallax": true,
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "linear-gradient(78deg, rgba(0, 174, 239, 1) 26%, rgba(187, 48, 254, 1) 99%)",
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "divider": false,
+        "rounded": false
+      }
+    },
+    "shop-the-look": {
+      "type": "shop-the-look",
+      "blocks": {
+        "product-1": {
+          "type": "product",
+          "settings": {
+            "product": "enbrighten-wifi-vibe-color-changing-led-landscape-lights-12-lights-110ft-black-cord",
+            "color_text": "#ffffff",
+            "vertical": 85,
+            "horizontal": 14,
+            "vertical_mobile": 25,
+            "horizontal_mobile": 25
+          }
+        },
+        "product-2": {
+          "type": "product",
+          "settings": {
+            "product": "enbrighten-wifi-vibe-color-changing-permanent-outdoor-eternity-eave-lights-72-lights-100ft-white-cord",
+            "color_text": "#ffffff",
+            "vertical": 20,
+            "horizontal": 32,
+            "vertical_mobile": 75,
+            "horizontal_mobile": 65
+          }
+        },
+        "product-3": {
+          "type": "product",
+          "settings": {
+            "product": "enbrighten-wifi-vibe-indoor-outdoor-color-changing-led-flex-light-8ft",
+            "color_text": "#ffffff",
+            "vertical": 39,
+            "horizontal": 62,
+            "vertical_mobile": 50,
+            "horizontal_mobile": 50
+          }
+        },
+        "product_DcArL6": {
+          "type": "product",
+          "settings": {
+            "product": "enbrighten-vibe-24in-led-wifi-light-fixture-white",
+            "color_text": "#ffffff",
+            "vertical": 69,
+            "horizontal": 40,
+            "vertical_mobile": 50,
+            "horizontal_mobile": 50
+          }
+        },
+        "product_wYnVKy": {
+          "type": "product",
+          "settings": {
+            "product": "enbrighten-wifi-vibe-color-changing-led-tabletop-lamp-with-usb-charging-black",
+            "color_text": "#ffffff",
+            "vertical": 50,
+            "horizontal": 37,
+            "vertical_mobile": 50,
+            "horizontal_mobile": 50
+          }
+        },
+        "product_tX8Ktf": {
+          "type": "product",
+          "settings": {
+            "product": "enbrighten-wifi-vibe-usb-powered-led-color-changing-gaming-light-bars-2-pack-black",
+            "color_text": "#ffffff",
+            "vertical": 46,
+            "horizontal": 67,
+            "vertical_mobile": 50,
+            "horizontal_mobile": 50
+          }
+        }
+      },
+      "block_order": [
+        "product-1",
+        "product-2",
+        "product-3",
+        "product_DcArL6",
+        "product_wYnVKy",
+        "product_tX8Ktf"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Shoppable-Image-Desktop-1.jpg",
+        "heading": "Lighting Meets Lifestyle",
+        "heading_size": "title-md",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "<p><strong>From cozy to cool - transform any room with Enbrighten lights that match your mood, decor and more.</strong></p>",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "text",
+        "highlighted_scribble": "circle",
+        "color_text": "rgba(0,0,0,0)",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "rgba(0,0,0,0)",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 100,
+        "padding_bottom": 100,
+        "divider": true,
+        "full_width": true,
+        "rounded": true
+      }
+    },
+    "featured-collections": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "wifi",
+            "products": [
+              "enbrighten-wifi-vibe-color-changing-permanent-outdoor-eternity-eave-lights-72-lights-100ft-white-cord",
+              "enbrighten-wifi-vibe-color-changing-permanent-outdoor-eternity-eave-lights-72-lights-100ft-black-cord",
+              "enbrighten-wifi-vibe-vintage-color-changing-led-cafe-lights-24-bulbs-48ft-black-cord",
+              "enbrighten-wifi-vibe-color-changing-led-landscape-lights-6-lights-50ft-black-cord",
+              "enbrighten-wifi-vibe-spectrum-color-changing-adjustable-accent-lamp",
+              "enbrighten-outdoor-2-head-motion-sensing-security-light-with-led-night-light-black",
+              "enbrighten-wifi-vibe-indoor-outdoor-color-changing-led-flex-light-24ft"
+            ],
+            "title": "Best Sellers"
+          }
+        },
+        "collection_KrEWbz": {
+          "type": "collection",
+          "settings": {
+            "collection": "night-lights",
+            "products": [],
+            "title": "Trending Now"
+          }
+        },
+        "collection_7XUfRb": {
+          "type": "collection",
+          "settings": {
+            "collection": "new-arrivals",
+            "products": [],
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection-1",
+        "collection_KrEWbz",
+        "collection_7XUfRb"
+      ],
+      "settings": {
+        "product_limit": 6,
+        "columns": 4,
+        "carousel_on_desktop": true,
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "Shop by Category",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "#ececec",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "#231f20",
+        "color_button_gradient": "",
+        "padding_top": 100,
+        "padding_bottom": 100,
+        "divider": false,
+        "full_width": false,
+        "rounded": true
+      }
+    },
+    "rich_text_7Dhikp": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_zt6MkF": {
+          "type": "heading",
+          "settings": {
+            "heading": "See What People Are Saying About Enbrighten",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_zt6MkF"
+      ],
+      "settings": {
+        "text_alignment": "center",
+        "text_alignment_mobile": "center",
+        "heading": "",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-center md:items-center",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "#ffffff",
+        "color_background": "#160b14",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 44,
+        "padding_bottom": 44,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
+    "testimonials-banner": {
+      "type": "testimonials-banner",
+      "blocks": {
+        "testimonial-1": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "text": "<p><strong>The lights that make people drive past slower to admire.</strong></p>",
+            "author": "Sandor Clegane",
+            "author_info": "",
+            "author_url": "",
+            "image_ratio": "rounded",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "testimonial-2": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "text": "<p>A fun and flexible outdoor lighting upgrade - great for holidays or everyday use.</p>",
+            "author": "SoCalDogfather",
+            "author_info": "",
+            "author_url": "",
+            "image_ratio": "rounded",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "testimonial_7Rkeq9": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "text": "<p>Exceeded my expectations by a mile.</p>",
+            "author": "TarheelinVA",
+            "author_info": "",
+            "author_url": "",
+            "image_ratio": "rounded",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "testimonial-3": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "text": "<p>If you’re looking for lights to help replace the hassle of putting up lights around Christmas time, these (Eave Lights) are perfect.</p>",
+            "author": "Shane A. Heck",
+            "author_info": "",
+            "author_url": "",
+            "image_ratio": "rounded",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "testimonial_YJLztK": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "text": "<p>I bought this (Galaxy Projector) for my 14 year old son for his room and he loves it. The problem is, everyone else loves it too and wants one for themselves.</p>",
+            "author": "Mainiac",
+            "author_info": "",
+            "author_url": "",
+            "image_ratio": "rounded",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial-1",
+        "testimonial-2",
+        "testimonial_7Rkeq9",
+        "testimonial-3",
+        "testimonial_YJLztK"
+      ],
+      "settings": {
+        "transparent_header": false,
+        "image": "shopify://shop_images/Enbrighten_Background.jpg",
+        "image_height": "750px",
+        "content_position": "md:items-center md:justify-center",
+        "image_height_mobile": "500px",
+        "content_position_mobile": "items-center justify-center",
+        "color_text": "#ffffff",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 19,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "rounded": true,
+        "enable_parallax": true,
+        "parallax_direction": "vertical"
+      }
+    },
+    "image-comparison": {
+      "type": "image-comparison",
+      "blocks": {
+        "image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/accent-eave-lights-enbrighten-white.jpg",
+            "subheading": "",
+            "heading": "",
+            "content_position": "end",
+            "color_text": "#ffffff"
+          }
+        },
+        "image-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/accent-eave-lights-enbrighten-color.jpg",
+            "subheading": "",
+            "heading": "",
+            "content_position": "end",
+            "color_text": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "image-1",
+        "image-2"
+      ],
+      "settings": {
+        "layout": "horizontal",
+        "image_height": "adapt",
+        "image_height_mobile": "adapt",
+        "heading": "<em>Create Magic Moments.</em>",
+        "heading_size": "title-md",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "<p><strong>Experience a seamless transition from everyday timeless whites to holiday modes and more.</strong></p>",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "text",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "linear-gradient(90deg, rgba(0, 174, 239, 1), rgba(0, 174, 239, 1) 100%)",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 100,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "collage_zmzHyL": {
+      "type": "collage",
+      "blocks": {
+        "image_LcAbt7": {
+          "type": "image",
+          "settings": {
+            "subheading": "",
+            "heading": "",
+            "link": "shopify://collections/cafe-lights",
+            "invert_subheading_heading": false,
+            "image": "shopify://shop_images/amandasok.png",
+            "image_ratio": "portrait",
+            "content_position": "md:items-end md:justify-end",
+            "text_alignment": "left",
+            "image_ratio_mobile": "portrait",
+            "content_position_mobile": "items-end justify-start",
+            "text_alignment_mobile": "left",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#ffffff",
+            "color_highlight": "",
+            "gradient_highlight": "",
+            "color_overlay": "#171717",
+            "overlay_opacity": 10
+          }
+        },
+        "image_Npk8yn": {
+          "type": "image",
+          "settings": {
+            "subheading": "",
+            "heading": "",
+            "link": "shopify://collections/cafe-lights",
+            "invert_subheading_heading": false,
+            "image": "shopify://shop_images/creatiffdiy.png",
+            "image_ratio": "portrait",
+            "content_position": "md:items-start md:justify-end",
+            "text_alignment": "left",
+            "image_ratio_mobile": "portrait",
+            "content_position_mobile": "items-end justify-start",
+            "text_alignment_mobile": "left",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#ffffff",
+            "color_highlight": "",
+            "gradient_highlight": "",
+            "color_overlay": "#171717",
+            "overlay_opacity": 10
+          }
+        },
+        "image_aLcbb3": {
+          "type": "image",
+          "settings": {
+            "subheading": "",
+            "heading": "",
+            "link": "shopify://collections/night-lights",
+            "invert_subheading_heading": false,
+            "image": "shopify://shop_images/notyouravg_mom.png",
+            "image_ratio": "portrait",
+            "content_position": "md:items-end md:justify-start",
+            "text_alignment": "center",
+            "image_ratio_mobile": "portrait",
+            "content_position_mobile": "items-end justify-start",
+            "text_alignment_mobile": "left",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#ffffff",
+            "color_highlight": "",
+            "gradient_highlight": "",
+            "color_overlay": "#171717",
+            "overlay_opacity": 10
+          }
+        },
+        "image_6QwQ4M": {
+          "type": "image",
+          "settings": {
+            "subheading": "",
+            "heading": "",
+            "link": "shopify://collections/eave-lights",
+            "invert_subheading_heading": false,
+            "image": "shopify://shop_images/chelseamhaynes.png",
+            "image_ratio": "portrait",
+            "content_position": "md:items-end md:justify-start",
+            "text_alignment": "left",
+            "image_ratio_mobile": "portrait",
+            "content_position_mobile": "items-end justify-start",
+            "text_alignment_mobile": "left",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#ffffff",
+            "color_highlight": "",
+            "gradient_highlight": "",
+            "color_overlay": "#171717",
+            "overlay_opacity": 10
+          }
+        }
+      },
+      "block_order": [
+        "image_LcAbt7",
+        "image_Npk8yn",
+        "image_aLcbb3",
+        "image_6QwQ4M"
+      ],
+      "settings": {
+        "heading": "Connect with Us on Social",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "<p>Tag us in your photos showing how you use your favorite Enbrighten products for a chance to be featured.</p><p>Post your <strong>#enbrightenstyle </strong>and mention <strong>@enbrightenbrand </strong>in your caption</p>",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 44,
+        "padding_bottom": 52,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": true
+      }
+    },
+    "images_with_text_overlay_h3WXgV": {
+      "type": "images-with-text-overlay",
+      "blocks": {
+        "subheading_pKLAEL": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Become An Ambassador",
+            "subheading_size": "subtitle-md",
+            "secondary_color": true
+          }
+        },
+        "heading_dRyxkU": {
+          "type": "heading",
+          "settings": {
+            "heading": "Join Our Team",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_AiMzVU": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share our mission, earn competitive commissions and light up your followers' lives with products that enhance any space <em>and </em>improve lives around the world through Enbrighten's profit donations.</p>",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "button_b3YLNr": {
+          "type": "button",
+          "settings": {
+            "button_label": "Learn More",
+            "button_link": "shopify://pages/ambassador-program",
+            "button_style": "secondary",
+            "button_size": "md",
+            "button_external": false,
+            "button_icon": true
+          }
+        }
+      },
+      "block_order": [
+        "subheading_pKLAEL",
+        "heading_dRyxkU",
+        "text_AiMzVU",
+        "button_b3YLNr"
+      ],
+      "settings": {
+        "transparent_header": false,
+        "image_height": "650px",
+        "content_width": "small",
+        "content_position": "md:items-end md:justify-start",
+        "text_alignment": "left",
+        "image_1": "shopify://shop_images/notyouravg_mom--spring2024-enbrighten-v-i-b-e-eternity-lights--2024-06-10-08-21-19--instagram22.jpg",
+        "image_2": "shopify://shop_images/HappilyHarper--2022-sam-s-club--eco-scapes-cafe-lights-campaign---2022-06-22-01-58-36--facebook5.jpg",
+        "image_3": "shopify://shop_images/mystylemuse--campaign_unavailable--2022-11-01-06-08-26--instagram2.jpg",
+        "image_4": "shopify://shop_images/werethewolffs--lowe-s--enbrighten-wi--fi-cafe-lights--2022-08-18-01-38-51--instagram6.jpg",
+        "image_5": "shopify://shop_images/notyouravg_mom--campaign_unavailable--2022-10-30-09-09-31--instagram2.jpg",
+        "image_height_mobile": "auto",
+        "content_position_mobile": "items-end justify-start",
+        "text_alignment_mobile": "left",
+        "color_text": "#ffffff",
+        "color_highlight": "#00aeef",
+        "gradient_highlight": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#231f20",
+        "overlay_opacity": 100,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": true,
+        "enable_parallax": true
+      }
+    },
+    "logo_list_J4CbhH": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_ChtDVj": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/amazon-logo-2.webp",
+            "height": 100,
+            "link": ""
+          }
+        },
+        "logo_zbBTXA": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/Walmart_logo_svg.png",
+            "height": 64,
+            "link": ""
+          }
+        },
+        "logo_crR9Qw": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/costco-logo-2.png",
+            "height": 64,
+            "link": ""
+          }
+        },
+        "logo_dcN9dk": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/sams-club-logo.png",
+            "height": 80,
+            "link": ""
+          }
+        },
+        "logo_tYrNCY": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/target-logo-red.png",
+            "height": 24,
+            "link": ""
+          }
+        },
+        "logo_DYCUdr": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/lowes-logo.png",
+            "height": 80,
+            "link": ""
+          }
+        },
+        "logo_jircPg": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/the-home-depot-logo.jpg",
+            "height": 80,
+            "link": ""
+          }
+        },
+        "logo_QcPhLN": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/wayfair-logo.png",
+            "height": 80,
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_ChtDVj",
+        "logo_zbBTXA",
+        "logo_crR9Qw",
+        "logo_dcN9dk",
+        "logo_tYrNCY",
+        "logo_DYCUdr",
+        "logo_jircPg",
+        "logo_QcPhLN"
+      ],
+      "settings": {
+        "layout": "marquee",
+        "grid_horizontal": 70,
+        "direction": "left",
+        "speed": 10,
+        "heading": "Find us at your favorite retailer.",
+        "heading_size": "title-md",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 84,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "shop_the_feed_TrqRHd": {
+      "type": "shop-the-feed",
+      "blocks": {
+        "feed_QGhtnP": {
+          "type": "feed",
+          "settings": {
+            "enable_video_autoplay": true,
+            "enable_video_looping": true,
+            "video_on_hover": true,
+            "button_label": "",
+            "button_link": "",
+            "button_external": false,
+            "button_icon": false,
+            "account_name": "@Concept",
+            "account_description": "We cultivate sonic excellence",
+            "account_button": "Follow",
+            "account_link": "",
+            "account_link_external": false,
+            "color_text": "#ffffff",
+            "color_button_text": "#000000",
+            "color_button_background": "#ffffff",
+            "color_button_gradient": "",
+            "hotspot_color_text_1": "#ffffff",
+            "hotspot_vertical_1": 45,
+            "hotspot_horizontal_1": 25,
+            "hotspot_product_1": "",
+            "hotspot_color_text_2": "#ffffff",
+            "hotspot_vertical_2": 30,
+            "hotspot_horizontal_2": 65,
+            "hotspot_product_2": "",
+            "hotspot_color_text_3": "#ffffff",
+            "hotspot_vertical_3": 60,
+            "hotspot_horizontal_3": 75,
+            "hotspot_product_3": "",
+            "hotspot_color_text_4": "#ffffff",
+            "hotspot_vertical_4": 50,
+            "hotspot_horizontal_4": 50,
+            "hotspot_product_4": ""
+          }
+        },
+        "feed_h8VkDt": {
+          "type": "feed",
+          "settings": {
+            "enable_video_autoplay": true,
+            "enable_video_looping": true,
+            "video_on_hover": true,
+            "button_label": "",
+            "button_link": "",
+            "button_external": false,
+            "button_icon": false,
+            "account_name": "@Concept",
+            "account_description": "We cultivate sonic excellence",
+            "account_button": "Follow",
+            "account_link": "",
+            "account_link_external": false,
+            "color_text": "#ffffff",
+            "color_button_text": "#000000",
+            "color_button_background": "#ffffff",
+            "color_button_gradient": "",
+            "hotspot_color_text_1": "#ffffff",
+            "hotspot_vertical_1": 45,
+            "hotspot_horizontal_1": 25,
+            "hotspot_product_1": "",
+            "hotspot_color_text_2": "#ffffff",
+            "hotspot_vertical_2": 30,
+            "hotspot_horizontal_2": 65,
+            "hotspot_product_2": "",
+            "hotspot_color_text_3": "#ffffff",
+            "hotspot_vertical_3": 60,
+            "hotspot_horizontal_3": 75,
+            "hotspot_product_3": "",
+            "hotspot_color_text_4": "#ffffff",
+            "hotspot_vertical_4": 50,
+            "hotspot_horizontal_4": 50,
+            "hotspot_product_4": ""
+          }
+        },
+        "feed_WRwzdY": {
+          "type": "feed",
+          "settings": {
+            "enable_video_autoplay": true,
+            "enable_video_looping": true,
+            "video_on_hover": true,
+            "button_label": "",
+            "button_link": "",
+            "button_external": false,
+            "button_icon": false,
+            "account_name": "@Concept",
+            "account_description": "We cultivate sonic excellence",
+            "account_button": "Follow",
+            "account_link": "",
+            "account_link_external": false,
+            "color_text": "#ffffff",
+            "color_button_text": "#000000",
+            "color_button_background": "#ffffff",
+            "color_button_gradient": "",
+            "hotspot_color_text_1": "#ffffff",
+            "hotspot_vertical_1": 45,
+            "hotspot_horizontal_1": 25,
+            "hotspot_product_1": "",
+            "hotspot_color_text_2": "#ffffff",
+            "hotspot_vertical_2": 30,
+            "hotspot_horizontal_2": 65,
+            "hotspot_product_2": "",
+            "hotspot_color_text_3": "#ffffff",
+            "hotspot_vertical_3": 60,
+            "hotspot_horizontal_3": 75,
+            "hotspot_product_3": "",
+            "hotspot_color_text_4": "#ffffff",
+            "hotspot_vertical_4": 50,
+            "hotspot_horizontal_4": 50,
+            "hotspot_product_4": ""
+          }
+        },
+        "feed_hJXrpb": {
+          "type": "feed",
+          "settings": {
+            "enable_video_autoplay": true,
+            "enable_video_looping": true,
+            "video_on_hover": true,
+            "button_label": "",
+            "button_link": "",
+            "button_external": false,
+            "button_icon": false,
+            "account_name": "@Concept",
+            "account_description": "We cultivate sonic excellence",
+            "account_button": "Follow",
+            "account_link": "",
+            "account_link_external": false,
+            "color_text": "#ffffff",
+            "color_button_text": "#000000",
+            "color_button_background": "#ffffff",
+            "color_button_gradient": "",
+            "hotspot_color_text_1": "#ffffff",
+            "hotspot_vertical_1": 45,
+            "hotspot_horizontal_1": 25,
+            "hotspot_product_1": "",
+            "hotspot_color_text_2": "#ffffff",
+            "hotspot_vertical_2": 30,
+            "hotspot_horizontal_2": 65,
+            "hotspot_product_2": "",
+            "hotspot_color_text_3": "#ffffff",
+            "hotspot_vertical_3": 60,
+            "hotspot_horizontal_3": 75,
+            "hotspot_product_3": "",
+            "hotspot_color_text_4": "#ffffff",
+            "hotspot_vertical_4": 50,
+            "hotspot_horizontal_4": 50,
+            "hotspot_product_4": ""
+          }
+        },
+        "feed_xEyqXa": {
+          "type": "feed",
+          "settings": {
+            "enable_video_autoplay": true,
+            "enable_video_looping": true,
+            "video_on_hover": true,
+            "button_label": "",
+            "button_link": "",
+            "button_external": false,
+            "button_icon": false,
+            "account_name": "@Concept",
+            "account_description": "We cultivate sonic excellence",
+            "account_button": "Follow",
+            "account_link": "",
+            "account_link_external": false,
+            "color_text": "#ffffff",
+            "color_button_text": "#000000",
+            "color_button_background": "#ffffff",
+            "color_button_gradient": "",
+            "hotspot_color_text_1": "#ffffff",
+            "hotspot_vertical_1": 45,
+            "hotspot_horizontal_1": 25,
+            "hotspot_product_1": "",
+            "hotspot_color_text_2": "#ffffff",
+            "hotspot_vertical_2": 30,
+            "hotspot_horizontal_2": 65,
+            "hotspot_product_2": "",
+            "hotspot_color_text_3": "#ffffff",
+            "hotspot_vertical_3": 60,
+            "hotspot_horizontal_3": 75,
+            "hotspot_product_3": "",
+            "hotspot_color_text_4": "#ffffff",
+            "hotspot_vertical_4": 50,
+            "hotspot_horizontal_4": 50,
+            "hotspot_product_4": ""
+          }
+        }
+      },
+      "block_order": [
+        "feed_QGhtnP",
+        "feed_h8VkDt",
+        "feed_WRwzdY",
+        "feed_hJXrpb",
+        "feed_xEyqXa"
+      ],
+      "name": "t:sections.shop-the-feed.name",
+      "settings": {
+        "columns": 4,
+        "carousel_on_desktop": true,
+        "image_ratio": "portrait",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "account_name": "@Concept",
+        "show_vendor": false,
+        "show_price": true,
+        "heading": "Shop the Feed",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "<p>Discover premium audio from our Instagram and shop now.</p>",
+        "button_label": "Follow",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": false,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 80,
+        "padding_bottom": 100,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    }
+  },
+  "order": [
+    "slideshow",
+    "rich-text-1",
+    "collection-list",
+    "video-with-text-overlay",
+    "featured_product_6fne9e",
+    "scrolling-text-1",
+    "shop-the-look",
+    "featured-collections",
+    "rich_text_7Dhikp",
+    "testimonials-banner",
+    "image-comparison",
+    "collage_zmzHyL",
+    "images_with_text_overlay_h3WXgV",
+    "logo_list_J4CbhH",
+    "shop_the_feed_TrqRHd"
+  ]
+}

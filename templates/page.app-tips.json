@@ -1,1 +1,460 @@
-{"sections":{"main-page":{"type":"main-page","disabled":true,"settings":{"heading_size":"title-xl tracking-heading","heading_alignment":"text-left","heading_tag":"h1","text_size":"text-base","padding_top":72,"padding_bottom":120,"divider":false,"narrow":true,"rounded":false}},"image_with_text_overlay_Tc3McB":{"type":"image-with-text-overlay","blocks":{"heading_VTf4XK":{"type":"heading","settings":{"heading":"Enbrighten App","heading_size":"title-lg tracking-heading","heading_tag":"h2","highlighted_text":"text","highlighted_scribble":"circle"}},"text_ibLaje":{"type":"text","settings":{"text":"<p>Explore tips to get the most out of your app.<\/p>","text_size":"subtext-xl","text_max_size":32,"text_font":"body","secondary_color":false,"highlighted_text":"none","highlighted_scribble":"circle"}}},"block_order":["heading_VTf4XK","text_ibLaje"],"settings":{"transparent_header":false,"image":"shopify:\/\/shop_images\/Enbrighten-Wifi-App-1920x580_8ebf5fc3-d74d-45da-a761-77758274ee0d.png","image_height":"adapt","content_width":"small","content_position":"md:items-end md:justify-start","text_alignment":"left","image_height_mobile":"auto","content_position_mobile":"items-end justify-start","text_alignment_mobile":"left","color_text":"#ffffff","color_highlight":"#00aeef","gradient_highlight":"","color_button_text":"#171717","color_button_background":"#ffffff","color_button_gradient":"","color_overlay":"#171717","overlay_opacity":70,"padding_top":0,"padding_bottom":0,"divider":false,"full_width":true,"rounded":false,"enable_parallax":false,"parallax_direction":"vertical"}},"scrolling_banner_tTW9mi":{"type":"scrolling-banner","blocks":{"image_iUyFeT":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/enbrighten_app_1.jpg","icon":"none","icon_image":"shopify:\/\/shop_images\/Step-1-rv2.svg","icon_width":48,"heading":"Color Options","heading_size":"title-md","heading_tag":"h2","subheading":"","description":"<h4>Full-spectrum color options, as well as tunable white settings provide seemingly endless custom lighting options for any occasion.<\/h4>","button_label":"","button_link":"","button_style":"primary","button_external":false,"button_icon":true,"highlighted_text":"none","highlighted_scribble":"circle"}},"image_L3PqrV":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/enbrighten_app_2.jpg","icon":"none","icon_image":"shopify:\/\/shop_images\/Step-2.svg","icon_width":48,"heading":"Automations & Programs","heading_size":"title-md","heading_tag":"h2","subheading":"","description":"<h4>Create custom schedules and programs. Run automations based on location, weather conditions, sunrise\/sunset times and more.<\/h4>","button_label":"","button_link":"","button_style":"primary","button_external":false,"button_icon":true,"highlighted_text":"none","highlighted_scribble":"circle"}},"image_n43pcw":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/enbrighten_app_3.jpg","icon":"none","icon_image":"shopify:\/\/shop_images\/Step-3.svg","icon_width":48,"heading":"Create Groups","heading_size":"title-md","heading_tag":"h2","subheading":"","description":"<h4>Several devices can follow the same commands through the groups feature.Groups allow devices to be sorted to specific areas, like patios, basements or bedrooms, giving you the ability to control entire spaces at once.<\/h4>","button_label":"","button_link":"","button_style":"primary","button_external":false,"button_icon":true,"highlighted_text":"none","highlighted_scribble":"circle"}},"image_RXBQt7":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/enbrighten_app_4.jpg","icon":"none","icon_image":"shopify:\/\/shop_images\/Step-4.svg","icon_width":48,"heading":"SmartSun Technology","heading_size":"title-md","heading_tag":"h2","subheading":"","description":"<h4>Programmable settings automatically adjust brightness and white temperature to support a proper circadian rhythm and create the perfect ambiance. The personalized cycle repeats every day.<\/h4>","button_label":"","button_link":"","button_style":"primary","button_external":false,"button_icon":true,"highlighted_text":"none","highlighted_scribble":"circle"}},"image_mUKanV":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/enbrighten_app_5.jpg","icon":"none","icon_image":"shopify:\/\/shop_images\/Step-5.svg","icon_width":48,"heading":"Turn Off Sections of Light","heading_size":"title-md","heading_tag":"h2","subheading":"","description":"<h4>Customize your lighting by turning off certain bulbs or sections of light to fit the needs of your space.<\/h4>","button_label":"","button_link":"","button_style":"primary","button_external":false,"button_icon":true,"highlighted_text":"none","highlighted_scribble":"circle"}},"image_yeKTqw":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/enbrighten_app_6.jpg","icon":"none","icon_image":"shopify:\/\/shop_images\/Step-6.svg","icon_width":48,"heading":"Music Sync","heading_size":"title-md","heading_tag":"h2","subheading":"","description":"<h4>Create a party atmosphere for any gathering with the press of a button.Light comes to life and changes color as it responds to sounds through your smart phone's microphone.<\/h4><p>(Can be used with Enbrighten Smart Bulbs,Gaming Light Bars, Fairy Curtain or String Lights)<\/p>","button_label":"","button_link":"","button_style":"primary","button_external":false,"button_icon":true,"highlighted_text":"none","highlighted_scribble":"circle"}}},"block_order":["image_iUyFeT","image_L3PqrV","image_n43pcw","image_RXBQt7","image_mUKanV","image_yeKTqw"],"settings":{"image_height":"adapt","image_width":"small","layout":"image_first","text_alignment":"left","content_position":"items-center","image_height_mobile":"auto","text_alignment_mobile":"left","color_text":"","color_background":"","gradient_background":"","color_background_2":"","gradient_background_2":"","color_highlight":"","gradient_highlight":"","color_button_text":"","color_button_background":"","color_button_gradient":"","padding_top":72,"padding_bottom":72,"divider":false,"full_width":false,"rounded":false}},"image_with_text_overlay_DeHNJA":{"type":"image-with-text-overlay","disabled":true,"settings":{"transparent_header":false,"image":"shopify:\/\/shop_images\/enbrighten_app_graphics_1__jpg.webp","image_height":"adapt","content_width":"small","content_position":"md:items-end md:justify-start","text_alignment":"left","image_height_mobile":"auto","content_position_mobile":"items-end justify-start","text_alignment_mobile":"left","color_text":"#ffffff","color_highlight":"#e0a580","gradient_highlight":"","color_button_text":"#171717","color_button_background":"#ffffff","color_button_gradient":"","color_overlay":"#171717","overlay_opacity":70,"padding_top":0,"padding_bottom":0,"divider":false,"full_width":true,"rounded":false,"enable_parallax":false,"parallax_direction":"vertical"}},"image_with_text_overlay_3p8pxr":{"type":"image-with-text-overlay","disabled":true,"settings":{"transparent_header":false,"image":"shopify:\/\/shop_images\/enbrighten_app_5__png.webp","image_height":"adapt","content_width":"small","content_position":"md:items-end md:justify-start","text_alignment":"left","image_height_mobile":"auto","content_position_mobile":"items-end justify-start","text_alignment_mobile":"left","color_text":"#ffffff","color_highlight":"#e0a580","gradient_highlight":"","color_button_text":"#171717","color_button_background":"#ffffff","color_button_gradient":"","color_overlay":"#171717","overlay_opacity":70,"padding_top":0,"padding_bottom":0,"divider":false,"full_width":true,"rounded":false,"enable_parallax":false,"parallax_direction":"vertical"}},"image_with_text_overlay_rCqj94":{"type":"image-with-text-overlay","disabled":true,"settings":{"transparent_header":false,"image":"shopify:\/\/shop_images\/enbrighten_app_6__png.webp","image_height":"adapt","content_width":"small","content_position":"md:items-end md:justify-start","text_alignment":"left","image_height_mobile":"auto","content_position_mobile":"items-end justify-start","text_alignment_mobile":"left","color_text":"#ffffff","color_highlight":"#e0a580","gradient_highlight":"","color_button_text":"#171717","color_button_background":"#ffffff","color_button_gradient":"","color_overlay":"#171717","overlay_opacity":70,"padding_top":0,"padding_bottom":0,"divider":false,"full_width":true,"rounded":false,"enable_parallax":false,"parallax_direction":"vertical"}},"image_with_text_overlay_CVcz74":{"type":"image-with-text-overlay","disabled":true,"settings":{"transparent_header":false,"image":"shopify:\/\/shop_images\/enbrighten_app_7__png.webp","image_height":"adapt","content_width":"small","content_position":"md:items-end md:justify-start","text_alignment":"left","image_height_mobile":"auto","content_position_mobile":"items-end justify-start","text_alignment_mobile":"left","color_text":"#ffffff","color_highlight":"#e0a580","gradient_highlight":"","color_button_text":"#171717","color_button_background":"#ffffff","color_button_gradient":"","color_overlay":"#171717","overlay_opacity":70,"padding_top":0,"padding_bottom":0,"divider":false,"full_width":true,"rounded":false,"enable_parallax":false,"parallax_direction":"vertical"}},"image_with_text_overlay_T9q9y4":{"type":"image-with-text-overlay","disabled":true,"settings":{"transparent_header":false,"image":"shopify:\/\/shop_images\/enbrighten_app_8__png.webp","image_height":"adapt","content_width":"small","content_position":"md:items-end md:justify-start","text_alignment":"left","image_height_mobile":"auto","content_position_mobile":"items-end justify-start","text_alignment_mobile":"left","color_text":"#ffffff","color_highlight":"#e0a580","gradient_highlight":"","color_button_text":"#171717","color_button_background":"#ffffff","color_button_gradient":"","color_overlay":"#171717","overlay_opacity":70,"padding_top":0,"padding_bottom":0,"divider":false,"full_width":true,"rounded":false,"enable_parallax":false,"parallax_direction":"vertical"}},"image_with_text_overlay_iUNjK3":{"type":"image-with-text-overlay","disabled":true,"settings":{"transparent_header":false,"image":"shopify:\/\/shop_images\/enbrighten_app_11__png.webp","image_height":"adapt","content_width":"small","content_position":"md:items-end md:justify-start","text_alignment":"left","image_height_mobile":"auto","content_position_mobile":"items-end justify-start","text_alignment_mobile":"left","color_text":"#ffffff","color_highlight":"#e0a580","gradient_highlight":"","color_button_text":"#171717","color_button_background":"#ffffff","color_button_gradient":"","color_overlay":"#171717","overlay_opacity":70,"padding_top":0,"padding_bottom":0,"divider":false,"full_width":true,"rounded":false,"enable_parallax":false,"parallax_direction":"vertical"}},"video_ip7Wa6":{"type":"video","settings":{"transparent_header":false,"video_url":"https:\/\/www.youtube.com\/watch?v=OYxXD86KT_s","cover_image":"shopify:\/\/shop_images\/WhatsApp_Image_2025-01-28_at_17.46.49.jpg","description":"","enable_video_autoplay":true,"enable_video_looping":false,"image_height":"adapt","video_url_mobile":"https:\/\/www.youtube.com\/watch?v=OYxXD86KT_s","cover_image_mobile":"shopify:\/\/shop_images\/WhatsApp_Image_2025-01-28_at_17.46.49.jpg","image_height_mobile":"adapt","padding_top":0,"padding_bottom":0,"divider":false,"full_width":true,"rounded":false}}},"order":["main-page","image_with_text_overlay_Tc3McB","scrolling_banner_tTW9mi","image_with_text_overlay_DeHNJA","image_with_text_overlay_3p8pxr","image_with_text_overlay_rCqj94","image_with_text_overlay_CVcz74","image_with_text_overlay_T9q9y4","image_with_text_overlay_iUNjK3","video_ip7Wa6"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main-page": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "heading_size": "title-xl tracking-heading",
+        "heading_alignment": "text-left",
+        "heading_tag": "h1",
+        "text_size": "text-base",
+        "padding_top": 72,
+        "padding_bottom": 120,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
+    "image_with_text_overlay_Tc3McB": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_VTf4XK": {
+          "type": "heading",
+          "settings": {
+            "heading": "Enbrighten App",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "highlighted_text": "text",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_ibLaje": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Explore tips to get the most out of your app.</p>",
+            "text_size": "subtext-xl",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_VTf4XK",
+        "text_ibLaje"
+      ],
+      "settings": {
+        "transparent_header": false,
+        "image": "shopify://shop_images/Enbrighten-Wifi-App-1920x580_8ebf5fc3-d74d-45da-a761-77758274ee0d.png",
+        "image_height": "adapt",
+        "content_width": "small",
+        "content_position": "md:items-end md:justify-start",
+        "text_alignment": "left",
+        "image_height_mobile": "auto",
+        "content_position_mobile": "items-end justify-start",
+        "text_alignment_mobile": "left",
+        "color_text": "#ffffff",
+        "color_highlight": "#00aeef",
+        "gradient_highlight": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 70,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "scrolling_banner_tTW9mi": {
+      "type": "scrolling-banner",
+      "blocks": {
+        "image_iUyFeT": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/enbrighten_app_1.jpg",
+            "icon": "none",
+            "icon_image": "shopify://shop_images/Step-1-rv2.svg",
+            "icon_width": 48,
+            "heading": "Color Options",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "subheading": "",
+            "description": "<h4>Full-spectrum color options, as well as tunable white settings provide seemingly endless custom lighting options for any occasion.</h4>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "image_L3PqrV": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/enbrighten_app_2.jpg",
+            "icon": "none",
+            "icon_image": "shopify://shop_images/Step-2.svg",
+            "icon_width": 48,
+            "heading": "Automations & Programs",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "subheading": "",
+            "description": "<h4>Create custom schedules and programs. Run automations based on location, weather conditions, sunrise/sunset times and more.</h4>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "image_n43pcw": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/enbrighten_app_3.jpg",
+            "icon": "none",
+            "icon_image": "shopify://shop_images/Step-3.svg",
+            "icon_width": 48,
+            "heading": "Create Groups",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "subheading": "",
+            "description": "<h4>Several devices can follow the same commands through the groups feature.Groups allow devices to be sorted to specific areas, like patios, basements or bedrooms, giving you the ability to control entire spaces at once.</h4>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "image_RXBQt7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/enbrighten_app_4.jpg",
+            "icon": "none",
+            "icon_image": "shopify://shop_images/Step-4.svg",
+            "icon_width": 48,
+            "heading": "SmartSun Technology",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "subheading": "",
+            "description": "<h4>Programmable settings automatically adjust brightness and white temperature to support a proper circadian rhythm and create the perfect ambiance. The personalized cycle repeats every day.</h4>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "image_mUKanV": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/enbrighten_app_5.jpg",
+            "icon": "none",
+            "icon_image": "shopify://shop_images/Step-5.svg",
+            "icon_width": 48,
+            "heading": "Turn Off Sections of Light",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "subheading": "",
+            "description": "<h4>Customize your lighting by turning off certain bulbs or sections of light to fit the needs of your space.</h4>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "image_yeKTqw": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/enbrighten_app_6.jpg",
+            "icon": "none",
+            "icon_image": "shopify://shop_images/Step-6.svg",
+            "icon_width": 48,
+            "heading": "Music Sync",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "subheading": "",
+            "description": "<h4>Create a party atmosphere for any gathering with the press of a button.Light comes to life and changes color as it responds to sounds through your smart phone's microphone.</h4><p>(Can be used with Enbrighten Smart Bulbs,Gaming Light Bars, Fairy Curtain or String Lights)</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "image_iUyFeT",
+        "image_L3PqrV",
+        "image_n43pcw",
+        "image_RXBQt7",
+        "image_mUKanV",
+        "image_yeKTqw"
+      ],
+      "settings": {
+        "image_height": "adapt",
+        "image_width": "small",
+        "layout": "image_first",
+        "text_alignment": "left",
+        "content_position": "items-center",
+        "image_height_mobile": "auto",
+        "text_alignment_mobile": "left",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_background_2": "",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "image_with_text_overlay_DeHNJA": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "settings": {
+        "transparent_header": false,
+        "image": "shopify://shop_images/enbrighten_app_graphics_1__jpg.webp",
+        "image_height": "adapt",
+        "content_width": "small",
+        "content_position": "md:items-end md:justify-start",
+        "text_alignment": "left",
+        "image_height_mobile": "auto",
+        "content_position_mobile": "items-end justify-start",
+        "text_alignment_mobile": "left",
+        "color_text": "#ffffff",
+        "color_highlight": "#e0a580",
+        "gradient_highlight": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 70,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "image_with_text_overlay_3p8pxr": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "settings": {
+        "transparent_header": false,
+        "image": "shopify://shop_images/enbrighten_app_5__png.webp",
+        "image_height": "adapt",
+        "content_width": "small",
+        "content_position": "md:items-end md:justify-start",
+        "text_alignment": "left",
+        "image_height_mobile": "auto",
+        "content_position_mobile": "items-end justify-start",
+        "text_alignment_mobile": "left",
+        "color_text": "#ffffff",
+        "color_highlight": "#e0a580",
+        "gradient_highlight": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 70,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "image_with_text_overlay_rCqj94": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "settings": {
+        "transparent_header": false,
+        "image": "shopify://shop_images/enbrighten_app_6__png.webp",
+        "image_height": "adapt",
+        "content_width": "small",
+        "content_position": "md:items-end md:justify-start",
+        "text_alignment": "left",
+        "image_height_mobile": "auto",
+        "content_position_mobile": "items-end justify-start",
+        "text_alignment_mobile": "left",
+        "color_text": "#ffffff",
+        "color_highlight": "#e0a580",
+        "gradient_highlight": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 70,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "image_with_text_overlay_CVcz74": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "settings": {
+        "transparent_header": false,
+        "image": "shopify://shop_images/enbrighten_app_7__png.webp",
+        "image_height": "adapt",
+        "content_width": "small",
+        "content_position": "md:items-end md:justify-start",
+        "text_alignment": "left",
+        "image_height_mobile": "auto",
+        "content_position_mobile": "items-end justify-start",
+        "text_alignment_mobile": "left",
+        "color_text": "#ffffff",
+        "color_highlight": "#e0a580",
+        "gradient_highlight": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 70,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "image_with_text_overlay_T9q9y4": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "settings": {
+        "transparent_header": false,
+        "image": "shopify://shop_images/enbrighten_app_8__png.webp",
+        "image_height": "adapt",
+        "content_width": "small",
+        "content_position": "md:items-end md:justify-start",
+        "text_alignment": "left",
+        "image_height_mobile": "auto",
+        "content_position_mobile": "items-end justify-start",
+        "text_alignment_mobile": "left",
+        "color_text": "#ffffff",
+        "color_highlight": "#e0a580",
+        "gradient_highlight": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 70,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "image_with_text_overlay_iUNjK3": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "settings": {
+        "transparent_header": false,
+        "image": "shopify://shop_images/enbrighten_app_11__png.webp",
+        "image_height": "adapt",
+        "content_width": "small",
+        "content_position": "md:items-end md:justify-start",
+        "text_alignment": "left",
+        "image_height_mobile": "auto",
+        "content_position_mobile": "items-end justify-start",
+        "text_alignment_mobile": "left",
+        "color_text": "#ffffff",
+        "color_highlight": "#e0a580",
+        "gradient_highlight": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 70,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "video_ip7Wa6": {
+      "type": "video",
+      "settings": {
+        "transparent_header": false,
+        "video_url": "https://www.youtube.com/watch?v=OYxXD86KT_s",
+        "cover_image": "shopify://shop_images/WhatsApp_Image_2025-01-28_at_17.46.49.jpg",
+        "description": "",
+        "enable_video_autoplay": true,
+        "enable_video_looping": false,
+        "image_height": "adapt",
+        "video_url_mobile": "https://www.youtube.com/watch?v=OYxXD86KT_s",
+        "cover_image_mobile": "shopify://shop_images/WhatsApp_Image_2025-01-28_at_17.46.49.jpg",
+        "image_height_mobile": "adapt",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": false
+      }
+    }
+  },
+  "order": [
+    "main-page",
+    "image_with_text_overlay_Tc3McB",
+    "scrolling_banner_tTW9mi",
+    "image_with_text_overlay_DeHNJA",
+    "image_with_text_overlay_3p8pxr",
+    "image_with_text_overlay_rCqj94",
+    "image_with_text_overlay_CVcz74",
+    "image_with_text_overlay_T9q9y4",
+    "image_with_text_overlay_iUNjK3",
+    "video_ip7Wa6"
+  ]
+}

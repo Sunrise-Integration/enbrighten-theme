@@ -1,1 +1,99 @@
-{"sections":{"main-page":{"type":"main-page","settings":{"heading_size":"title-xl tracking-heading","heading_alignment":"text-left","heading_tag":"h1","text_size":"text-base","padding_top":72,"padding_bottom":0,"divider":false,"narrow":true,"rounded":false}},"custom_liquid_mUdpMK":{"type":"custom-liquid","disabled":true,"settings":{"liquid":"","color_text":"","color_background":"","gradient_background":"","color_button_text":"","color_button_background":"","color_button_gradient":"","padding_top":72,"padding_bottom":72,"divider":false,"narrow":false,"rounded":false}},"rich_text_GKkGhL":{"type":"rich-text","blocks":{"button_wiY3WP":{"type":"button","settings":{"button_label":"Login to start","button_link":"\/account\/orders","button_style":"primary","button_size":"md","button_external":false,"button_icon":true}}},"block_order":["button_wiY3WP"],"settings":{"text_alignment":"left","text_alignment_mobile":"left","heading":"","heading_size":"title-md","heading_alignment":"text-left md:items-end md:flex-row","heading_width":"small","heading_tag":"h2","subheading":"","description":"","button_label":"","button_link":"","button_external":false,"button_icon":true,"highlighted_text":"none","highlighted_scribble":"circle","color_text":"","color_background":"","gradient_background":"","color_highlight":"","gradient_highlight":"","color_button_text":"","color_button_background":"","color_button_gradient":"","padding_top":0,"padding_bottom":100,"divider":false,"narrow":true,"rounded":false}}},"order":["main-page","custom_liquid_mUdpMK","rich_text_GKkGhL"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main-page": {
+      "type": "main-page",
+      "settings": {
+        "heading_size": "title-xl tracking-heading",
+        "heading_alignment": "text-left",
+        "heading_tag": "h1",
+        "text_size": "text-base",
+        "padding_top": 72,
+        "padding_bottom": 0,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
+    "custom_liquid_mUdpMK": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "liquid": "",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "narrow": false,
+        "rounded": false
+      }
+    },
+    "rich_text_GKkGhL": {
+      "type": "rich-text",
+      "blocks": {
+        "button_wiY3WP": {
+          "type": "button",
+          "settings": {
+            "button_label": "Login to start",
+            "button_link": "/account/orders",
+            "button_style": "primary",
+            "button_size": "md",
+            "button_external": false,
+            "button_icon": true
+          }
+        }
+      },
+      "block_order": [
+        "button_wiY3WP"
+      ],
+      "settings": {
+        "text_alignment": "left",
+        "text_alignment_mobile": "left",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 0,
+        "padding_bottom": 100,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    }
+  },
+  "order": [
+    "main-page",
+    "custom_liquid_mUdpMK",
+    "rich_text_GKkGhL"
+  ]
+}

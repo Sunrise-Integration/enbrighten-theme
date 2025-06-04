@@ -1,1 +1,154 @@
-{"sections":{"main":{"type":"main-page","disabled":true,"settings":{"heading_size":"title-xl tracking-heading","heading_alignment":"text-left","heading_tag":"h1","text_size":"text-base","padding_top":72,"padding_bottom":120,"divider":false,"narrow":true,"rounded":false}},"multicolumn_VgmHXp":{"type":"multicolumn","blocks":{"column_hmTqMB":{"type":"column","settings":{"show_border":false,"text_alignment":"center","text_alignment_mobile":"center","image":"shopify:\/\/shop_images\/FAQs_3__1_png.webp","image_ratio":"adapt","heading":"","heading_size":"text-lg-2xl","text":"","button_label":"View More","button_link":"shopify:\/\/pages\/why-wifi","button_style":"primary","button_external":false,"button_icon":true,"highlighted_text":"none","highlighted_scribble":"circle"}},"column_pNCjYe":{"type":"column","settings":{"show_border":false,"text_alignment":"center","text_alignment_mobile":"center","image":"shopify:\/\/shop_images\/FAQs_3__png.webp","image_ratio":"adapt","heading":"","heading_size":"text-lg-2xl","text":"","button_label":"View More","button_link":"shopify:\/\/pages\/faq","button_style":"primary","button_external":false,"button_icon":true,"highlighted_text":"none","highlighted_scribble":"circle"}},"column_p8Ant3":{"type":"column","settings":{"show_border":false,"text_alignment":"center","text_alignment_mobile":"center","image":"shopify:\/\/shop_images\/FAQs_1__png.webp","image_ratio":"adapt","heading":"","heading_size":"text-lg-2xl","text":"","button_label":"View More","button_link":"shopify:\/\/pages\/enbrighten-wi-fi-manuals","button_style":"primary","button_external":false,"button_icon":true,"highlighted_text":"none","highlighted_scribble":"circle"}},"column_dcrMUU":{"type":"column","settings":{"show_border":false,"text_alignment":"center","text_alignment_mobile":"center","image":"shopify:\/\/shop_images\/FAQs_2__png.webp","image_ratio":"adapt","heading":"","heading_size":"text-lg-2xl","text":"","button_label":"View More","button_link":"shopify:\/\/pages\/video-library","button_style":"primary","button_external":false,"button_icon":true,"highlighted_text":"none","highlighted_scribble":"circle"}}},"block_order":["column_hmTqMB","column_pNCjYe","column_p8Ant3","column_dcrMUU"],"settings":{"gap":"large","columns":4,"columns_mobile":"1","swipe_on_mobile":true,"heading":"ENBRIGHTEN WI-FI SUPPORT RESOURCES","heading_size":"title-md","heading_alignment":"text-center md:items-center","heading_tag":"h2","subheading":"","description":"","button_label":"","button_link":"","button_external":false,"button_icon":true,"highlighted_text":"none","highlighted_scribble":"circle","color_text":"","color_background":"","gradient_background":"","color_highlight":"","gradient_highlight":"","color_button_text":"","color_button_background":"#00aeef","color_button_gradient":"","padding_top":72,"padding_bottom":72,"divider":false,"full_width":false,"rounded":false}}},"order":["main","multicolumn_VgmHXp"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "heading_size": "title-xl tracking-heading",
+        "heading_alignment": "text-left",
+        "heading_tag": "h1",
+        "text_size": "text-base",
+        "padding_top": 72,
+        "padding_bottom": 120,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
+    "multicolumn_VgmHXp": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_hmTqMB": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "image": "shopify://shop_images/FAQs_3__1_png.webp",
+            "image_ratio": "adapt",
+            "heading": "",
+            "heading_size": "text-lg-2xl",
+            "text": "",
+            "button_label": "View More",
+            "button_link": "shopify://pages/why-wifi",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_pNCjYe": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "image": "shopify://shop_images/FAQs_3__png.webp",
+            "image_ratio": "adapt",
+            "heading": "",
+            "heading_size": "text-lg-2xl",
+            "text": "",
+            "button_label": "View More",
+            "button_link": "shopify://pages/faq",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_p8Ant3": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "image": "shopify://shop_images/FAQs_1__png.webp",
+            "image_ratio": "adapt",
+            "heading": "",
+            "heading_size": "text-lg-2xl",
+            "text": "",
+            "button_label": "View More",
+            "button_link": "shopify://pages/enbrighten-wi-fi-manuals",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_dcrMUU": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "image": "shopify://shop_images/FAQs_2__png.webp",
+            "image_ratio": "adapt",
+            "heading": "",
+            "heading_size": "text-lg-2xl",
+            "text": "",
+            "button_label": "View More",
+            "button_link": "shopify://pages/video-library",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "column_hmTqMB",
+        "column_pNCjYe",
+        "column_p8Ant3",
+        "column_dcrMUU"
+      ],
+      "settings": {
+        "gap": "large",
+        "columns": 4,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "ENBRIGHTEN WI-FI SUPPORT RESOURCES",
+        "heading_size": "title-md",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "#00aeef",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "multicolumn_VgmHXp"
+  ]
+}
