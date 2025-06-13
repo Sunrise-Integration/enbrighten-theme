@@ -3600,6 +3600,54 @@
         "name": "Scrolling text"
       }
     },
+    "shop-the-feed": {
+      "name": "Shop the feed",
+      "settings": {
+        "header__account": {
+          "content": "Social account"
+        },
+        "account_avatar": {
+          "label": "Social account avatar"
+        },
+        "account_name": {
+          "label": "Social account name"
+        },
+        "account_description": {
+          "label": "Social account description"
+        },
+        "account_button": {
+          "label": "Social account button"
+        },
+        "account_link": {
+          "label": "Social account link"
+        }
+      },
+      "blocks": {
+        "feed": {
+          "name": "Feed",
+          "settings": {
+            "video_on_hover": {
+              "label": "Show video on hover"
+            },
+            "header__hotspot_1": {
+              "content": "Hotspot 1"
+            },
+            "header__hotspot_2": {
+              "content": "Hotspot 2"
+            },
+            "header__hotspot_3": {
+              "content": "Hotspot 3"
+            },
+            "header__hotspot_4": {
+              "content": "Hotspot 4"
+            }
+          }
+        }
+      },
+      "presets": {
+        "name": "Shop the feed"
+      }
+    },
     "shop-the-look": {
       "name": "Shop the look",
       "presets": {
