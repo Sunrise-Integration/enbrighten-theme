@@ -1,6 +1,6 @@
 {
     "type": "footer",
-    "name": "t:sections.footer-group.name",
+    "name": "t:sections.footer-group.name", 
     "sections": {
         "multicolumn-with-icons": {
             "type": "multicolumn-with-icons",
