@@ -203,7 +203,7 @@
       },
       "product_variants": "Produktvarianten",
       "total_items": "Artikel gesamt: {{ count }}",
-      "remove_all_items_confirmation": "Alle {{ quantity }} Artikel aus Ihrem Warenkorb entfernen?",
+      "remove_all_items_confirmation": "Alle {{ quantity }} Artikel aus deinem Warenkorb entfernen?",
       "remove_all": "Alle entfernen",
       "cancel": "Abbrechen",
       "remove_all_single_item_confirmation": "1 Artikel aus dem Warenkorb entfernen?",
@@ -236,12 +236,12 @@
   },
   "cart": {
     "general": {
-      "title": "Ihr Warenkorb",
+      "title": "Dein Warenkorb",
       "remove": "Entfernen",
       "note": "Spezielle Bestellanweisungen",
       "subtotal": "Zwischensumme",
-      "cart_error": "Beim Aktualisieren Ihres Warenkorbs ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.",
-      "cart_quantity_error_html": "Sie können Ihrem Warenkorb nur {{ quantity }} Stück dieses Artikels hinzufügen.",
+      "cart_error": "Beim Aktualisieren deines Warenkorbs ist ein Fehler aufgetreten. Bitte versuche es erneut.",
+      "cart_quantity_error_html": "Du kannst deinem Warenkorb nur {{ quantity }} Stück dieses Artikels hinzufügen.",
       "taxes_and_shipping_policy_at_checkout_html": "Steuern und <a href=\"{{ link }}\">Versand</a> werden beim Checkout berechnet",
       "taxes_included_but_shipping_at_checkout": "Inklusive Steuern, Versand wird beim Checkout berechnet",
       "taxes_included_and_shipping_policy_html": "Inklusive Steuern. <a href=\"{{ link }}\">Versand </a> wird beim Checkout berechnet",
@@ -249,7 +249,7 @@
       "update": "Aktualisieren",
       "checkout": "Auschecken",
       "we_accept": "Wir akzeptieren",
-      "empty": "Ihr Warenkorb ist leer.",
+      "empty": "Dein Warenkorb ist leer.",
       "continue_shopping": "Weiter shoppen"
     },
     "headings": {
@@ -455,7 +455,6 @@
       "view_product": "Produkt ansehen",
       "pre_order": "Vorbestellung",
       "add_to_bundle": "Zum Bundle hinzufügen",
-      "shop_the_look": "Shoppe den Look",
       "vendor": "Anbieter",
       "include_taxes": "inkl. MwSt.",
       "shipping_policy_html": "zzgl. <a href='{{ link }}'>Versandkosten</a>",

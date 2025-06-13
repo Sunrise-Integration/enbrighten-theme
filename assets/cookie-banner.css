@@ -1,9 +1,9 @@
-.touch .has-cookie-banner {
+html.touch .has-cookie-banner {
   touch-action: none
 }
 
-.js .cookie-modal .overlay,
-.js .cookie-modal[active] .overlay {
+html.js .cookie-modal .overlay,
+html.js .cookie-modal[active] .overlay {
   background-color: transparent;
   pointer-events: none;
 }
@@ -23,16 +23,16 @@
   margin-block-start: var(--sp-4);
 }
 
-.cookie-modal .text-center :is(.heading, .cookie__flex) {
+.cookie-modal .text-center :is(.heading) {
   justify-content: center;
 }
 
-.cookie-modal .text-right :is(.heading, .cookie__flex) {
+.cookie-modal .text-right :is(.heading) {
   justify-content: flex-end;
 }
 
 @media screen and (max-width: 639px) {
-  .js .cookie-modal .drawer__inner {
+  html.js .cookie-modal .drawer__inner {
     height: auto;
   }
 }

@@ -179,7 +179,7 @@
           <compact-product-bundle class="compact-product-bundle flex flex-col gap-6 lg:gap-10">
             <motion-list class="product-grid{% if section.settings.swipe_on_mobile %} swipe-on-mobile{% endif %} card-grid card-grid--{{ product_limit }} mobile:card-grid--1 grid">
               {%- for product in products limit: product_limit -%}
-                <div class="grid relative">
+                <div class="flex relative">
                   {%- liquid
                     unless forloop.first
                       render 'icon', icon: 'plus-3', size: 'xl', class: 'icon-bundle-plus absolute pointer-events-none'
@@ -192,7 +192,6 @@
                     lazy_load: false,
                     image_ratio: settings.product_image_ratio,
                     image_fill: settings.product_image_fill,
-                    show_secondary_image: settings.product_secondary_image,
                     show_vendor: settings.product_vendor,
                     show_rating: settings.product_rating,
                     show_color_swatches: settings.product_color_swatches,
@@ -211,7 +210,7 @@
               {%- else -%}
                 {%- for i in (1..section.settings.product_limit) -%}
                   {%- capture placeholder -%}product-{% cycle '1', '2', '3', '4', '5', '6' %}{%- endcapture -%}
-                  <div class="grid relative">
+                  <div class="flex relative">
                     {%- liquid
                       unless forloop.first
                         render 'icon', icon: 'plus-3', size: 'xl', class: 'icon-bundle-plus absolute pointer-events-none'
@@ -491,7 +490,6 @@
       "label": "t:sections.main-product.blocks.variant_picker.settings.picker_type.label"
     },
     {
-      "visible_if": "{{ section.settings.picker_type == 'button' }}",
       "type": "checkbox",
       "id": "enable_color_swatches",
       "default": true,
@@ -499,7 +497,6 @@
       "info": "t:sections.main-product.blocks.variant_picker.settings.enable_color_swatches.info"
     },
     {
-      "visible_if": "{{ section.settings.picker_type == 'button' and section.settings.enable_color_swatches == true }}",
       "type": "select",
       "id": "color_swatch_type",
       "options": [
@@ -620,7 +617,6 @@
       "default": true
     },
     {
-      "visible_if": "{{ section.settings.enable_parallax == true }}",
       "type": "select",
       "id": "parallax_direction",
       "label": "t:sections.global.settings.parallax_direction.label",
@@ -766,7 +762,6 @@
           "label": "t:sections.global.settings.highlighted_text.label"
         },
         {
-          "visible_if": "{{ block.settings.highlighted_text == 'scribble' }}",
           "type": "select",
           "id": "highlighted_scribble",
           "options": [
@@ -874,7 +869,6 @@
           "label": "t:sections.global.settings.text_size.label"
         },
         {
-          "visible_if": "{{ block.settings.text_size == 'subtext-custom' }}",
           "type": "range",
           "id": "text_max_size",
           "default": 32,
@@ -948,7 +942,6 @@
           "label": "t:sections.global.settings.highlighted_text.label"
         },
         {
-          "visible_if": "{{ block.settings.highlighted_text == 'scribble' }}",
           "type": "select",
           "id": "highlighted_scribble",
           "options": [
@@ -1322,7 +1315,7 @@
           "id": "icon_width",
           "label": "t:sections.global.settings.icon_width.label",
           "default": 48,
-          "min": 10,
+          "min": 20,
           "max": 120,
           "step": 2,
           "unit": "px"
@@ -1355,7 +1348,6 @@
           "label": "t:sections.global.settings.image_width.label"
         },
         {
-          "visible_if": "{{ block.settings.image_width == 'custom' }}",
           "type": "range",
           "id": "image_max_width",
           "label": "t:sections.global.settings.image_max_width.label",
@@ -1366,7 +1358,6 @@
           "unit": "px"
         },
         {
-          "visible_if": "{{ block.settings.image_width == 'custom' }}",
           "type": "range",
           "id": "image_max_width_mobile",
           "label": "t:sections.global.settings.image_max_width_mobile.label",
