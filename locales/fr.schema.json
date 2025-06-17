@@ -1852,6 +1852,9 @@
             "target_link": {
               "label": "Lien cible"
             },
+            "promo_image_ratio": {
+              "info": "Uniquement pour mobile."
+            },
             "header__tab_1": {
               "content": "Languette 1"
             },
@@ -2956,6 +2959,15 @@
             },
             "opened": {
               "label": "S'affiche initialement comme ouvert"
+            },
+            "style": {
+              "options__1": {
+                "label": "Avec bordure"
+              },
+              "options__2": {
+                "label": "Avec fond"
+              },
+              "label": "Style"
             }
           }
         },
@@ -3052,6 +3064,9 @@
             "metafield": {
               "label": "Métachamp",
               "info": "Saisissez l'espace de noms et la clé du métachamp contenant la valeur. Exemple: custom.bundle"
+            },
+            "clickable": {
+              "label": "Activer les éléments cliquables"
             }
           }
         },

@@ -176,6 +176,7 @@
       "default": true
     },
     {
+      "visible_if": "{{ section.settings.show_payment_icons == true }}",
       "type": "checkbox",
       "id": "monochrome_payment_icons",
       "label": "t:sections.footer-copyright.settings.monochrome_payment_icons.label",
@@ -191,6 +192,7 @@
       "label": "t:sections.footer-copyright.settings.show_copyright.label"
     },
     {
+      "visible_if": "{{ section.settings.show_copyright == true }}",
       "type": "text",
       "id": "copyright_text",
       "label": "t:sections.footer-copyright.settings.copyright_text.label"

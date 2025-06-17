@@ -283,12 +283,14 @@
       "label": "t:sections.global.settings.button_link.label"
     },
     {
+      "visible_if": "{{ section.settings.button_label != blank }}",
       "type": "checkbox",
       "id": "button_external",
       "label": "t:sections.global.settings.button_external.label",
       "default": false
     },
     {
+      "visible_if": "{{ section.settings.button_label != blank }}",
       "type": "checkbox",
       "id": "button_icon",
       "label": "t:sections.global.settings.button_icon.label",
@@ -336,6 +338,7 @@
       "label": "t:sections.global.settings.highlighted_text.label"
     },
     {
+      "visible_if": "{{ section.settings.highlighted_text == 'scribble' }}",
       "type": "select",
       "id": "highlighted_scribble",
       "options": [
@@ -469,9 +472,47 @@
         },
         {
           "type": "checkbox",
+          "id": "enable_video_autoplay",
+          "label": "t:sections.video.settings.enable_video_autoplay.label",
+          "info": "t:sections.video.settings.enable_video_autoplay.info",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "enable_video_looping",
+          "label": "t:sections.video.settings.enable_video_looping.label",
+          "default": true
+        },
+        {
+          "type": "checkbox",
           "id": "video_on_hover",
           "label": "t:sections.shop-the-feed.blocks.feed.settings.video_on_hover.label",
           "default": true
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "t:sections.global.settings.button_label.label",
+          "info": "t:sections.global.settings.button_label.info"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "t:sections.global.settings.button_link.label"
+        },
+        {
+          "visible_if": "{{ block.settings.button_label != blank }}",
+          "type": "checkbox",
+          "id": "button_external",
+          "label": "t:sections.global.settings.button_external.label",
+          "default": false
+        },
+        {
+          "visible_if": "{{ block.settings.button_label != blank }}",
+          "type": "checkbox",
+          "id": "button_icon",
+          "label": "t:sections.global.settings.button_icon.label",
+          "default": false
         },
         {
           "type": "header",
@@ -506,8 +547,9 @@
           "label": "t:sections.shop-the-feed.settings.account_link.label"
         },
         {
+          "visible_if": "{{ block.settings.account_button != blank }}",
           "type": "checkbox",
-          "id": "button_external",
+          "id": "account_link_external",
           "label": "t:sections.global.settings.button_external.label",
           "default": false
         },

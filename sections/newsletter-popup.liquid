@@ -23,8 +23,12 @@
     }
   </style>
 
-  <link rel="stylesheet" href="{{ 'newsletter-popup.css' | asset_url }}" media="print" onload="this.media='all'">
-  <noscript>{{ 'newsletter-popup.css' | asset_url | stylesheet_tag }}</noscript>
+  {%- unless request.design_mode -%}
+    <link rel="stylesheet" href="{{ 'newsletter-popup.css' | asset_url }}" media="print" onload="this.media='all'">
+    <noscript>{{ 'newsletter-popup.css' | asset_url | stylesheet_tag }}</noscript>
+  {%- else -%}
+    {{ 'newsletter-popup.css' | asset_url | stylesheet_tag }}
+  {%- endunless -%}
   <script src="{{ 'newsletter-popup.js' | asset_url }}" defer="defer"></script>
 
   <newsletter-modal id="NewsletterModal" class="x-modal newsletter-modal drawer z-35 fixed bottom-0 left-0 h-full w-full pointer-events-none"
@@ -452,6 +456,7 @@
           "label": "t:sections.global.settings.highlighted_text.label"
         },
         {
+          "visible_if": "{{ block.settings.highlighted_text == 'scribble' }}",
           "type": "select",
           "id": "highlighted_scribble",
           "options": [
@@ -521,6 +526,7 @@
           "label": "t:sections.global.settings.text_size.label"
         },
         {
+          "visible_if": "{{ block.settings.text_size == 'subtext-custom' }}",
           "type": "range",
           "id": "text_max_size",
           "default": 32,
@@ -594,6 +600,7 @@
           "label": "t:sections.global.settings.highlighted_text.label"
         },
         {
+          "visible_if": "{{ block.settings.highlighted_text == 'scribble' }}",
           "type": "select",
           "id": "highlighted_scribble",
           "options": [
@@ -1000,6 +1007,7 @@
           "label": "t:sections.global.settings.image_width.label"
         },
         {
+          "visible_if": "{{ block.settings.image_width == 'custom' }}",
           "type": "range",
           "id": "image_max_width",
           "label": "t:sections.global.settings.image_max_width.label",
@@ -1010,6 +1018,7 @@
           "unit": "px"
         },
         {
+          "visible_if": "{{ block.settings.image_width == 'custom' }}",
           "type": "range",
           "id": "image_max_width_mobile",
           "label": "t:sections.global.settings.image_max_width_mobile.label",
@@ -1114,12 +1123,6 @@
           "info": "t:sections.newsletter-popup.blocks.floating.settings.show_social.info"
         },
         {
-          "type": "text",
-          "id": "social_heading",
-          "default": "Follow us",
-          "label": "t:sections.newsletter-popup.blocks.floating.settings.social_heading.label"
-        },
-        {
           "type": "header",
           "content": "t:sections.global.settings.header__mobile.content"
         },
@@ -1130,6 +1133,7 @@
           "default": true
         },
         {
+          "visible_if": "{{ block.settings.mobile_disabled == false }}",
           "type": "checkbox",
           "id": "mobile_hide_social",
           "label": "t:sections.newsletter-popup.blocks.floating.settings.mobile_hide_social.label",

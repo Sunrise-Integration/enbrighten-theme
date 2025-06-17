@@ -234,13 +234,22 @@ console.log(theme.settings.themeName + ' theme (' + theme.settings.themeVersion 
       form.setAttribute("action", path);
     
       for (const key in params) {
-        for (const index in params[key]) {
-          for (const key2 in params[key][index]) {
-            const hiddenField = document.createElement("input");
-            hiddenField.setAttribute("type", "hidden");
-            hiddenField.setAttribute("name", `${key}[${index}][${key2}]`);
-            hiddenField.setAttribute("value", params[key][index][key2]);
-            form.appendChild(hiddenField);
+        if (typeof params[key] === 'string') {
+          const hiddenField = document.createElement("input");
+          hiddenField.setAttribute("type", "hidden");
+          hiddenField.setAttribute("name", key);
+          hiddenField.setAttribute("value", params[key]);
+          form.appendChild(hiddenField);
+        }
+        else {
+          for (const index in params[key]) {
+            for (const key2 in params[key][index]) {
+              const hiddenField = document.createElement("input");
+              hiddenField.setAttribute("type", "hidden");
+              hiddenField.setAttribute("name", `${key}[${index}][${key2}]`);
+              hiddenField.setAttribute("value", params[key][index][key2]);
+              form.appendChild(hiddenField);
+            }
           }
         }
       }
@@ -894,25 +903,40 @@ console.log(theme.settings.themeName + ' theme (' + theme.settings.themeVersion 
   theme.initWhenVisible = (function() {
     class ScriptLoader {
       constructor(callback, delay = 5000) {
-        this.loadScriptTimer = setTimeout(callback, delay);
-        this.userInteractionEvents = ['click', 'mousemove', 'keydown', 'touchstart', 'touchmove', 'wheel'];
-
-        this.onScriptLoader = this.triggerScriptLoader.bind(this, callback);
-        this.userInteractionEvents.forEach((event) => {
-          window.addEventListener(event, this.onScriptLoader, {
-            passive: !0
-          });
+        this.callback = callback;
+        this.triggered = false;
+        this.timeoutId = null;
+        
+        this.interactionEvents = ['click', 'mousemove', 'keydown', 'touchstart', 'touchmove', 'wheel'];
+        this.handleInteraction = this.handleInteraction.bind(this);
+        
+        this.interactionEvents.forEach(eventType => {
+          window.addEventListener(eventType, this.handleInteraction, { passive: true });
         });
+        
+        this.timeoutId = setTimeout(() => {
+          if (!this.triggered) {
+            this.handleInteraction({ type: 'timeout' });
+          }
+        }, delay);
       }
 
-      triggerScriptLoader(callback) {
-        callback();
-        clearTimeout(this.loadScriptTimer);
-        this.userInteractionEvents.forEach((event) => {
-          window.removeEventListener(event, this.onScriptLoader, {
-            passive: !0
-          });
+      handleInteraction(event) {
+        if (this.triggered) return;
+    
+        this.triggered = true;
+        this.callback(event);
+        this.cleanup();
+      }
+
+      cleanup() {
+        this.interactionEvents.forEach(eventType => {
+          window.removeEventListener(eventType, this.handleInteraction, { passive: true });
         });
+        
+        clearTimeout(this.timeoutId);
+        this.timeoutId = null;
+        this.callback = null;
       }
     }
 
@@ -1795,6 +1819,10 @@ class ModalElement extends HTMLElement {
 
   disconnectedCallback() {
     this.abortController?.abort();
+    
+    if (Shopify.designMode) {
+      document.body.classList.remove(this.classes.open);
+    }
   }
 
   attributeChangedCallback(name, oldValue, newValue) {
@@ -1902,6 +1930,14 @@ class ModalElement extends HTMLElement {
       this.setAttribute('active', '');
     }, 75);
     return new Promise((resolve) => {
+      const computedStyle = window.getComputedStyle(this.overlay);
+      const hasTransition = computedStyle.transitionProperty !== 'none' && parseFloat(computedStyle.transitionDuration) > 0;
+
+      if (!hasTransition) {
+        resolve();
+        return;
+      }  
+                          
       this.overlay.addEventListener('transitionend', resolve, { once: true });
     });
   }
@@ -3067,7 +3103,11 @@ class DetailsDropdown extends HTMLDetailsElement {
       
       this.setAttribute('open', '');
       this.summaryElement.setAttribute('open', '');
-      setTimeout(() => this.contentElement.setAttribute('open', ''), 100);
+      if (theme.config.motionReduced) {
+        this.contentElement.setAttribute('open', '');
+      } else {
+        setTimeout(() => this.contentElement.setAttribute('open', ''), 100);
+      }
       document.addEventListener('click', this.detectClickOutsideListener);
       document.addEventListener('keydown', this.detectEscKeyboardListener);
       document.addEventListener('focusout', this.detectFocusOutListener);
@@ -3690,8 +3730,10 @@ class MotionList extends HTMLElement {
   constructor() {
     super();
 
-    if (theme.config.motionReduced || this.hasAttribute('motion-reduced')) return;
+    this.isMobile = theme.config.mqlSmall || theme.config.isTouch;
+    this.motionReduced = theme.config.motionReduced || this.hasAttribute('motion-reduced');
 
+    if (this.motionReduced) return;
     if (this.hasAttribute('initialized')) return;
     
     this.unload();
@@ -3699,23 +3741,61 @@ class MotionList extends HTMLElement {
   }
 
   get items() {
-    return this.querySelectorAll('.card');
+    return Array.from(this.querySelectorAll('.card'));
   }
 
   get itemsToShow() {
-    return this.querySelectorAll('.card:not([style])');
+    return Array.from(this.querySelectorAll('.card:not([style])'));
+  }
+
+  getAnimationParams() {
+    return {
+      distance: this.isMobile ? 30 : 50,
+      duration: this.motionReduced ? 0 : (this.isMobile ? 0.3 : 0.5),
+      staggerDelay: this.motionReduced ? 0 : (this.isMobile ? 0.05 : 0.1)
+    };
+  }
+
+  getVisibleItems(items) {
+    const viewportHeight = window.innerHeight + window.scrollY;
+    const visible = [];
+    const invisible = [];
+    
+    items.forEach(item => {
+      const rect = item.getBoundingClientRect();
+      const isVisible = rect.top < viewportHeight && rect.bottom > 0;
+      
+      if (isVisible) {
+        visible.push(item);
+      } else {
+        invisible.push(item);
+      }
+    });
+    
+    return { visible, invisible };
   }
 
   unload() {
-    Motion.animate(this.items, { y: 50, opacity: 0, visibility: 'hidden' }, { duration: 0 });
+    const { distance } = this.getAnimationParams();
+    const visibleItems = this.items;
+
+    Motion.animate(visibleItems, { y: distance, opacity: 0, visibility: 'hidden' }, { duration: 0 });
   }
 
   load() {
-    Motion.animate(this.items, { y: [50, 0], opacity: [0, 1], visibility: ['hidden', 'visible'] }, { duration: theme.config.motionReduced ? 0 : 0.5, delay: theme.config.motionReduced ? 0 : Motion.stagger(0.1) });
+    const { distance, duration, staggerDelay } = this.getAnimationParams();
+    const { visible: visibleItems, invisible: inVisibleItems } = this.getVisibleItems(this.items);
+
+    Motion.animate(visibleItems, { y: [distance, 0], opacity: [0, 1], visibility: ['hidden', 'visible'] }, { duration: duration, delay: Motion.stagger(staggerDelay) }).finished;
+    Motion.animate(inVisibleItems, { y: [distance, 0], opacity: [0, 1], visibility: ['hidden', 'visible'] }, { duration: duration });
   }
 
   reload() {
-    Motion.animate(this.itemsToShow, { y: [50, 0], opacity: [0, 1], visibility: ['hidden', 'visible'] }, { duration: theme.config.motionReduced ? 0 : 0.5, delay: theme.config.motionReduced ? 0 : Motion.stagger(0.1) });
+    const { distance, duration, staggerDelay } = this.getAnimationParams();
+    const { visible: visibleItems, invisible: inVisibleItems } = this.getVisibleItems(this.itemsToShow);
+    
+    Motion.animate(visibleItems, { y: [distance, 0], opacity: [0, 1], visibility: ['hidden', 'visible'] }, { duration: duration, delay: Motion.stagger(staggerDelay) }).finished;
+    Motion.animate(inVisibleItems, { y: [distance, 0], opacity: [0, 1], visibility: ['hidden', 'visible'] }, { duration: duration });
   }
 }
 customElements.define('motion-list', MotionList);
@@ -3767,7 +3847,7 @@ class MenuToggle extends MagnetButton {
     if (this.controlledElement) this.controlledElement.classList.toggle('active');
   }
 }
-customElements.define('menu-toogle', MenuToggle, { extends: 'button' });
+customElements.define('menu-toggle', MenuToggle, { extends: 'button' });
 
 class ScrollShadow extends HTMLElement {
   constructor() {
@@ -4511,7 +4591,7 @@ class VideoMedia extends DeferredMedia {
     else {
       const templateElement = this.querySelector('template');
       if (templateElement) {
-        this.appendChild(templateElement.content.firstElementChild.cloneNode(true));
+        templateElement.replaceWith(templateElement.content.firstElementChild.cloneNode(true));
       }
       this.setAttribute('loaded', '');
       this.closest('.media')?.classList.remove('loading');
@@ -5007,11 +5087,54 @@ class ProductForm extends HTMLFormElement {
   }
 
   get bundles() {
-    return Array.from(document.querySelectorAll(`[aria-controls="${this.getAttribute('id')}"] input[name="bundles"]:checked`));
+    return Array.from(document.querySelectorAll(`[form="${this.getAttribute('id')}"] input[name="bundles"]:checked`));
+  }
+
+  prepareFormData(formData) {
+    const bundlesLength = this.bundles.length;
+    const itemsArray = new Array(bundlesLength + 1);
+    
+    for (let i = 0; i < bundlesLength; i++) {
+      const reverseIndex = bundlesLength - 1 - i;
+      itemsArray[i] = {
+        id: this.bundles[reverseIndex].value,
+        quantity: 1
+      };
+    }
+    
+    const allFormData = { items: itemsArray.slice(0, bundlesLength) };
+    
+    const json = {};
+    const formEntries = Array.from(formData.entries());
+    
+    for (const [name, value] of formEntries) {
+      if (name === 'id' || name === 'quantity') {
+        json[name] = value;
+      } else {
+        allFormData[name] = value;
+      }
+    }
+    
+    allFormData.items.push(json);
+    return allFormData;
   }
 
   onSubmitHandler(event) {
-    if (document.body.classList.contains('template-cart') || theme.settings.cartType === 'page') return;
+    const hasBundles = this.bundles.length > 0;
+
+    if (!Shopify.designMode) {
+      if (document.body.classList.contains('template-cart') || theme.settings.cartType === 'page') {
+        if (hasBundles) {
+          theme.utils.postLink2(theme.routes.cart_add_url, {
+            parameters: {
+              ...this.prepareFormData(new FormData(this))
+            }
+          });
+          event.preventDefault();
+        }
+        return;
+      }
+    }
     
     event.preventDefault();
     if (this.submitButton.hasAttribute('aria-disabled')) return;
@@ -5032,20 +5155,8 @@ class ProductForm extends HTMLFormElement {
 
     config.body = formData;
 
-    if (this.bundles.length > 0) {
-      let allFormData = {
-        items: this.bundles.reverse().map(item => ({
-          id: item.value,
-          quantity: 1
-        }))
-      };
-
-      const json = {};
-      for (const [name, value] of formData.entries()) {
-        name == 'id' || name == 'quantity' ? json[name] = value : allFormData[name] = value;
-      }
-      allFormData.items.push(json);
-
+    if (hasBundles) {
+      const allFormData = this.prepareFormData(formData);
       config.body = JSON.stringify(allFormData);
       config.headers['Content-Type'] = 'application/json';
     }
@@ -5076,6 +5187,13 @@ class ProductForm extends HTMLFormElement {
           this.submitButton.setAttribute('aria-disabled', 'true');
           this.error = true;
           return;
+        }
+
+        if (Shopify.designMode) {
+          if (document.body.classList.contains('template-cart') || theme.settings.cartType === 'page') {
+            window.location.href = theme.routes.cart_url;
+            return;
+          }
         }
 
         const cartJson = await (await fetch(theme.routes.cart_url, { ...theme.utils.fetchConfig('json', 'GET')})).json();
@@ -5270,35 +5388,91 @@ class ProductBundleDetails extends AccordionDetails {
 
   cartUpdateUnsubscriber = undefined;
 
+  get productForm() {
+    return document.forms[this.getAttribute('form')];
+  }
+
+  get bundles() {
+    return Array.from(this.querySelectorAll('input[name="bundles"]:checked'));
+  }
+
   connectedCallback() {
     this.cartUpdateUnsubscriber = theme.pubsub.subscribe(theme.pubsub.PUB_SUB_EVENTS.cartUpdate, this.onCartUpdate.bind(this));
+    this.onBundleChangeListener = this.onBundleChange.bind(this);
+    this.addEventListener('change', this.onBundleChangeListener);
   }
 
   disconnectedCallback() {
     if (this.cartUpdateUnsubscriber) {
       this.cartUpdateUnsubscriber();
     }
+    this.removeEventListener('change', this.onBundleChangeListener);
   }
 
   onCartUpdate(event) {
+    if (this.bundles.length === 0) return;
+
     if (event.source === 'product-form') {
-      Array.from(this.querySelectorAll('input[name="bundles"]:checked')).forEach((input) => {
+      this.bundles.forEach((input) => {
         if (!input.disabled) input.checked = false;
       });
+      this.onBundleChange();
     }
+  }
+
+  onBundleChange() {
+    (this.productForm ?? document).dispatchEvent(new CustomEvent('bundle:change', {
+      detail: {
+        items: this.bundles.map(input => ({
+          id: input.value,
+          quantity: 1,
+          price: input.getAttribute('data-price')
+        }))
+      }
+    }));
   }
 }
 customElements.define('product-bundle-details', ProductBundleDetails, { extends: 'details' });
+
+class ProductBuyPrice extends HTMLElement {
+  constructor() {
+    super();
+  }
+
+  get productForm() {
+    return document.forms[this.getAttribute('form')];
+  }
+
+  connectedCallback() {
+    this.onBundleChangedListener = this.onBundleChanged.bind(this);
+    (this.productForm ?? document).addEventListener('bundle:change', this.onBundleChangedListener);
+  }
+
+  disconnectedCallback() {
+    (this.productForm ?? document).removeEventListener('bundle:change', this.onBundleChangedListener);
+  }
+
+  onBundleChanged(event) {
+    const { items } = event.detail;
+    let subtotal = parseInt(this.getAttribute('data-price'));
+
+    items.forEach(({ price, quantity }) => {
+      subtotal += parseInt(price) * parseInt(quantity);
+    });
+
+    this.innerHTML = theme.Currency.formatMoney(subtotal, theme.settings.currencyCodeEnabled ? theme.settings.moneyWithCurrencyFormat : theme.settings.moneyFormat);
+  }
+}
+customElements.define('product-buy-price', ProductBuyPrice);
 
 class MediaGallery extends HTMLElement {
   constructor() {
     super();
 
     Motion.inView(this, () => {
-      setTimeout(() => this.pauseAllMedia(), 500);
+      requestAnimationFrame(() => this.pauseAllMedia());
+      //setTimeout(() => this.pauseAllMedia(), 500);
     });
-
-    (this.productForm ?? document).addEventListener('variant:change', this.onVariantChanged.bind(this));
 
     this.addEventListener('lightbox:open', (event) => this.openZoom(event.detail.index));
     this.sliderGallery.addEventListener('slider:change', this.onSlideChange.bind(this));
@@ -5310,30 +5484,12 @@ class MediaGallery extends HTMLElement {
     return this.querySelector('[data-shopify-xr]');
   }
 
-  get productForm() {
-    return document.forms[this.getAttribute('form')];
-  }
-
   get sliderGallery() {
     return this.querySelector('slider-element');
   }
 
-  get sliderDots() {
-    return this.querySelector('media-dots');
-  }
-
   get mediaPreview() {
     return this.querySelector('.product__preview .product__media');
-  }
-
-  get hideVariants() {
-    return this._hideVariants = this._hideVariants || this.querySelectorAll('.product__media--variant').length > 0;
-  }
-
-  get gangOption() {
-    if (this._gangOption) return this._gangOption;
-    const mediaItemWithGang = this.sliderGallery.querySelector('[data-gang-option]');
-    return mediaItemWithGang ? this._gangOption = mediaItemWithGang.getAttribute('data-gang-option') : false;
   }
 
   get photoswipe() {
@@ -5386,36 +5542,6 @@ class MediaGallery extends HTMLElement {
     return this._photoswipe = lightbox;
   }
 
-  onVariantChanged(event) {
-    const currentVariant = event.detail.variant;
-    if (!currentVariant.featured_media) return;
-
-    const newMedia = this.sliderGallery.querySelector(`[data-media-id="${currentVariant.featured_media.id}"]`);
-    if (newMedia === null) return;
-
-    if (this.gangOption) {
-      this.sliderGallery.items.forEach((item) => item.hidden = item.getAttribute('data-gang-connect') !== newMedia.getAttribute('data-gang-connect'));
-      this.sliderGallery.reset();
-
-      if (this.sliderDots) {
-        this.sliderDots.items.forEach((item) => item.hidden = item.getAttribute('data-gang-connect') !== newMedia.getAttribute('data-gang-connect'));
-        this.sliderDots.reset();
-        this.sliderDots.resetIndexes();
-        this.sliderDots.transitionTo(1, true);
-      }
-    }
-
-    this.setActiveMedia(currentVariant.featured_media.id, this.hideVariants);
-
-    if (this.mediaPreview) {
-      this.sliderGallery.querySelectorAll('[data-media-id]').forEach((media) => media.classList.remove('xl:hidden'));
-      this.mediaPreview.parentNode.replaceChild(newMedia.cloneNode(true), this.mediaPreview);
-      newMedia.classList.add('xl:hidden');
-    }
-
-    this.countMediaGallery();
-  }
-
   onSlideChange(event) {
     const activeMedia = event.detail.currentElement;
     this.playActiveMedia(activeMedia);
@@ -5425,45 +5551,6 @@ class MediaGallery extends HTMLElement {
         this.viewInSpaceButton.setAttribute('data-shopify-model3d-id', activeMedia.getAttribute('data-media-id'));
       } else {
         this.viewInSpaceButton.setAttribute('data-shopify-model3d-id', this.viewInSpaceButton.getAttribute('data-shopify-model3d-default-id'));
-      }
-    }
-  }
-
-  setActiveMedia(mediaId, prepend) {
-    const activeMedia = this.sliderGallery.querySelector(`[data-media-id="${mediaId}"]`);
-
-    if (prepend) {
-      activeMedia.parentElement.prepend(activeMedia);
-      this.sliderGallery.reset();
-
-      if (this.sliderDots) {
-        const activeThumbnail = this.sliderDots.querySelector(`[data-media-id="${mediaId}"]`);
-        activeThumbnail.parentElement.prepend(activeThumbnail);
-        this.sliderDots.reset();
-        this.sliderDots.resetIndexes();
-      }
-    }
-    else {
-      this.sliderGallery.select(this.sliderGallery.itemsToShow.indexOf(activeMedia) + 1, true);
-    }
-
-    if (this.gangOption) {
-      this.sliderGallery.select(1, true);
-    }
-
-    if (theme.config.mqlSmall) {
-      const quickViewModal = this.closest('quick-view');
-      if (quickViewModal) {
-        quickViewModal.querySelector('.quick-view__content').scrollTo({
-          top: activeMedia.getBoundingClientRect().top,
-          behavior: theme.config.motionReduced ? 'auto' : 'smooth'
-        });
-      }
-      else {
-        window.scrollTo({
-          top: activeMedia.getBoundingClientRect().top + window.scrollY - 95,
-          behavior: theme.config.motionReduced ? 'auto' : 'smooth'
-        });
       }
     }
   }
@@ -5860,6 +5947,8 @@ class TabsElement extends HTMLElement {
 
   load() {
     const toButton = this.buttons[parseInt(this.selectedIndex)];
+    if (toButton === undefined) return;
+
     const toPanel = document.getElementById(toButton.getAttribute('aria-controls'));
     Motion.animate(toPanel, { transform: ['translateY(2rem)', 'translateY(0)'], opacity: [0, 1] }, { duration: theme.config.motionReduced ? 0 : 0.15 }).finished;
     toPanel.querySelector('motion-list')?.load();
@@ -5867,6 +5956,8 @@ class TabsElement extends HTMLElement {
 
   unload() {
     const fromButton = this.buttons[parseInt(this.selectedIndex)];
+    if (fromButton === undefined) return;
+
     const fromPanel = document.getElementById(fromButton.getAttribute('aria-controls'));
     Motion.animate(fromPanel, { transform: ['translateY(0)', 'translateY(2rem)'], opacity: [1, 0] }, { duration: theme.config.motionReduced ? 0 : 0.15 }).finished;
     fromPanel.querySelector('motion-list')?.unload();
@@ -6582,7 +6673,7 @@ class FiltersToggle extends HoverButton {
     this.addEventListener('click', this.onClick);
 
     if (theme.config.hasLocalStorage) {
-      const expanded = window.localStorage.getItem(`${theme.settings.themeName}:filters-toogle`) || 'false';
+      const expanded = window.localStorage.getItem(`${theme.settings.themeName}:filters-toggle`) || 'false';
       this.onToggle(expanded === 'true');
     }
   }
@@ -6604,11 +6695,11 @@ class FiltersToggle extends HoverButton {
     if (this.controlledElement) this.controlledElement.classList.toggle('xl:block', !expanded);
 
     if (theme.config.hasLocalStorage) {
-      window.localStorage.setItem(`${theme.settings.themeName}:filters-toogle`, expanded);
+      window.localStorage.setItem(`${theme.settings.themeName}:filters-toggle`, expanded);
     }
   }
 }
-customElements.define('filters-toogle', FiltersToggle, { extends: 'button' });
+customElements.define('filters-toggle', FiltersToggle, { extends: 'button' });
 
 class RevealBanner extends HTMLElement {
   constructor() {
@@ -7172,33 +7263,59 @@ class ScrollingBanner extends HTMLElement {
 
   onScrollHandler() {
     const scrollTop = window.scrollY;
+
+    if (this.currentScrollTop === scrollTop) return;
+    this.currentScrollTop = scrollTop;
     const offsetTop = this.getBoundingClientRect().top - parseFloat(this.stickyElement.inset);
 
-    this.media.forEach((media, index) => {
-      const mediaHeight = media.getBoundingClientRect().height;
+    const mediaElements = this.media;
+    const mediaCount = mediaElements.length;
 
-      if (index !== 0 && offsetTop < 0) {
-        const mediaScrollTop = mediaHeight * (index - 1);
+    if (offsetTop < 0) {
+      let activeIndex = 1;
+
+      // Start from second element
+      for (let i = 1; i < mediaCount; i++) {
+        const media = mediaElements[i];
+        const mediaHeight = media.getBoundingClientRect().height;
+        const mediaScrollTop = mediaHeight * (i - 1);
+
         if (Math.abs(offsetTop) > mediaScrollTop) {
+          activeIndex = i;
           let progress = 100 - Math.floor((Math.abs(offsetTop) - mediaScrollTop) / mediaHeight * 100);
           if (progress > 95) progress = 100;
           if (progress < 5) progress = 0;
 
           media.style.clipPath = `polygon(0 ${progress}%, 100% ${progress}%, 100% 100%, 0 100%)`;
-
-          const controlledElement = media.hasAttribute('aria-controls') ? document.getElementById(media.getAttribute('aria-controls')) : null;
-          if (controlledElement) {
-            if (progress === 100) controlledElement.classList.add('opacity-0', 'pointer-events-none');
-            if (progress === 0) controlledElement.classList.remove('opacity-0', 'pointer-events-none');
-          }
+          this.updateControlledElement(media, progress);
         }
         else {
           media.style.clipPath = '';
         }
       }
-    });
 
-    this.currentScrollTop = scrollTop;
+      // Update remaining elements
+      for (let i = activeIndex + 1; i < mediaCount; i++) {
+        const media = mediaElements[i];
+        this.updateControlledElement(media, 100);
+      }
+    }
+    else {
+      // Reset all elements when scrolled to top
+      for (let i = 1; i < mediaCount; i++) {
+        const media = mediaElements[i];
+        media.style.clipPath = '';
+        this.updateControlledElement(media, 100);
+      }
+    }
+  }
+
+  updateControlledElement(media, progress) {
+    const controlledElement = media.hasAttribute('aria-controls') ? document.getElementById(media.getAttribute('aria-controls')) : null;
+    if (controlledElement) {
+      if (progress === 100) controlledElement.classList.add('opacity-0', 'pointer-events-none');
+      if (progress === 0) controlledElement.classList.remove('opacity-0', 'pointer-events-none');
+    }
   }
 
   load() {
@@ -7233,11 +7350,17 @@ class SecondaryVideo extends HTMLDivElement {
   }
 
   onEnterHandler() {
-    this.videoMedia?.play();
+    const media = this.videoMedia;
+    if (media && media.hasAttribute('autoplay')) {
+      media.play();
+    }
   }
 
   onLeaveHandler() {
-    this.videoMedia?.pause();
+    const media = this.videoMedia;
+    if (media) {
+      media.pause();
+    }
   }
 }
 customElements.define('secondary-video', SecondaryVideo, { extends: 'div' });

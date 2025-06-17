@@ -5,6 +5,11 @@
   unless offset
     assign offset = 0
   endunless
+
+  assign section_rendering_api = false
+  if section.index == nil
+    assign section_rendering_api = true
+  endif
 -%}
 
 <ul class="flex flex-wrap{% unless section.settings.hover_menu %} gap-1{% endunless %} list-menu with-{{ section.settings.menu_active }}">

@@ -304,6 +304,7 @@
       "label": "t:sections.main-product.blocks.variant_picker.settings.picker_type.label"
     },
     {
+      "visible_if": "{{ section.settings.picker_type == 'button' }}",
       "type": "checkbox",
       "id": "enable_color_swatches",
       "default": true,
@@ -311,6 +312,7 @@
       "info": "t:sections.main-product.blocks.variant_picker.settings.enable_color_swatches.info"
     },
     {
+      "visible_if": "{{ section.settings.picker_type == 'button' and section.settings.enable_color_swatches == true }}",
       "type": "select",
       "id": "color_swatch_type",
       "options": [
@@ -478,6 +480,7 @@
       "label": "t:sections.global.settings.highlighted_text.label"
     },
     {
+      "visible_if": "{{ section.settings.highlighted_text == 'scribble' }}",
       "type": "select",
       "id": "highlighted_scribble",
       "options": [

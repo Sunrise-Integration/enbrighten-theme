@@ -257,12 +257,16 @@
             {%- if show_price -%}
               <div id="BuyButtonPrice-{{ section.id }}-{{ product.id }}" class="flex">
                 <span class="relative">&nbsp;&nbsp;-&nbsp;&nbsp;</span>
-                {%- liquid
-                  if product == null
-                    assign placeholder = true
-                  endif
-                  render 'product-price', product: product, placeholder: placeholder, use_variant: true
-                -%}
+                <product-buy-price class="price" data-price="{{ product.selected_or_first_available_variant.price }}" form="{{ product_form_id }}">
+                  {%- liquid
+                    assign price = product.selected_or_first_available_variant.price | default: 1999
+                    if settings.currency_code_enabled
+                      echo price | money_with_currency
+                    else
+                      echo price | money
+                    endif
+                  -%}
+                </product-buy-price>
               </div>
             {%- endif -%}
           </span>

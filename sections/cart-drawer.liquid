@@ -743,6 +743,7 @@
       "default": false
     },
     {
+      "visible_if": "{{ section.settings.show_free_shipping_bar == true }}",
       "type": "text",
       "id": "free_shipping_minimum_amount",
       "default": "100",
@@ -761,12 +762,14 @@
       "default": true
     },
     {
+      "visible_if": "{{ section.settings.cart_recommendations_enabled == true }}",
       "type": "text",
       "id": "cart_recommendations_heading",
       "default": "You may also like",
       "label": "t:sections.global.settings.heading.label"
     },
     {
+      "visible_if": "{{ section.settings.cart_recommendations_enabled == true }}",
       "type": "range",
       "id": "cart_recommendations_limit",
       "min": 1,
@@ -776,18 +779,21 @@
       "label": "t:sections.global.settings.product_limit.label"
     },
     {
+      "visible_if": "{{ section.settings.cart_recommendations_enabled == true }}",
       "type": "checkbox",
       "id": "show_cart_recommendations_vendor",
       "label": "t:sections.global.settings.show_vendor.label",
       "default": false
     },
     {
+      "visible_if": "{{ section.settings.cart_recommendations_enabled == true }}",
       "type": "checkbox",
       "id": "show_cart_recommendations_price",
       "label": "t:sections.global.settings.show_price.label",
       "default": true
     },
     {
+      "visible_if": "{{ section.settings.cart_recommendations_enabled == true }}",
       "type": "product_list",
       "id": "cart_recommendations_products",
       "label": "t:sections.cart-drawer.settings.cart_recommendations_products.label",
@@ -818,12 +824,14 @@
       "default": true
     },
     {
+      "visible_if": "{{ section.settings.recent_products_enabled == true }}",
       "type": "text",
       "id": "recent_products_heading",
       "default": "Recently viewed",
       "label": "t:sections.global.settings.heading.label"
     },
     {
+      "visible_if": "{{ section.settings.recent_products_enabled == true }}",
       "type": "range",
       "id": "recent_products_limit",
       "min": 1,
@@ -833,12 +841,14 @@
       "label": "t:sections.global.settings.product_limit.label"
     },
     {
+      "visible_if": "{{ section.settings.recent_products_enabled == true }}",
       "type": "checkbox",
       "id": "show_recent_products_vendor",
       "label": "t:sections.global.settings.show_vendor.label",
       "default": false
     },
     {
+      "visible_if": "{{ section.settings.recent_products_enabled == true }}",
       "type": "checkbox",
       "id": "show_recent_products_price",
       "label": "t:sections.global.settings.show_price.label",

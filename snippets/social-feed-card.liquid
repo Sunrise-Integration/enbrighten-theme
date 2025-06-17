@@ -9,6 +9,11 @@
   if section.index == nil
     assign section_rendering_api = true
   endif
+
+  if block.settings.video != blank
+    assign autoplay = block.settings.enable_video_autoplay
+    assign loop = block.settings.enable_video_looping
+  endif
 -%}
 <div class="card media-card media-card--{{ settings.card_style }} media-card--overlap" id="shopify-block-{{ block.id }}">
   <div class="product-card__media flex flex-col w-full h-full relative"{% if block.settings.video_on_hover and block.settings.video != blank %} is="secondary-video"{% endif %}>
@@ -22,33 +27,36 @@
             echo placeholder | placeholder_svg_tag: 'placeholder'
           endif
         -%}
-        {%- if block.settings.video != blank -%}
-          <video-media class="absolute top-0 left-0 w-full h-full hidden md:block opacity-0 pointer-events-none">
-            {{- block.settings.video | video_tag: playsinline: true, muted: true, autoplay: false, loop: true, controls: false, preload: 'none', image_size: '1x' -}}
-          </video-media>
-        {%- endif -%}
-      {%- else -%}
-        {%- liquid
-          assign video_alt = block.settings.video.alt | default: block.settings.image.alt
-          assign alt = 'general.accessibility.load_video' | t: description: video_alt | escape
-          assign preview_image = block.settings.video.preview_image | default: block.settings.image
-
-          capture poster
-            if preview_image != blank
-              echo preview_image | image_url: width: preview_image.width | image_tag: loading: 'lazy', widths: '180,360,540,720,900,1080', sizes: sizes, is: 'lazy-image', class: 'inline-block', alt: alt
-            else
-              echo 'lifestyle-1' | placeholder_svg_tag: 'placeholder'
-            endif
-          endcapture
-        -%}
-        <video-media class="block" style="--aspect-ratio: {{ block.settings.video.aspect_ratio }}" autoplay>
-          {{- poster -}}
-          <template>
-            {{- block.settings.video | video_tag: playsinline: true, muted: true, autoplay: true, loop: true, controls: false, preload: 'none', image_size: '1x' -}}
-          </template>
+      {%- endif -%}
+      
+      {%- if block.settings.video != blank -%}
+        <video-media class="block{% if block.settings.video_on_hover %} absolute top-0 left-0 w-full h-full opacity-0 pointer-events-none{% endif %}" style="--aspect-ratio: {{ block.settings.video.aspect_ratio }}"{% if autoplay %} autoplay{% endif %}>
+          {%- if autoplay -%}
+            {{- block.settings.video | video_tag: playsinline: false, muted: autoplay, autoplay: autoplay, loop: loop, controls: false, preload: 'none', image_size: '1x' -}}
+          {%- else -%}
+            {%- liquid
+              assign video_alt = block.settings.video.alt | default: block.settings.image.alt
+              assign alt = 'general.accessibility.load_video' | t: description: video_alt | escape
+              assign poster = block.settings.video.preview_image | default: block.settings.image
+            -%}
+            {{- poster | image_url: width: preview_image.width | image_tag: loading: 'lazy', widths: '180,360,540,720,900,1080', sizes: sizes, is: 'lazy-image', class: 'inline-block', alt: alt -}}
+            <template>
+              {{- block.settings.video | video_tag: playsinline: false, muted: autoplay, autoplay: autoplay, loop: loop, controls: false, preload: 'none', image_size: '1x' -}}
+            </template>
+          {%- endif -%}
+          
+          {%- unless autoplay -%}
+            <button type="button" id="DeferredPoster-{{ block.settings.video.id }}" class="deferred-poster absolute top-0 left-0 w-full h-full" aria-label="{{ 'general.accessibility.play_video' | t | escape }}">
+              <span class="play-button absolute flex items-center justify-center rounded-full pointer-events-auto z-10">
+                {%- render 'icon', icon: 'play' -%}
+                {%- render 'icon', icon: 'pause' -%}
+              </span>
+            </button>
+          {%- endunless -%}
         </video-media>
       {%- endif -%}
-      <div class="badges z-2 absolute grid gap-3 pointer-events-none">
+
+      <div class="badges absolute grid gap-3 pointer-events-none">
         {%- render 'icon-brand', icon: 'instagram', size: 'lg' -%}
       </div>
     </div>
@@ -87,12 +95,34 @@
           {%- endfor -%}
         {%- endif -%}
       </div>
-      <button type="button" class="media-card__button"{% unless section_rendering_api %} is="api-button" data-id="SocialFeed-{{ section.id }}-{{ block.id }}" data-section-id="{{ section.id }}"{% endunless %}>
-        <hover-element class="button button--primary button--blur w-full" aria-controls="SocialFeed-{{ section.id }}-{{ block.id }}">
-          <span class="btn-fill" data-fill></span>
-          <span class="btn-text">{{ 'products.product.shop_the_look' | t }}</span>
-        </hover-element>
-      </button>
+      {%- capture feed_button_text -%}
+        {%- liquid
+          if block.settings.button_label == blank
+            echo 'products.product.shop_the_look' | t | escape
+          else
+            echo block.settings.button_label | escape
+          endif
+          if block.settings.button_icon
+            render 'icon', icon: 'arrow-right', size: 'sm', class: 'transform'
+          endif
+        -%}
+      {%- endcapture -%}
+      {%- if block.settings.button_link == blank -%}
+        <button class="media-card__button relative" type="button"{% unless section_rendering_api %} is="api-button" data-id="SocialFeed-{{ section.id }}-{{ block.id }}" data-section-id="{{ section.id }}"{% endunless %} aria-controls="SocialFeed-{{ section.id }}-{{ block.id }}">
+          <hover-element class="button button--primary button--blur icon-with-text w-full">
+            <span class="btn-fill" data-fill></span>
+            <span class="btn-text">{{ feed_button_text }}</span>
+          </hover-element>
+        </button>
+      {%- else -%}
+        <a class="media-card__button relative" href="{{ block.settings.button_link }}"{% if block.settings.button_external %} target="_blank" rel="noopener"{% endif %}>
+          <hover-element class="button button--primary button--blur icon-with-text w-full">
+            <span class="btn-fill" data-fill></span>
+            <span class="btn-text">{{ feed_button_text }}</span>
+          </hover-element>
+          <button type="button" class="absolute top-0 left-0 w-full h-full invisible pointer-events-none"{% unless section_rendering_api %} is="api-button" data-id="SocialFeed-{{ section.id }}-{{ block.id }}" data-section-id="{{ section.id }}"{% endunless %} tabindex="-1"></button>
+        </a>
+      {%- endif -%}
     </div>
 
     {%- unless section_rendering_api -%}
@@ -277,7 +307,7 @@
               
                               {%- if block.settings.account_button != blank -%}
                                 <p>
-                                  <a class="button button--secondary button--sm"{% if block.settings.account_link != blank %} href="{{ block.settings.account_link }}"{% if block.settings.button_external %} target="_blank" rel="noopener"{% endif %}{% else %} role="link" aria-disabled="true"{% endif %} is="hover-link">
+                                  <a class="button button--secondary button--sm"{% if block.settings.account_link != blank %} href="{{ block.settings.account_link }}"{% if block.settings.account_link_external %} target="_blank" rel="noopener"{% endif %}{% else %} role="link" aria-disabled="true"{% endif %} is="hover-link">
                                     <span class="btn-fill" data-fill></span>
                                     <span class="btn-text">{{ block.settings.account_button }}</span>
                                   </a>

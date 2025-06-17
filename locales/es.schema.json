@@ -1852,6 +1852,9 @@
             "target_link": {
               "label": "Enlace de destino"
             },
+            "promo_image_ratio": {
+              "info": "Solo para móvil."
+            },
             "header__tab_1": {
               "content": "Pestaña 1"
             },
@@ -2956,6 +2959,15 @@
             },
             "opened": {
               "label": "Mostrar inicialmente como abierto"
+            },
+            "style": {
+              "options__1": {
+                "label": "Con borde"
+              },
+              "options__2": {
+                "label": "Con fondo"
+              },
+              "label": "Estilo"
             }
           }
         },
@@ -3052,6 +3064,9 @@
             "metafield": {
               "label": "Metacampo",
               "info": "Introduzca el espacio de nombres y clave del metacampo que albergue el valor. P. ej.: custom.bundle"
+            },
+            "clickable": {
+              "label": "Habilitar elementos clicables"
             }
           }
         },

@@ -1852,6 +1852,9 @@
             "target_link": {
               "label": "Target link"
             },
+            "promo_image_ratio": {
+              "info": "Just for mobile."
+            },
             "header__tab_1": {
               "content": "Tab 1"
             },
@@ -2956,6 +2959,15 @@
             },
             "opened": {
               "label": "Initially display as opened"
+            },
+            "style": {
+              "options__1": {
+                "label": "With border"
+              },
+              "options__2": {
+                "label": "With background"
+              },
+              "label": "Style"
             }
           }
         },
@@ -3052,6 +3064,9 @@
             "metafield": {
               "label": "Metafield",
               "info": "Enter namespace and key of the metafield holding the value. Eg.: custom.bundle"
+            },
+            "clickable": {
+              "label": "Enable clickable items"
             }
           }
         },

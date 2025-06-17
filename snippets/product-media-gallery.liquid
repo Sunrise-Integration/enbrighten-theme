@@ -261,7 +261,7 @@
 </media-gallery>
 
 {%- if spinning_block != blank and spinning_block.settings.text != blank -%}
-  <spinning-text class="product__spinning text-xs md:text-base lg:text-lg uppercase flex items-center justify-center absolute top-0 z-10" data-string="{{ spinning_block.settings.text | escape }}">
+  <spinning-text class="product__spinning text-xs md:text-base lg:text-lg uppercase flex items-center justify-center absolute top-0 z-10 pointer-events-none" data-string="{{ spinning_block.settings.text | escape }}" style="--char-count: {{ spinning_block.settings.text.size | plus: 1 }}">
     {%- render 'icon', icon: 'thumbs-up', class: 'absolute' -%}
   </spinning-text>
 {%- endif -%}

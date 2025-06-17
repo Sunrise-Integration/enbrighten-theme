@@ -1852,6 +1852,9 @@
             "target_link": {
               "label": "Ziellink"
             },
+            "promo_image_ratio": {
+              "info": "Nur für Mobilgeräte."
+            },
             "header__tab_1": {
               "content": "Tab 1"
             },
@@ -2956,6 +2959,15 @@
             },
             "opened": {
               "label": "Wird zunächst im geöffneten Zustand angezeigt"
+            },
+            "style": {
+              "options__1": {
+                "label": "Mit Umrandung"
+              },
+              "options__2": {
+                "label": "Mit Hintergrund"
+              },
+              "label": "Optik"
             }
           }
         },
@@ -3052,6 +3064,9 @@
             "metafield": {
               "label": "Metafeld",
               "info": "Geben Sie den Namensraum und den Schlüssel des Metafeldes ein, welches den Wert enthält. Beispiel: custom.bundle"
+            },
+            "clickable": {
+              "label": "Aktivieren Sie anklickbare Elemente"
             }
           }
         },

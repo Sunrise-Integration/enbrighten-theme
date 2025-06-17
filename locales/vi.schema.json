@@ -1852,6 +1852,9 @@
             "target_link": {
               "label": "Liên kết mục tiêu"
             },
+            "promo_image_ratio": {
+              "info": "Chỉ dành cho di động."
+            },
             "header__tab_1": {
               "content": "Thẻ 1"
             },
@@ -2956,6 +2959,15 @@
             },
             "opened": {
               "label": "Mặc định hiển thị mở"
+            },
+            "style": {
+              "options__1": {
+                "label": "Có viền"
+              },
+              "options__2": {
+                "label": "Có nền"
+              },
+              "label": "Kiểu"
             }
           }
         },
@@ -3052,6 +3064,9 @@
             "metafield": {
               "label": "Trường thông tin",
               "info": "Nhập không gian tên và khóa của trường thông tin chứa giá trị. Ví dụ: custom.bundle"
+            },
+            "clickable": {
+              "label": "Bật các mục có thể nhấp"
             }
           }
         },

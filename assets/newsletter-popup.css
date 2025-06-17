@@ -16,7 +16,7 @@
 }
 
 @media screen and (max-width: 639px) {
-  html.js .newsletter-modal .drawer__inner {
+  .js .newsletter-modal .drawer__inner {
     height: auto;
   }
 }

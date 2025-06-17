@@ -1852,6 +1852,9 @@
             "target_link": {
               "label": "Collegamento di destinazione"
             },
+            "promo_image_ratio": {
+              "info": "Solo per mobile."
+            },
             "header__tab_1": {
               "content": "Tab 1"
             },
@@ -2956,6 +2959,15 @@
             },
             "opened": {
               "label": "Inizialmente visualizzato come aperto"
+            },
+            "style": {
+              "options__1": {
+                "label": "Con bordo"
+              },
+              "options__2": {
+                "label": "Con sfondo"
+              },
+              "label": "Stile"
             }
           }
         },
@@ -3052,6 +3064,9 @@
             "metafield": {
               "label": "Metafield",
               "info": "Inserisci spazio dei nomi e chiave del metafield contenente il valore. Esempio: custom.bundle"
+            },
+            "clickable": {
+              "label": "Abilita gli elementi cliccabili"
             }
           }
         },

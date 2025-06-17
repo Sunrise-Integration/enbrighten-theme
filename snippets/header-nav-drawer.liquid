@@ -68,14 +68,14 @@
                         </div>
                       </div>
                       <div class="drawer__sticky w-full">
-                        <button class="button button--primary icon-with-text w-full" type="submit" is="hover-button">
+                        <a class="button button--primary icon-with-text w-full" href="{{ block.settings[tab_target_link].url }}" is="hover-link">
                           <span class="btn-fill" data-fill></span>
                           <span class="btn-text">
                             {{ 'collections.subcollections.all_products' | t: collection: tab_target_heading }}
                             ({{ block.settings[tab_target_link].object.all_products_count }})
                             {%- render 'icon', icon: 'arrow-right', size: 'sm', class: 'transform' -%}
                           </span>
-                        </button>
+                        </a>
                       </div>
                     </div>
                   </details>
@@ -194,6 +194,14 @@
                 {%- endif -%}
               {%- endfor -%}
             </ul>
+          </li>
+        {%- endif -%}
+        {%- if block.settings.button_label != blank -%}
+          <li class="mega-menu__footer">
+            <a class="button button--primary icon-with-text w-full"{% if block.settings.button_link != blank %} href="{{ block.settings.button_link }}"{% if block.settings.button_external %} target="_blank" rel="noopener"{% endif %}{% else %} role="link" aria-disabled="true"{% endif %} is="hover-link">
+              <span class="btn-fill" data-fill></span>
+              <span class="btn-text">{{ block.settings.button_label | escape }}</span>
+            </a>
           </li>
         {%- endif -%}
       </ul>
