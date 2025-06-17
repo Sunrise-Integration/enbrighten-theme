@@ -696,6 +696,7 @@
           "label": "t:sections.global.settings.highlighted_text.label"
         },
         {
+          "visible_if": "{{ block.settings.highlighted_text == 'scribble' }}",
           "type": "select",
           "id": "highlighted_scribble",
           "options": [
@@ -803,6 +804,7 @@
           "label": "t:sections.global.settings.text_size.label"
         },
         {
+          "visible_if": "{{ block.settings.text_size == 'subtext-custom' }}",
           "type": "range",
           "id": "text_max_size",
           "default": 32,
@@ -876,6 +878,7 @@
           "label": "t:sections.global.settings.highlighted_text.label"
         },
         {
+          "visible_if": "{{ block.settings.highlighted_text == 'scribble' }}",
           "type": "select",
           "id": "highlighted_scribble",
           "options": [
@@ -1249,7 +1252,7 @@
           "id": "icon_width",
           "label": "t:sections.global.settings.icon_width.label",
           "default": 48,
-          "min": 20,
+          "min": 10,
           "max": 120,
           "step": 2,
           "unit": "px"
@@ -1282,6 +1285,7 @@
           "label": "t:sections.global.settings.image_width.label"
         },
         {
+          "visible_if": "{{ block.settings.image_width == 'custom' }}",
           "type": "range",
           "id": "image_max_width",
           "label": "t:sections.global.settings.image_max_width.label",
@@ -1292,6 +1296,7 @@
           "unit": "px"
         },
         {
+          "visible_if": "{{ block.settings.image_width == 'custom' }}",
           "type": "range",
           "id": "image_max_width_mobile",
           "label": "t:sections.global.settings.image_max_width_mobile.label",

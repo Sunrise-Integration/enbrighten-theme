@@ -377,39 +377,46 @@
           "default": false
         },
         {
+          "visible_if": "{{ block.settings.type == 'checkbox' }}",
           "type": "header",
           "content": "t:sections.main-register.blocks.custom_field.settings.header__checkbox.content",
           "info": "t:sections.main-register.blocks.custom_field.settings.header__checkbox.info"
         },
         {
+          "visible_if": "{{ block.settings.type == 'checkbox' }}",
           "type": "text",
           "id": "checked_value",
           "label": "t:sections.main-register.blocks.custom_field.settings.checked_value.label",
           "default": "Yes"
         },
         {
+          "visible_if": "{{ block.settings.type == 'checkbox' }}",
           "type": "text",
           "id": "unchecked_value",
           "label": "t:sections.main-register.blocks.custom_field.settings.unchecked_value.label",
           "default": "No"
         },
         {
+          "visible_if": "{{ block.settings.type == 'radio' }}",
           "type": "header",
           "content": "t:sections.main-register.blocks.custom_field.settings.header__radio.content",
           "info": "t:sections.main-register.blocks.custom_field.settings.header__radio.info"
         },
         {
+          "visible_if": "{{ block.settings.type == 'radio' }}",
           "type": "text",
           "id": "radio_options",
           "label": "t:sections.main-register.blocks.custom_field.settings.options.label",
           "info": "t:sections.main-register.blocks.custom_field.settings.options.info"
         },
         {
+          "visible_if": "{{ block.settings.type == 'select' }}",
           "type": "header",
           "content": "t:sections.main-register.blocks.custom_field.settings.header__dropdown.content",
           "info": "t:sections.main-register.blocks.custom_field.settings.header__dropdown.info"
         },
         {
+          "visible_if": "{{ block.settings.type == 'select' }}",
           "type": "text",
           "id": "select_options",
           "label": "t:sections.main-register.blocks.custom_field.settings.options.label",

@@ -1,19 +1,4 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin language editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
-   "cart": {
-    "general": {
-      "discount_code": "Discount code",
-      "apply_discount": "Apply discount"
-    }
-  },
   "general": {
     "accessibility": {
       "skip_to_content": "Skip to content",
@@ -40,7 +25,7 @@
     },
     "404": {
       "title": "Page not found",
-      "subtext_html": "Looks like the page you're looking for no longer exists.<br>Try going back to the previous page or to the pages below.",
+      "subtext_html": "Looks like the page you're looking for no longer exists.\u003cbr\u003eTry going back to the previous page or to the pages below.",
       "back_to_home": "Go to the home page",
       "continue_shopping": "Continue shopping"
     },
@@ -60,7 +45,7 @@
       "login_form_password": "Password",
       "login_form_error": "Wrong password!",
       "login_form_submit": "Enter",
-      "admin_link_html": "Are you the store owner? <a href=\"/admin\" class=\"link\">Log in here</a>",
+      "admin_link_html": "Are you the store owner? \u003ca href=\"\/admin\" class=\"link\"\u003eLog in here\u003c\/a\u003e",
       "powered_by_shopify_html": "This shop will be powered by {{ shopify }}"
     },
     "breadcrumbs": {
@@ -143,7 +128,7 @@
       "shipping_calculator": {
         "title": "Shipping",
         "caption": "Estimate shipping rates",
-        "tooltip": "Shipping & taxes will be calculated at checkout",
+        "tooltip": "Shipping \u0026 taxes will be calculated at checkout",
         "button": "Calculate",
         "error": "One or more errors occurred while retrieving the shipping rates:",
         "not_found": "Sorry, we do not ship to your address.",
@@ -188,8 +173,8 @@
       "view_details": "View details",
       "address_error": "Error looking up that address",
       "address_no_results": "No results for that address",
-      "address_query_limit_html": "You have exceeded the Google API usage limit. Consider upgrading to a <a href=\"https://developers.google.com/maps/premium/usage-limits\">Premium Plan</a>.",
-      "auth_error_html": "There was a problem authenticating your Google Maps account. Create and enable the <a href=\"https://developers.google.com/maps/documentation/javascript/get-api-key\">JavaScript API</a> and  <a href=\"https://developers.google.com/maps/documentation/geocoding/get-api-key\">Geocoding API</a> permissions of your app."
+      "address_query_limit_html": "You have exceeded the Google API usage limit. Consider upgrading to a \u003ca href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\"\u003ePremium Plan\u003c\/a\u003e.",
+      "auth_error_html": "There was a problem authenticating your Google Maps account. Create and enable the \u003ca href=\"https:\/\/developers.google.com\/maps\/documentation\/javascript\/get-api-key\"\u003eJavaScript API\u003c\/a\u003e and  \u003ca href=\"https:\/\/developers.google.com\/maps\/documentation\/geocoding\/get-api-key\"\u003eGeocoding API\u003c\/a\u003e permissions of your app."
     },
     "slideshow": {
       "play_slideshow": "Play slideshow",
@@ -204,7 +189,7 @@
     "quick_order_list": {
       "product_total": "Subtotal",
       "view_cart": "View cart",
-      "each": "{{ money }}/ea",
+      "each": "{{ money }}\/ea",
       "product": "Product",
       "variant": "Variant",
       "variant_total": "Variant total",
@@ -257,9 +242,9 @@
       "subtotal": "Subtotal",
       "cart_error": "There was an error while updating your cart. Please try again.",
       "cart_quantity_error_html": "You can only add {{ quantity }} of this item to your cart.",
-      "taxes_and_shipping_policy_at_checkout_html": "Taxes and <a href=\"{{ link }}\">shipping</a> calculated at checkout",
+      "taxes_and_shipping_policy_at_checkout_html": "Taxes and \u003ca href=\"{{ link }}\"\u003eshipping\u003c\/a\u003e calculated at checkout",
       "taxes_included_but_shipping_at_checkout": "Tax included and shipping calculated at checkout",
-      "taxes_included_and_shipping_policy_html": "Tax included. <a href=\"{{ link }}\">Shipping</a> calculated at checkout.",
+      "taxes_included_and_shipping_policy_html": "Tax included. \u003ca href=\"{{ link }}\"\u003eShipping\u003c\/a\u003e calculated at checkout.",
       "taxes_and_shipping_at_checkout": "Taxes included and shipping calculated at checkout.",
       "update": "Update cart",
       "checkout": "Check out",
@@ -316,10 +301,10 @@
     }
   },
   "localization": {
-    "country_label": "Country/region",
+    "country_label": "Country\/region",
     "language_label": "Language",
     "update_language": "Update language",
-    "update_country": "Update country/region"
+    "update_country": "Update country\/region"
   },
   "contact": {
     "form": {
@@ -358,9 +343,9 @@
       "address1": "Address 1",
       "address2": "Address 2",
       "city": "City",
-      "country": "Country/region",
+      "country": "Country\/region",
       "province": "Province",
-      "zip": "Postal/ZIP code",
+      "zip": "Postal\/ZIP code",
       "phone": "Phone",
       "set_default": "Set as default address",
       "add": "Add address",
@@ -473,7 +458,7 @@
       "shop_the_look": "Shop the Look",
       "vendor": "Vendor",
       "include_taxes": "Tax included.",
-      "shipping_policy_html": "<a href='{{ link }}'>Shipping</a> calculated at checkout.",
+      "shipping_policy_html": "\u003ca href='{{ link }}'\u003eShipping\u003c\/a\u003e calculated at checkout.",
       "will_not_ship_until": "Ready to ship {{ date }}",
       "will_be_in_stock_after": "Back in stock {{ date }}",
       "waiting_for_stock": "Inventory on the way",
@@ -487,7 +472,7 @@
       "regular_price": "Regular price",
       "sale_price": "Sale price",
       "unit_price": "Unit price",
-      "from_price_html": "<small>From</small> {{ price }}"
+      "from_price_html": "\u003csmall\u003eFrom\u003c\/small\u003e {{ price }}"
     },
     "media": {
       "open_media": "Open media {{ index }} in modal",
@@ -512,7 +497,7 @@
       "title": "Volume Pricing",
       "note": "Volume pricing available",
       "minimum": "{{ quantity }}+",
-      "price_at_each": "at {{ price }}/ea",
+      "price_at_each": "at {{ price }}\/ea",
       "price_range": "{{ minimum }} - {{ maximum }}"
     },
     "inventory": {

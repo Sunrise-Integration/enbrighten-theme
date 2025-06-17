@@ -244,7 +244,7 @@
       "cart_quantity_error_html": "Do koszyka możesz dodać tylko {{ quantity }} tego produktu.",
       "taxes_and_shipping_policy_at_checkout_html": "Podatki i wysyłka obliczane przy kasie",
       "taxes_included_but_shipping_at_checkout": "Podatek jest wliczony w cenę, a wysyłka obliczana przy kasie",
-      "taxes_included_and_shipping_policy_html": "",
+      "taxes_included_and_shipping_policy_html": "<a href=\"{{ link }}\">Koszt wysyłki</a> obliczony przy kasie.",
       "taxes_and_shipping_at_checkout": "Podatki są wliczone, a wysyłka obliczana przy kasie.",
       "update": "Zaktualizuj koszyk",
       "checkout": "Dokończ transakcję ",
@@ -455,6 +455,7 @@
       "view_product": "Zobacz produkt",
       "pre_order": "Przed Sprzedaż",
       "add_to_bundle": "Dodaj do pakietu",
+      "shop_the_look": "Kup Stylizację",
       "vendor": "Sprzedawca",
       "include_taxes": "Z wliczonym podatkiem.",
       "shipping_policy_html": "<a href=\"&lt;span%20class=\" notranslate>{{ link }} '&gt;Wysyłka</a> obliczana przy kasie.",
@@ -465,7 +466,7 @@
       "xr_button_label": "Zobacz w swojej przestrzeni, ładuje element w oknie rzeczywistości rozszerzonej",
       "read_more": "Zobaczyć szczegołowy opis",
       "quick_add": "Dodaj",
-      "quick_view": "Pogląd",
+      "quick_view": "Pogląd"
     },
     "price": {
       "regular_price": "Normalna cena",
@@ -504,8 +505,8 @@
       "in_stock_with_count": "{{ count }} w magazynie",
       "low_stock": "Niski poziom zapasów",
       "low_stock_with_count": {
-        "one": "Pospiesz się, w magazynie pozostało tylko {{ count }} artykułu!",
-        "other": "Pospiesz się, w magazynie pozostało tylko {{ count }} artykułów!"
+        "one": "Została już tylko {{ count }} sztuka, nie zwlekaj!",
+        "other": "Zostały już tylko {{ count }} sztuki, nie zwlekaj!"
       },
       "out_of_stock": "Obecnie brak na stanie",
       "out_of_stock_continue_selling": "W magazynie",
