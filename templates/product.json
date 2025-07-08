@@ -169,18 +169,9 @@
         "text_qMKLNQ": {
           "type": "text",
           "settings": {
-            "icon": "time",
+            "icon": "lightning",
             "icon_width": 20,
             "text": "Free and Fast Shipping Over $50",
-            "text_size": "text-base"
-          }
-        },
-        "text_efAmnx": {
-          "type": "text",
-          "settings": {
-            "icon": "phone",
-            "icon_width": 20,
-            "text": "US-Based Consumer Care Product Support from 7am-6pm CT Mon-Fri",
             "text_size": "text-base"
           }
         }
@@ -205,8 +196,7 @@
         "back_in_stock_BXELgm",
         "shop_shop_login_button_app_block_KUH6aw",
         "text_g6G9ha",
-        "text_qMKLNQ",
-        "text_efAmnx"
+        "text_qMKLNQ"
       ],
       "settings": {
         "enable_sticky_info": true,
