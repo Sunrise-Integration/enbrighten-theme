@@ -1,17 +1,15 @@
-{%- doc -%}
-  Renders pagination controls with numbered pages or infinite scroll functionality.
+{%- comment -%}
+  Renders a set of links for paginated results. Must be used within paginate tags.
 
-  Must be wrapped in Shopify's paginate tags to access paginate object.
-
-  @param {object} paginate - Shopify pagination object from {% paginate %} tags
-  @param {string} [mode] - Loading behavior ('infinite', 'click', or default)
-  @param {string} [hash] - URL fragment to append to links (e.g., '#results')
-
-  @example
-  {% paginate results by 12 %}
+  Usage:
+  {% paginate results by 2 %}
     {% render 'pagination', paginate: paginate %}
   {% endpaginate %}
-{%- enddoc -%}
+
+  Accepts:
+  - paginate: {Object}
+  - mode: {String} (optional) How additional pages of products are navigated
+{%- endcomment -%}
 
 <div class="pagination flex flex-wrap justify-center align-self-center md:gap-2 text-sm md:text-base">
   {%- if mode == 'infinite' or mode == 'click' -%}

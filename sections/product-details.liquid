@@ -29,28 +29,13 @@
             {%- if description.settings.heading != blank -%}
               <div class="heading text-base md:text-lg font-medium leading-none normal-case flex items-center gap-2d5 md:gap-3">
                 {%- if description.settings.icon_image != blank -%}
-                  {%- liquid
-                    if description.settings.iwidth == 'fit'
-                      assign icon_width = description.settings.icon_image.width
-                    else
-                      assign icon_width = description.settings.icon_width
-                    endif
-                  -%}
                   <figure class="media media--transparent relative inline-block">
-                    {%- capture sizes -%}{{ icon_width }}px{%- endcapture -%}
-                    {%- capture widths -%}{{ icon_width }}, {{ icon_width | times: 2 | at_most: description.settings.icon_image.width }}{%- endcapture -%}
-                    {%- assign image_alt = description.settings.icon_image.alt | default: description.settings.accessibility_info | escape -%}
-                    {%- assign image_alt = image_alt | default: description.settings.heading | escape -%}
-                    {{- description.settings.icon_image | image_url: width: description.settings.icon_image.width | image_tag: loading: 'lazy', sizes: sizes, widths: widths, alt: image_alt, class: 'image-fit' -}}
+                    {%- capture sizes -%}{{ description.settings.icon_width }}px{%- endcapture -%}
+                    {%- capture widths -%}{{ description.settings.icon_width }}, {{ description.settings.icon_width | times: 2 | at_most: description.settings.icon_image.width }}{%- endcapture -%}
+                    {{- description.settings.icon_image | image_url: width: description.settings.icon_image.width | image_tag: loading: 'lazy', sizes: sizes, widths: widths, class: 'image-fit' -}}
                   </figure>
                 {%- elsif description.settings.icon != 'none' -%}
-                  {%- liquid
-                    if description.settings.iwidth == 'fit'
-                      render 'icon-guarantee', icon: description.settings.icon, size: 'lg', class: 'inline-block'
-                    else
-                      render 'icon-guarantee', icon: description.settings.icon, size: 'custom', class: 'inline-block', width: description.settings.icon_width
-                    endif
-                  -%}
+                  {%- render 'icon-guarantee', icon: description.settings.icon, size: 'lg', class: 'inline-block' -%}
                 {%- endif -%}
                 {{- description.settings.heading | escape -}}
               </div>
@@ -72,28 +57,13 @@
                         <summary class="details__summary flex items-center justify-between gap-2 cursor-pointer">
                           <span class="heading text-base-xl font-medium leading-none flex items-center gap-2d5 md:gap-3">
                             {%- if block.settings.icon_image != blank -%}
-                              {%- liquid
-                                if block.settings.iwidth == 'fit'
-                                  assign icon_width = block.settings.icon_image.width
-                                else
-                                  assign icon_width = block.settings.icon_width
-                                endif
-                              -%}
                               <figure class="media media--transparent relative inline-block">
-                                {%- capture sizes -%}{{ icon_width }}px{%- endcapture -%}
-                                {%- capture widths -%}{{ icon_width }}, {{ icon_width | times: 2 | at_most: block.settings.icon_image.width }}{%- endcapture -%}
-                                {%- assign image_alt = block.settings.icon_image.alt | default: block.settings.accessibility_info | escape -%}
-                                {%- assign image_alt = image_alt | default: block.settings.heading | escape -%}
-                                {{- block.settings.icon_image | image_url: width: block.settings.icon_image.width | image_tag: loading: 'lazy', sizes: sizes, widths: widths, alt: image_alt, class: 'image-fit' -}}
+                                {%- capture sizes -%}{{ block.settings.icon_width }}px{%- endcapture -%}
+                                {%- capture widths -%}{{ block.settings.icon_width }}, {{ block.settings.icon_width | times: 2 | at_most: block.settings.icon_image.width }}{%- endcapture -%}
+                                {{- block.settings.icon_image | image_url: width: block.settings.icon_image.width | image_tag: loading: 'lazy', sizes: sizes, widths: widths, class: 'image-fit' -}}
                               </figure>
                             {%- elsif block.settings.icon != 'none' -%}
-                              {%- liquid
-                                if block.settings.iwidth == 'fit'
-                                  render 'icon-guarantee', icon: block.settings.icon, size: 'lg', class: 'inline-block'
-                                else
-                                  render 'icon-guarantee', icon: block.settings.icon, size: 'custom', class: 'inline-block', width: block.settings.icon_width
-                                endif
-                              -%}
+                              {%- render 'icon-guarantee', icon: block.settings.icon, size: 'lg', class: 'inline-block' -%}
                             {%- endif -%}
                             {{- block.settings.heading | escape -}}
                           </span>
@@ -206,28 +176,13 @@
                         <summary class="details__summary flex items-center justify-between gap-2 cursor-pointer">
                           <span class="heading text-base-xl font-medium leading-none flex items-center gap-2d5 md:gap-3">
                             {%- if block.settings.icon_image != blank -%}
-                              {%- liquid
-                                if block.settings.iwidth == 'fit'
-                                  assign icon_width = block.settings.icon_image.width
-                                else
-                                  assign icon_width = block.settings.icon_width
-                                endif
-                              -%}
                               <figure class="media media--transparent relative inline-block">
-                                {%- capture sizes -%}{{ icon_width }}px{%- endcapture -%}
-                                {%- capture widths -%}{{ icon_width }}, {{ icon_width | times: 2 | at_most: block.settings.icon_image.width }}{%- endcapture -%}
-                                {%- assign image_alt = block.settings.icon_image.alt | default: block.settings.accessibility_info | escape -%}
-                                {%- assign image_alt = image_alt | default: block.settings.heading | escape -%}
-                                {{- block.settings.icon_image | image_url: width: block.settings.icon_image.width | image_tag: loading: 'lazy', sizes: sizes, widths: widths, alt: image_alt, class: 'image-fit' -}}
+                                {%- capture sizes -%}{{ block.settings.icon_width }}px{%- endcapture -%}
+                                {%- capture widths -%}{{ block.settings.icon_width }}, {{ block.settings.icon_width | times: 2 | at_most: block.settings.icon_image.width }}{%- endcapture -%}
+                                {{- block.settings.icon_image | image_url: width: block.settings.icon_image.width | image_tag: loading: 'lazy', sizes: sizes, widths: widths, class: 'image-fit' -}}
                               </figure>
                             {%- elsif block.settings.icon != 'none' -%}
-                              {%- liquid
-                                if block.settings.iwidth == 'fit'
-                                  render 'icon-guarantee', icon: block.settings.icon, size: 'lg', class: 'inline-block'
-                                else
-                                  render 'icon-guarantee', icon: block.settings.icon, size: 'custom', class: 'inline-block', width: block.settings.icon_width
-                                endif
-                              -%}
+                              {%- render 'icon-guarantee', icon: block.settings.icon, size: 'lg', class: 'inline-block' -%}
                             {%- endif -%}
                             {{- block.settings.heading | escape -}}
                           </span>
@@ -869,31 +824,14 @@
           "label": "t:sections.global.settings.icon_image.label"
         },
         {
-          "type": "select",
-          "id": "iwidth",
-          "label": "t:sections.global.settings.icon_width.label",
-          "options": [
-            {
-              "value": "fit",
-              "label": "t:sections.global.settings.icon_width.options__1.label"
-            },
-            {
-              "value": "custom",
-              "label": "t:sections.global.settings.icon_width.options__2.label"
-            }
-          ],
-          "default": "custom"
-        },
-        {
           "type": "range",
           "id": "icon_width",
-          "label": "t:sections.global.settings.custom_width.label",
+          "label": "t:sections.global.settings.icon_width.label",
           "default": 24,
           "min": 10,
           "max": 120,
           "step": 2,
-          "unit": "px",
-          "visible_if": "{{ block.settings.iwidth == 'custom' }}"
+          "unit": "px"
         },
         {
           "type": "text",
@@ -1156,31 +1094,14 @@
           "label": "t:sections.global.settings.icon_image.label"
         },
         {
-          "type": "select",
-          "id": "iwidth",
-          "label": "t:sections.global.settings.icon_width.label",
-          "options": [
-            {
-              "value": "fit",
-              "label": "t:sections.global.settings.icon_width.options__1.label"
-            },
-            {
-              "value": "custom",
-              "label": "t:sections.global.settings.icon_width.options__2.label"
-            }
-          ],
-          "default": "custom"
-        },
-        {
           "type": "range",
           "id": "icon_width",
-          "label": "t:sections.global.settings.custom_width.label",
+          "label": "t:sections.global.settings.icon_width.label",
           "default": 24,
           "min": 10,
           "max": 120,
           "step": 2,
-          "unit": "px",
-          "visible_if": "{{ block.settings.iwidth == 'custom' }}"
+          "unit": "px"
         },
         {
           "type": "text",
@@ -1224,7 +1145,7 @@
   ],
   "presets": [
     {
-      "name": "t:sections.product-details.name",
+      "name": "t:sections.product-details.presets.name",
       "blocks": [
         {
           "type": "description"

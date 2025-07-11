@@ -78,7 +78,7 @@
         {%- endif -%}
   
         {%- assign first_read_more = section.blocks | where: 'type', 'read_more' | first -%}
-        <animate-element data-animate="fade-up" data-immediate class="product__content block w-full overflow-hidden">
+        <animate-element class="product__content block w-full overflow-hidden" data-animate="fade-up" data-immediate>
           <product-info
             id="ProductInfo-{{ section.id }}-{{ product.id }}"
             class="product__info{% if first_read_more != blank %} with-read-more{% endif %} block"
@@ -88,7 +88,6 @@
             data-product-id="{{ product.id }}"
             data-product-url="{{ product.url }}"
             data-update-url="false"
-            form="{{ product_form_id }}"
           >
             {%- for block in section.blocks -%}
               {%- case block.type -%}
@@ -96,7 +95,7 @@
                   {%- render block -%}
   
                 {%- when 'breadcrumb' -%}
-                  {%- render 'product-breadcrumb', product: product, block: block -%}
+                  {%- render 'product-breadcrumb', block: block -%}
   
                 {%- when 'text' -%}
                   {%- if block.settings.text != blank -%}
@@ -128,28 +127,13 @@
                       <div class="product__text{% if modulo == 0 %} even{% endif %}{% if prev_block.type != 'text' %} first{% endif %}{% if next_block.type != 'text' %} last{% endif %}" {{ block.shopify_attributes }}>
                         <div class="product__text-inner flex items-center gap-2d5">
                           {%- if block.settings.icon_image != blank -%}
-                            {%- liquid
-                              if block.settings.iwidth == 'fit'
-                                assign icon_width = block.settings.icon_image.width
-                              else
-                                assign icon_width = block.settings.icon_width
-                              endif
-                            -%}
-                            <figure class="media media--transparent relative inline-block">
-                              {%- capture sizes -%}{{ icon_width }}px{%- endcapture -%}
-                              {%- capture widths -%}{{ icon_width }}, {{ icon_width | times: 2 | at_most: block.settings.icon_image.width }}{%- endcapture -%}
-                              {%- assign image_alt = block.settings.icon_image.alt | default: block.settings.accessibility_info | escape -%}
-                              {%- assign image_alt = image_alt | default: block.settings.text | escape -%}
-                              {{- block.settings.icon_image | image_url: width: block.settings.icon_image.width | image_tag: loading: 'lazy', sizes: sizes, widths: widths, alt: image_alt, class: 'image-fit' -}}
+                            <figure class="media media--transparent relative">
+                              {%- capture sizes -%}{{ block.settings.icon_width }}px{%- endcapture -%}
+                              {%- capture widths -%}{{ block.settings.icon_width }}, {{ block.settings.icon_width | times: 2 | at_most: block.settings.icon_image.width }}{%- endcapture -%}
+                              {{- block.settings.icon_image | image_url: width: block.settings.icon_image.width | image_tag: loading: 'lazy', sizes: sizes, widths: widths, class: 'image-fit' -}}
                             </figure>
                           {%- elsif block.settings.icon != 'none' -%}
-                            {%- liquid
-                              if block.settings.iwidth == 'fit'
-                                render 'icon-guarantee', icon: block.settings.icon, size: 'lg', class: 'inline-block stroke-1'
-                              else
-                                render 'icon-guarantee', icon: block.settings.icon, size: 'custom', class: 'inline-block stroke-1', width: block.settings.icon_width
-                              endif
-                            -%}
+                            {%- render 'icon-guarantee', icon: block.settings.icon, size: 'lg', class: 'stroke-1' -%}
                           {%- endif -%}
                           <p class="rte {{ block.settings.text_size }} leading-tight">{{ block.settings.text }}</p>
                         </div>
@@ -178,7 +162,7 @@
                   -%}
                   <div class="product__title grid gap-3{% if price_block == blank and block.settings.show_price %} with-price{% endif %}" {{ block.shopify_attributes }}>
                     <h1 class="heading leading-none {{ block.settings.title_size }} mobile:{{ block.settings.title_size_mobile }} col-span-full">
-                      <split-words class="split-words js-invisible block" data-animate="fade-up">{{ product.title }}</split-words>
+                      <split-words class="split-words block" data-animate="fade-up">{{ product.title }}</split-words>
                     </h1>
     
                     {%- if price_block == blank and block.settings.show_price -%}
@@ -448,36 +432,30 @@
                     block: block,
                     product: product,
                     product_id: product.id,
-                    section_id: section.id,
-                    image_ratio: section.settings.image_ratio,
-                    image_ratio_mobile: section.settings.image_ratio_mobile,
-                    image_fill: settings.product_image_fill
+                    section_id: section.id
                   -%}
   
                 {%- when 'buy_buttons' -%}
                   {%- render 'buy-buttons',
                     block: block,
-                    section: section,
                     product: product,
                     product_id: product.id,
                     section_id: section.id,
                     product_form_id: product_form_id
                   -%}
-
+  
                 {%- when 'pickup_availability' -%}
                   {%- render 'pickup-availability',
                     block: block,
-                    section: section,
                     product: product,
                     product_id: product.id,
                     section_id: section.id,
                     product_form_id: product_form_id
                   -%}
-
+  
                 {%- when 'inventory' -%}
                   {%- render 'product-inventory',
                     block: block,
-                    section: section,
                     product: product,
                     product_id: product.id,
                     section_id: section.id,
@@ -502,7 +480,9 @@
                     {%- if block.settings.show_help_desk -%}
                       <div class="flex items-center gap-2">
                         {%- render 'icon', icon: 'question' -%}
-                        <a class="link text-sm leading-tight cursor-pointer"{% if block.settings.help_page != blank %} href="{{ block.settings.help_page.url }}"{% if block.settings.help_page_external %} target="_blank" rel="noopener"{% endif %}{% else %} role="link" aria-disabled="true"{% endif %}>
+                        <a class="link text-sm leading-tight cursor-pointer"
+                          {%- if block.settings.help_page != blank %} href="{{ block.settings.help_page.url }}"{% else %} role="link" aria-disabled="true"{% endif -%}
+                        >
                           {{- block.settings.help_label | escape -}}
                         </a>
                       </div>
@@ -512,7 +492,9 @@
                 {%- when 'help_desk' -%}
                   <div class="flex items-center gap-2" {{ block.shopify_attributes }}>
                     {%- render 'icon', icon: 'question' -%}
-                    <a class="link text-sm leading-tight cursor-pointer"{% if block.settings.help_page != blank %} href="{{ block.settings.help_page.url }}"{% if block.settings.help_page_external %} target="_blank" rel="noopener"{% endif %}{% else %} role="link" aria-disabled="true"{% endif %}>
+                    <a class="link text-sm leading-tight cursor-pointer"
+                      {%- if block.settings.help_page != blank %} href="{{ block.settings.help_page.url }}"{% else %} role="link" aria-disabled="true"{% endif -%}
+                    >
                       {{- block.settings.help_label | escape -}}
                     </a>
                   </div>
@@ -643,28 +625,13 @@
                         <summary class="details__summary flex items-center justify-between gap-2 cursor-pointer">
                           <div class="flex items-center gap-2d5">
                             {%- if block.settings.icon_image != blank -%}
-                              {%- liquid
-                                if block.settings.iwidth == 'fit'
-                                  assign icon_width = block.settings.icon_image.width
-                                else
-                                  assign icon_width = block.settings.icon_width
-                                endif
-                              -%}
-                              <figure class="media media--transparent relative inline-block">
-                                {%- capture sizes -%}{{ icon_width }}px{%- endcapture -%}
-                                {%- capture widths -%}{{ icon_width }}, {{ icon_width | times: 2 | at_most: block.settings.icon_image.width }}{%- endcapture -%}
-                                {%- assign image_alt = block.settings.icon_image.alt | default: block.settings.accessibility_info | escape -%}
-                                {%- assign image_alt = image_alt | default: block.settings.heading | escape -%}
-                                {{- block.settings.icon_image | image_url: width: block.settings.icon_image.width | image_tag: loading: 'lazy', sizes: sizes, widths: widths, alt: image_alt, class: 'image-fit' -}}
+                              <figure class="media media--transparent relative">
+                                {%- capture sizes -%}{{ block.settings.icon_width }}px{%- endcapture -%}
+                                {%- capture widths -%}{{ block.settings.icon_width }}, {{ block.settings.icon_width | times: 2 | at_most: block.settings.icon_image.width }}{%- endcapture -%}
+                                {{- block.settings.icon_image | image_url: width: block.settings.icon_image.width | image_tag: loading: 'lazy', sizes: sizes, widths: widths, class: 'image-fit' -}}
                               </figure>
                             {%- elsif block.settings.icon != 'none' -%}
-                              {%- liquid
-                                if block.settings.iwidth == 'fit'
-                                  render 'icon-guarantee', icon: block.settings.icon, size: 'lg', class: 'inline-block stroke-1'
-                                else
-                                  render 'icon-guarantee', icon: block.settings.icon, size: 'custom', class: 'inline-block stroke-1', width: block.settings.icon_width
-                                endif
-                              -%}
+                              {%- render 'icon-accordion', icon: block.settings.icon -%}
                             {%- endif -%}
                             <span class="text-sm-base font-medium leading-none">{{ block.settings.heading | escape }}</span>
                           </div>
@@ -738,7 +705,7 @@
                           <p class="font-medium leading-tight md:text-lg">{{ block.settings.heading | escape }}</p>
                         {%- endif -%}
                         <scroll-shadow class="product-card__spec block overflow-hidden">
-                          <div class="product-card__icons flex flex-nowrap{% unless block.settings.enable_carousel %} lg:flex-wrap{% endunless %}" is="icons-carousel" tabindex="0">
+                          <div class="product-card__icons flex flex-nowrap{% unless block.settings.enable_carousel %} lg:flex-wrap{% endunless %}">
                             {%- for item in metafield.value -%}
                               <div class="product-card__icon shrink-0">
                                 <div class="flex flex-col items-center md:flex-row md:items-start gap-2">
@@ -759,7 +726,7 @@
                           </div>
                           <template>
                             <slot></slot>
-                            <s dir="{% render 'direction' %}" style="--t: 0;--b: 0;--l: 0;--r: 0;">
+                            <s dir="{% render 'direction' %}" style="--t: 0; --b: 0; --l: 0; --r: 0;">
                               <span class="l"></span>
                               <span class="r"></span>
                             </s>
@@ -867,7 +834,7 @@
                                 <option value="{{ option_2 }}">{{ option_2 }}</option>
                               {%- endfor -%}
                             </select>
-                            {%- render 'icon', icon: 'chevron-up', size: 'sm', class: 'absolute pointer-events-none' -%}
+                            {%- render 'icon', icon: 'chevron-up', size: 'sm', class: 'absolute' -%}
                           {%- endif -%}
                           <label class="label{% if options.size > 0 %} is-floating{% endif %}" for="LineItemInput-{{ section.id }}-{{ product.id }}-{{ block.id }}">{{ block.settings.title | escape }}</label>
                       {%- endcase -%}
@@ -1232,31 +1199,14 @@
           "label": "t:sections.global.settings.icon_image.label"
         },
         {
-          "type": "select",
-          "id": "iwidth",
-          "label": "t:sections.global.settings.icon_width.label",
-          "options": [
-            {
-              "value": "fit",
-              "label": "t:sections.global.settings.icon_width.options__1.label"
-            },
-            {
-              "value": "custom",
-              "label": "t:sections.global.settings.icon_width.options__2.label"
-            }
-          ],
-          "default": "custom"
-        },
-        {
           "type": "range",
           "id": "icon_width",
-          "label": "t:sections.global.settings.custom_width.label",
-          "default": 24,
+          "label": "t:sections.global.settings.icon_width.label",
+          "default": 20,
           "min": 10,
           "max": 120,
           "step": 2,
-          "unit": "px",
-          "visible_if": "{{ block.settings.iwidth == 'custom' }}"
+          "unit": "px"
         },
         {
           "type": "inline_richtext",
@@ -1742,13 +1692,6 @@
           "type": "page",
           "id": "help_page",
           "label": "t:sections.main-product.blocks.help_desk.settings.help_page.label"
-        },
-        {
-          "visible_if": "{{ block.settings.show_help_desk == true }}",
-          "type": "checkbox",
-          "id": "help_page_external",
-          "label": "t:sections.global.settings.button_external.label",
-          "default": false
         }
       ]
     },
@@ -1767,12 +1710,6 @@
           "type": "page",
           "id": "help_page",
           "label": "t:sections.main-product.blocks.help_desk.settings.help_page.label"
-        },
-        {
-          "type": "checkbox",
-          "id": "help_page_external",
-          "label": "t:sections.global.settings.button_external.label",
-          "default": false
         }
       ]
     },
@@ -2447,31 +2384,14 @@
           "label": "t:sections.global.settings.icon_image.label"
         },
         {
-          "type": "select",
-          "id": "iwidth",
-          "label": "t:sections.global.settings.icon_width.label",
-          "options": [
-            {
-              "value": "fit",
-              "label": "t:sections.global.settings.icon_width.options__1.label"
-            },
-            {
-              "value": "custom",
-              "label": "t:sections.global.settings.icon_width.options__2.label"
-            }
-          ],
-          "default": "custom"
-        },
-        {
           "type": "range",
           "id": "icon_width",
-          "label": "t:sections.global.settings.custom_width.label",
+          "label": "t:sections.global.settings.icon_width.label",
           "default": 20,
           "min": 10,
           "max": 120,
           "step": 2,
-          "unit": "px",
-          "visible_if": "{{ block.settings.iwidth == 'custom' }}"
+          "unit": "px"
         },
         {
           "type": "text",

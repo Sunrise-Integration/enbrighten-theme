@@ -7,38 +7,9 @@ if (!customElements.get('facet-form')) {
 
         this.dirty = false;
         this.cachedMap = new Map();
-        this.isMobile = theme.config.mqlSmall || theme.config.isTouch;
-        this.motionReduced = theme.config.motionReduced || this.hasAttribute('motion-reduced');
 
         this.addEventListener('change', this.onFormChange);
         this.addEventListener('submit', this.onFormSubmit);
-      }
-
-      getAnimationParams() {
-        return {
-          distance: this.isMobile ? 30 : 50,
-          duration: this.motionReduced ? 0 : (this.isMobile ? 0.3 : 0.5),
-          staggerDelay: this.motionReduced ? 0 : (this.isMobile ? 0.05 : 0.1)
-        };
-      }
-
-      getVisibleItems(items) {
-        const viewportHeight = window.innerHeight + window.scrollY;
-        const visible = [];
-        const invisible = [];
-        
-        items.forEach(item => {
-          const rect = item.getBoundingClientRect();
-          const isVisible = rect.top < viewportHeight && rect.bottom > 0;
-          
-          if (isVisible) {
-            visible.push(item);
-          } else {
-            invisible.push(item);
-          }
-        });
-        
-        return { visible, invisible };
       }
 
       onFormChange() {
@@ -80,16 +51,12 @@ if (!customElements.get('facet-form')) {
       beforeRenderSection() {
         const container = document.getElementById('ProductGridContainer');
         const items = container.querySelectorAll('.product-card');
-
-        const { distance, duration, staggerDelay } = this.getAnimationParams();
-        const { visible: visibleItems, invisible: inVisibleItems } = this.getVisibleItems(items);
+        const translateY = theme.config.motionReduced ? 0 : 50;
 
         Motion.timeline([
-          [visibleItems, { y: distance, opacity: 0, visibility: 'hidden' }, { duration: duration, delay: Motion.stagger(staggerDelay) }],
-          [inVisibleItems, { y: distance, opacity: 0, visibility: 'hidden' }, { duration: duration }],
-          [container, { y: distance, opacity: 0 }, { duration: duration, easing: 'linear' }]
+          [items, { y: translateY, opacity: 0, visibility: 'hidden' }, { duration: 0.5, delay: theme.config.motionReduced ? 0 : Motion.stagger(0.1) }],
+          [container, { y: translateY, opacity: 0 }, { duration: 0.5, easing: 'linear' }],
         ]);
-        items.forEach(item => item.style.removeProperty('transform'));
 
         setTimeout(() => {
           const target = document.querySelector('.collection');
@@ -106,16 +73,12 @@ if (!customElements.get('facet-form')) {
       afterRenderSection() {
         const container = document.getElementById('ProductGridContainer');
         const items = container.querySelectorAll('.product-card');
-
-        const { distance, duration, staggerDelay } = this.getAnimationParams();
-        const { visible: visibleItems, invisible: inVisibleItems } = this.getVisibleItems(items);
+        const translateY = theme.config.motionReduced ? 0 : 50;
 
         Motion.timeline([
-          [container, { y: [distance, 0], opacity: [0, 1] }, { duration: duration, easing: 'linear' }],
-          [visibleItems, { y: [distance, 0], opacity: [0, 1], visibility: ['hidden', 'visible'] }, { duration: duration, delay: Motion.stagger(staggerDelay) }],
-          [inVisibleItems, { y: [distance, 0], opacity: [0, 1], visibility: ['hidden', 'visible'] }, { duration: duration }]
+          [container, { y: [translateY, 0], opacity: [0, 1] }, { duration: 0.5, easing: 'linear' }],
+          [items, { y: [translateY, 0], opacity: [0, 1], visibility: ['hidden', 'visible'] }, { duration: 0.5, delay: theme.config.motionReduced ? 0 : Motion.stagger(0.1) }],
         ]);
-        items.forEach(item => item.style.removeProperty('transform'));
 
         const drawer = document.getElementById('FacetDrawer');
         if (drawer) drawer.classList.remove('loading');

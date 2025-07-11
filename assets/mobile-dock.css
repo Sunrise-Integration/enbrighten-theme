@@ -93,8 +93,7 @@
   .header-sticky.header-hidden~.mobile-dock-section .mobile-dock,
   .mobile-dock-section.active .mobile-dock,
   .mobile-dock-section.shopify-active .mobile-dock,
-  .mobile-dock-section .mobile-dock.active,
-  .mobile-dock-section .mobile-dock:has(> .dock__item:focus-visible) {
+  .mobile-dock-section .mobile-dock.active {
     transform: translateY(0)
   }
 

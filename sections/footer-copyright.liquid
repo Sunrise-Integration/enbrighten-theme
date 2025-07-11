@@ -60,10 +60,7 @@
                 {{- 'localization.language_label' | t -}}
               </label>
               {%- render 'icon', icon: 'language', size: 'xs', class: 'stroke-1 absolute pointer-events-none' -%}
-              <button type="button" class="localization__item cursor-pointer leading-tight w-full">
-                {%- unless section_rendering_api -%}
-                  <api-button class="api-only" data-id="FooterLocalizationLanguageList" data-section-id="{{ section.id }}"></api-button>
-                {%- endunless -%}
+              <button type="button" class="localization__item cursor-pointer leading-tight w-full"{% unless section_rendering_api %} is="api-button" data-id="FooterLocalizationLanguageList" data-section-id="{{ section.id }}"{% endunless %}>
                 {{- localization.language.endonym_name | capitalize -}}
               </button>
               {%- unless section_rendering_api -%}
@@ -92,10 +89,7 @@
                 {{- 'localization.country_label' | t -}}
               </label>
               {%- render 'icon', icon: 'currency', size: 'xs', class: 'stroke-1 absolute pointer-events-none' -%}
-              <button type="button" class="localization__item cursor-pointer leading-tight w-full">
-                {%- unless section_rendering_api -%}
-                  <api-button class="api-only" data-id="FooterLocalizationCountryList" data-section-id="{{ section.id }}"></api-button>
-                {%- endunless -%}
+              <button type="button" class="localization__item cursor-pointer leading-tight w-full"{% unless section_rendering_api %} is="api-button" data-id="FooterLocalizationCountryList" data-section-id="{{ section.id }}"{% endunless %}>
                 {{- localization.country.name }} ({{ localization.country.currency.iso_code }} {{ localization.country.currency.symbol }})
               </button>
               {%- unless section_rendering_api -%}

@@ -1,55 +1,17 @@
-{%- doc -%}
-  Renders mobile drawer navigation with multi-level menus, product showcases, and promotions.
-
-  Supports standard navigation, mega menu tabs, product grids, and promotional content.
-
-  @param {object} section - Section object with navigation settings and menu blocks
-  @param {object} link - Navigation link object containing title and child links
-  @param {object} block - Mega menu block configuration for advanced content
-  @param {number} position - Numeric position for unique element IDs
-  @param {boolean} enable_mega_menu - Enable promotional content and mega features
-  @param {boolean} enable_accordion_menu - Enable accordion menu style
-
-  @example
-  {% render 'header-nav-drawer',
-     section: section,
-     link: link,
-     block: block,
-     position: forloop.index,
-     enable_mega_menu: true,
-     enable_accordion_menu: false
-  %}
-{%- enddoc -%}
-
 {%- liquid
   assign section_rendering_api = false
   if section.index == nil
     assign section_rendering_api = true
   endif
 -%}
-{%- liquid
-  capture chevron_icon
-    if enable_accordion_menu
-      render 'icon', icon: 'chevron-down', size: 'lg'
-    else
-      render 'icon', icon: 'chevron-right', size: 'lg'
-    endif
-  endcapture
--%}
-<details is="{% if enable_accordion_menu %}accordion-details{% else %}menu-details{% endif %}">
+<details is="menu-details">
   <summary class="drawer__menu-item block cursor-pointer relative" aria-expanded="false">
-    <span class="heading text-2xl leading-none tracking-tight">
-      {%- unless section_rendering_api -%}
-        <api-button class="api-only" data-id="DrawerSubMenu-{{ section.id }}-{{ position }}" data-section-id="{{ section.id }}"></api-button>
-      {%- endunless -%}
+    <button type="button" class="heading text-2xl leading-none tracking-tight"{% unless section_rendering_api %} is="api-button" data-id="DrawerSubMenu-{{ section.id }}-{{ position }}" data-section-id="{{ section.id }}"{% endunless %}>
       {{- link.title | escape -}}
-    </span>
-    {{- chevron_icon -}}
+    </button>
   </summary>
-  <div class="drawer__submenu{% unless enable_accordion_menu %} z-1 absolute top-0 left-0{% endunless %} flex flex-col w-full h-full" data-parent>
-    {%- unless enable_accordion_menu -%}
-      <button type="button" class="tracking-tight heading text-base shrink-0 flex items-center gap-3 w-full" data-close>{{ link.title | escape }}</button>
-    {%- endunless -%}
+  <div class="drawer__submenu z-1 absolute top-0 left-0 flex flex-col w-full h-full" data-parent>
+    <button type="button" class="tracking-tight heading text-base shrink-0 flex items-center gap-3 w-full" data-close>{{ link.title | escape }}</button>
     {%- unless section_rendering_api -%}
       <div id="DrawerSubMenu-{{ section.id }}-{{ position }}" class="drawer__scrollable flex flex-col h-full"></div>
     {%- else -%}
@@ -66,17 +28,12 @@
                   assign products = block.settings[tab_products] | default: block.settings[tab_target_link].object.products
                 -%}
                 {%- if block.settings[tab_target_link].type == 'collection_link' and products.count > 0 -%}
-                  <details is="{% if enable_accordion_menu %}accordion-details{% else %}menu-details{% endif %}">
+                  <details is="menu-details">
                     <summary class="drawer__menu-item block heading text-2xl leading-none tracking-tight cursor-pointer relative" aria-expanded="false">
-                      {%- liquid
-                        echo tab_target_heading | escape
-                        echo chevron_icon
-                      -%}
+                      {{- tab_target_heading | escape -}}
                     </summary>
-                    <div class="drawer__submenu{% unless enable_accordion_menu %} z-1 absolute top-0 left-0{% endunless %} flex flex-col w-full h-full">
-                      {%- unless enable_accordion_menu -%}
-                        <button type="button" class="tracking-tight heading text-base flex items-center gap-3 w-full" data-close>{{ block.settings[tab_target] | escape }}</button>
-                      {%- endunless -%}
+                    <div class="drawer__submenu z-1 absolute top-0 left-0 flex flex-col w-full h-full">
+                      <button type="button" class="tracking-tight heading text-base flex items-center gap-3 w-full" data-close>{{ block.settings[tab_target] | escape }}</button>
                       <div class="drawer__scrollable flex flex-col h-full">
                         <div class="horizontal-products product-grid">
                           {%- for product in products limit: 4 -%}
@@ -90,8 +47,7 @@
                               show_vendor: block.settings.show_vendor,
                               show_price: block.settings.show_price,
                               show_quick_add: settings.product_quick_add,
-                              show_quick_view: settings.product_quick_view,
-                              accessibility: true
+                              show_quick_view: settings.product_quick_view
                             -%}
                           {%- else -%}
                             {%- for i in (1..4) -%}
@@ -105,8 +61,7 @@
                                 show_vendor: block.settings.show_vendor,
                                 show_price: block.settings.show_price,
                                 show_quick_add: settings.product_quick_add,
-                                show_quick_view: settings.product_quick_view,
-                                accessibility: true
+                                show_quick_view: settings.product_quick_view
                               -%}
                             {%- endfor -%}
                           {%- endfor -%}
@@ -136,17 +91,12 @@
           {%- for childlink in link.links -%}
             <li class="drawer__menu-group">
               {%- if childlink.links != blank -%}
-                <details is="{% if enable_accordion_menu %}accordion-details{% else %}menu-details{% endif %}">
+                <details is="menu-details">
                   <summary class="drawer__menu-item block heading text-2xl leading-none tracking-tight cursor-pointer relative" aria-expanded="false">
-                    {%- liquid
-                      echo childlink.title | escape
-                      echo chevron_icon
-                    -%}
+                    {{- childlink.title | escape -}}
                   </summary>
-                  <div class="drawer__submenu{% unless enable_accordion_menu %} z-1 absolute top-0 left-0{% endunless %} flex flex-col w-full h-full">
-                    {%- unless enable_accordion_menu -%}
-                      <button type="button" class="tracking-tight heading text-base flex items-center gap-3 w-full" data-close>{{ childlink.title | escape }}</button>
-                    {%- endunless -%}
+                  <div class="drawer__submenu z-1 absolute top-0 left-0 flex flex-col w-full h-full">
+                    <button type="button" class="tracking-tight heading text-base flex items-center gap-3 w-full" data-close>{{ childlink.title | escape }}</button>
                     <ul class="drawer__scrollable flex flex-col h-full">
                       {%- for grandchildlink in childlink.links -%}
                         <li class="drawer__menu-group">
@@ -213,7 +163,7 @@
                     <div class="media-card media-card--{{ settings.card_style }}{% if block.settings[promo_overlay_content] %} media-card--overlap{% endif %}">
                       <a class="media-card__link flex flex-col w-full h-full relative"{% if block.settings[promo_link] != blank %} href="{{ block.settings[promo_link] }}"{% else %} role="link" aria-disabled="true"{% endif %}
                         aria-label="{{ block.settings[promo_heading] | default: block.settings[promo_subtext] | escape }}"
-                        style="--color-foreground: {{ block.settings[promo_color_text].rgb }};--color-overlay: {{ block.settings[promo_color_overlay].rgb }};--overlay-opacity: {{ block.settings[promo_overlay_opacity] | divided_by: 100.0 }};"
+                        style="--color-foreground: {{ block.settings[promo_color_text].rgb }}; --color-overlay: {{ block.settings[promo_color_overlay].rgb }}; --overlay-opacity: {{ block.settings[promo_overlay_opacity] | divided_by: 100.0 }};"
                       >
                         {%- if block.settings[promo_tag] != blank -%}
                           <div class="badges z-2 absolute grid gap-3 pointer-events-none">

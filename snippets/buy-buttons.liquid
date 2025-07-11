@@ -1,25 +1,15 @@
-{%- doc -%}
-  Renders a comprehensive product purchase form with quantity controls, pricing, and checkout options.
+{%- comment -%}
+  Renders product buy-buttons.
+  Accepts:
+  - product: {Object} product object.
+  - block: {Object} passing the block information.
+  - product_form_id: {String} product form id.
+  - product_id: {String} The ID of the current product.
+  - section_id: {String} The ID of section to which this snippet belongs.
 
-  Handles add-to-cart, dynamic checkout, volume pricing, inventory rules, and back-in-stock notifications.
-
-  @param {object} block - Block settings and configuration
-  @param {object} product - Shopify product object
-  @param {string} product_form_id - Unique form identifier for cart submission
-  @param {string} product_id - Product identifier for component IDs
-  @param {string} section_id - Section identifier for component IDs
-  @param {object} section - Parent section for block detection
-
-  @example
-  {% render 'buy-buttons',
-     block: block,
-     product: product,
-     product_form_id: 'product-form-123',
-     product_id: product.id,
-     section_id: section.id,
-     section: section
-  %}
-{%- enddoc -%}
+  Usage:
+  {% render 'buy-buttons', block: block, product: product, product_form_id: product_form_id, section_id: section.id %}
+{%- endcomment -%}
 
 <div class="product-form-wrapper" {{ block.shopify_attributes }}>
   {%- liquid
@@ -265,7 +255,7 @@
               -%}
             </span>
             {%- if show_price -%}
-              <div id="BuyButtonPrice-{{ section_id }}-{{ product_id }}" class="flex">
+              <div id="BuyButtonPrice-{{ section.id }}-{{ product.id }}" class="flex">
                 <span class="relative">&nbsp;&nbsp;-&nbsp;&nbsp;</span>
                 <product-buy-price class="price" data-price="{{ product.selected_or_first_available_variant.price }}" form="{{ product_form_id }}">
                   {%- liquid

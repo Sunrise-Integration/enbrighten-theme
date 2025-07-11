@@ -1,25 +1,3 @@
-{%- doc -%}
-  Renders desktop mega menu with navigation links, product grids, or tabbed collections.
-
-  Supports standard multi-column navigation or advanced tabbed product showcases.
-
-  @param {object} section - Section object with menu configuration
-  @param {object} link - Parent navigation link with child items
-  @param {object} block - Mega menu block settings and content
-  @param {number} position - Menu position for unique IDs
-  @param {string} context - Context identifier for ID generation
-  @param {boolean} full_width - Enable full-width container
-
-  @example
-  {% render 'header-nav-mega',
-     section: section,
-     link: link,
-     block: block,
-     position: forloop.index,
-     context: 'start'
-  %}
-{%- enddoc -%}
-
 {%- liquid
   assign section_rendering_api = false
   if section.index == nil
@@ -36,7 +14,7 @@
   -%}
   <div class="mega-menu__container invisible">
     {%- unless section_rendering_api -%}
-      <ul id="HeaderNavMega-{{ section.id }}-{{ position }}-{{ context }}" class="mega-menu__list page-width{% if full_width %} page-width--full{% endif %} flex flex-wrap w-full h-full overflow-hidden" role="list" tabindex="-1">
+      <ul id="HeaderNavMega-{{ section.id }}-{{ position }}-{{ dir }}" class="mega-menu__list page-width{% if full_width %} page-width--full{% endif %} flex flex-wrap w-full h-full overflow-hidden" role="list" tabindex="-1">
         {%- for i in (1..5) -%}
           <li class="mega-menu__item flex opacity-0 w-full aspect-square">
             <span class="media-card media-card--card w-full h-full"></span>
@@ -44,7 +22,7 @@
         {%- endfor -%}
       </ul>
     {%- else -%}
-      <ul id="HeaderNavMega-{{ section.id }}-{{ position }}-{{ context }}" class="mega-menu__list page-width{% if full_width %} page-width--full{% endif %} flex flex-wrap w-full h-full overflow-hidden" role="list" tabindex="-1">
+      <ul id="HeaderNavMega-{{ section.id }}-{{ position }}-{{ dir }}" class="mega-menu__list page-width{% if full_width %} page-width--full{% endif %} flex flex-wrap w-full h-full overflow-hidden" role="list" tabindex="-1">
         {%- if link.links != blank -%}
           <li class="mega-menu__item mega-menu__item--nav mega-menu__item--{{ block.settings.menu_width }}{% unless show_promotions %} mega-menu__item--full{% endunless %} opacity-0 w-full grid">
             <ul class="mega-menu__nav{% if link.links.size > 6 %} mega-menu__nav--more{% endif %}{% if show_promotions %} grid{% else %} flex flex-wrap{% endif %}">
@@ -102,7 +80,7 @@
                 <div class="media-card media-card--{{ settings.card_style }}{% if block.settings[promo_overlay_content] %} media-card--overlap{% endif %}">
                   <a class="media-card__link flex flex-col w-full h-full relative"{% if block.settings[promo_link] != blank %} href="{{ block.settings[promo_link] }}"{% else %} role="link" aria-disabled="true"{% endif %}
                     aria-label="{{ block.settings[promo_heading] | default: block.settings[promo_subtext] | escape }}"
-                    style="--color-foreground: {{ block.settings[promo_color_text].rgb }};--color-overlay: {{ block.settings[promo_color_overlay].rgb }};--overlay-opacity: {{ block.settings[promo_overlay_opacity] | divided_by: 100.0 }};"
+                    style="--color-foreground: {{ block.settings[promo_color_text].rgb }}; --color-overlay: {{ block.settings[promo_color_overlay].rgb }}; --overlay-opacity: {{ block.settings[promo_overlay_opacity] | divided_by: 100.0 }};"
                   >
                     {%- if block.settings[promo_tag] != blank -%}
                       <div class="badges z-2 absolute grid gap-3 pointer-events-none">
@@ -139,7 +117,7 @@
 {%- else -%}
   <div class="mega-menu__container invisible">
     {%- unless section_rendering_api -%}
-      <ul id="HeaderNavMega-{{ section.id }}-{{ position }}-{{ context }}" class="mega-menu__list page-width{% if full_width %} page-width--full{% endif %} flex flex-wrap w-full h-full overflow-hidden" role="list" tabindex="-1">
+      <ul id="HeaderNavMega-{{ section.id }}-{{ position }}-{{ dir }}" class="mega-menu__list page-width{% if full_width %} page-width--full{% endif %} flex flex-wrap w-full h-full overflow-hidden" role="list" tabindex="-1">
         {%- for i in (1..5) -%}
           <li class="mega-menu__item flex opacity-0 w-full aspect-square">
             <span class="media-card media-card--card w-full h-full"></span>
@@ -147,7 +125,7 @@
         {%- endfor -%}
       </ul>
     {%- else -%}
-      <ul id="HeaderNavMega-{{ section.id }}-{{ position }}-{{ context }}" class="mega-menu__list mega-menu__list--tabs page-width{% if full_width %} page-width--full{% endif %} flex flex-wrap w-full h-full overflow-hidden" role="list" tabindex="-1">
+      <ul id="HeaderNavMega-{{ section.id }}-{{ position }}-{{ dir }}" class="mega-menu__list mega-menu__list--tabs page-width{% if full_width %} page-width--full{% endif %} flex flex-wrap w-full h-full overflow-hidden" role="list" tabindex="-1">
         <li class="mega-menu__item mega-menu__item--tabs opacity-0 w-full flex flex-col gap-8">
           {%- if block.settings.heading_1 != blank -%}
             <p class="text-base xl:text-lg font-medium">{{ block.settings.heading_1 | escape }}</p>
@@ -176,7 +154,7 @@
                   {%- endif -%}
                   <span class="heading link-text text-xl-3xl tracking-tighter leading-tight">{{ tab_target_heading | escape }}</span>
                 {%- endcapture -%}
-                {%- if block.settings[tab_target_link].type == 'collection_link' or block.settings[tab_target_link].type == 'catalog_link' -%}
+                {%- if block.settings[tab_target_link].type == 'collection_link' -%}
                   <button type="button" class="mega-menu__nav-item flex gap-2 items-center opacity-0 link icon-with-text" role="tab" aria-controls="TabPanel-{{ block.id }}-{{ forloop_index }}" data-index="{{ forloop_index }}"{% if forloop_first %} disabled{% endif %}>
                     {{- tab_heading -}}
                   </button>
@@ -208,19 +186,13 @@
           -%}
           {%- for i in (1..5) -%}
             {%- assign tab_target_link = 'tab_target_link_' | append: i -%}
-            {%- if block.settings[tab_target_link] != blank and block.settings[tab_target_link].type == 'collection_link' or block.settings[tab_target_link].type == 'catalog_link' -%}
+            {%- if block.settings[tab_target_link] != blank and block.settings[tab_target_link].type == 'collection_link' -%}
               {%- liquid
                 assign promo_image = 'promo_image_' | append: i
                 assign tab_target = 'tab_target_' | append: i
                 assign tab_target_heading = block.settings[tab_target] | default: block.settings[tab_target_link].object.title
                 assign tab_products = 'tab_products_' | append: i
-                
-                assign products_count = block.settings[tab_target_link].object.products_count
                 assign products = block.settings[tab_products] | default: block.settings[tab_target_link].object.products
-                if block.settings[tab_target_link].type == 'catalog_link'
-                  assign products_count = collections.all.products_count
-                  assign products = products | default: collections.all.products
-                endif
               -%}
               <div id="TabPanel-{{ block.id }}-{{ forloop_index }}" class="mega-menu__panel{% if block.settings[promo_image] == blank %} without-promo{% endif %} flex w-full" role="tabpanel"{% unless forloop_first %} hidden{% endunless %}>
                 <div class="grid gap-8">
@@ -231,9 +203,7 @@
                     <a class="mega-menu__link link icon-with-text" href="{{ block.settings[tab_target_link].object.url }}">
                       <span class="heading link-text text-base-xl tracking-tight flex items-center gap-1">
                         {{- 'collections.subcollections.all_products' | t: collection: tab_target_heading -}}
-                        {%- if products_count > 0 -%}
-                          <span class="text-base font-medium tracking-tight">({{ products_count }})</span>
-                        {%- endif -%}
+                        <span class="text-base font-medium tracking-tight">({{ block.settings[tab_target_link].object.all_products_count }})</span>
                       </span>
                       {%- render 'icon', icon: 'arrow-right', size: 'sm', class: 'transform shrink-0' -%}
                     </a>
@@ -263,9 +233,19 @@
                       {%- for i in (1..4) -%}
                         {%- capture placeholder -%}product-{% cycle '1', '2', '3', '4' %}{%- endcapture -%}
                         {%- render 'product-card-placeholder',
-                          placeholder: placeholder
+                          lazy_load: false,
                           image_ratio: settings.product_image_ratio,
-                          show_vendor: settings.product_vendor
+                          image_fill: settings.product_image_fill,
+                          show_secondary_image: settings.product_secondary_image,
+                          show_vendor: settings.product_vendor,
+                          show_rating: settings.product_rating,
+                          show_color_swatches: settings.product_color_swatches,
+                          show_countdown: settings.product_countdown,
+                          show_quick_add: settings.product_quick_add,
+                          show_quick_view: settings.product_quick_view,
+                          show_save_amount: settings.product_save_amount,
+                          save_type: settings.product_save_type,
+                          placeholder: placeholder
                         -%}
                       {%- endfor -%}
                     {%- endfor -%}
@@ -286,7 +266,7 @@
                   <div class="media-card media-card--{{ settings.card_style }}{% if block.settings[promo_overlay_content] %} media-card--overlap{% endif %}">
                     <a class="media-card__link flex flex-col w-full h-full relative"{% if block.settings[promo_link] != blank %} href="{{ block.settings[promo_link] }}"{% else %} role="link" aria-disabled="true"{% endif %}
                       aria-label="{{ block.settings[promo_heading] | default: block.settings[promo_subtext] | escape }}"
-                      style="--color-foreground: {{ block.settings[promo_color_text].rgb }};--color-overlay: {{ block.settings[promo_color_overlay].rgb }};--overlay-opacity: {{ block.settings[promo_overlay_opacity] | divided_by: 100.0 }};"
+                      style="--color-foreground: {{ block.settings[promo_color_text].rgb }}; --color-overlay: {{ block.settings[promo_color_overlay].rgb }}; --overlay-opacity: {{ block.settings[promo_overlay_opacity] | divided_by: 100.0 }};"
                     >
                       {%- if block.settings[promo_tag] != blank -%}
                         <div class="badges z-2 absolute grid gap-3 pointer-events-none">

@@ -123,7 +123,6 @@
       "note": {
         "title": "หมายเหตุการสั่งซื้อ",
         "caption": "สั่งซื้อคำแนะนำพิเศษ",
-        "placeholder": "หมายเหตุการสั่งซื้อ",
         "button": "นำมาใช้"
       },
       "shipping_calculator": {
@@ -135,16 +134,6 @@
         "not_found": "ขออภัย เราไม่จัดส่งไปยังที่อยู่ของคุณ",
         "one_result": "ที่อยู่ของคุณมีอัตราค่าจัดส่งเดียว:",
         "multiple_results": "ที่อยู่ของคุณมีอัตราค่าจัดส่งหลายแบบ:"
-      },
-      "discount": {
-        "title": "ส่วนลด",
-        "caption": "ส่วนลด",
-        "placeholder": "รหัสส่วนลด",
-        "button": "นำมาใช้",
-        "error": "ไม่สามารถใช้รหัสส่วนลดกับตะกร้าสินค้าของคุณได้",
-        "shipping_error": "ส่วนลดค่าจัดส่งจะปรากฏในขั้นตอนชำระเงินหลังจากเพิ่มที่อยู่",
-        "applied": "ใช้รหัสส่วนลดแล้ว: {{ code }}",
-        "remove": "ลบ {{ code }} ส่วนลด"
       },
       "recently_viewed": {
         "empty": "การดูล่าสุดของคุณว่างเปล่า"
@@ -169,11 +158,6 @@
     }
   },
   "sections": {
-    "announcements": {
-      "carousel": "ภาพสไลด์",
-      "announcement": "การประกาศ",
-      "announcement_bar": "แถบประกาศ"
-    },
     "blog_posts": {
       "view_all": "ดูทั้งหมด"
     },
@@ -193,7 +177,6 @@
       "auth_error_html": "เกิดปัญหาในการตรวจสอบสิทธิ์บัญชี Google Maps ของคุณ สร้างและเปิดใช้งานสิทธิ์ <a href=\"https://developers.google.com/maps/documentation/javascript/get-api-key\">JavaScript API</a> และ <a href=\"https://developers.google.com/maps/documentation/geocoding/get-api-key\">Geocoding API</a> ของแอปของคุณ"
     },
     "slideshow": {
-      "carousel": "ภาพสไลด์",
       "play_slideshow": "เล่นสไลด์โชว์",
       "pause_slideshow": "หยุดสไลด์โชว์ชั่วคราว"
     },
@@ -403,8 +386,7 @@
       "payment_status": "สถานะการชำระเงิน",
       "shipping_address": "ที่อยู่จัดส่ง",
       "fulfillment_status": "สถานะการปฏิบัติตาม",
-      "discounts": "ส่วนลด",
-      "discount": "ส่วนลด",
+      "discount": "การลดราคา",
       "shipping": "การส่งสินค้า",
       "tax": "ภาษี",
       "product": "ผลิตภัณฑ์",

@@ -86,6 +86,7 @@
           {%- if subcollections != blank -%}
             {%- render 'subcollections',
               main_menu: subcollections.settings.menu,
+              per_row: subcollections.settings.per_row,
               show_count: subcollections.settings.show_count
             -%}
           {%- else -%}
@@ -433,6 +434,15 @@
           "type": "link_list",
           "id": "menu",
           "label": "t:sections.main-collection.blocks.subcollections.settings.menu.label"
+        },
+        {
+          "type": "range",
+          "id": "per_row",
+          "label": "t:sections.main-collection.blocks.subcollections.settings.per_row.label",
+          "default": 5,
+          "min": 2,
+          "max": 5,
+          "step": 1
         },
         {
           "type": "checkbox",

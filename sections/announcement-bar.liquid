@@ -27,7 +27,7 @@
   </style>
 
   {%- liquid
-    assign announcements_count = section.blocks.size
+    assign announcement_block_count = section.blocks.size
     if section.settings.enable_language_selector and localization.available_languages.size > 1
       assign enable_language_selector = true
     endif
@@ -36,16 +36,16 @@
     endif
   -%}
 
-  <nav class="topbar topbar--{{ section.settings.announcement_position }}{% if section.settings.invert_icons_selectors %} topbar--inverted{% endif %}{% unless section.settings.show_social or enable_language_selector or enable_country_selector %} topbar--only{% endunless %} page-width{% if section.settings.full_width %} page-width--full{% endif %} section{% if section.settings.rounded %} section--rounded{% endif %} relative grid py-0 h-full w-full items-center" aria-label="{{ 'sections.announcements.announcement_bar' | t | escape }}">
+  <div class="topbar topbar--{{ section.settings.announcement_position }}{% if section.settings.invert_icons_selectors %} topbar--inverted{% endif %}{% unless section.settings.show_social or enable_language_selector or enable_country_selector %} topbar--only{% endunless %} page-width{% if section.settings.full_width %} page-width--full{% endif %} section{% if section.settings.rounded %} section--rounded{% endif %} relative grid py-0 h-full w-full items-center">
     {%- if section.settings.show_social -%}
       <div class="social-icons hidden lg:flex items-center">
         {%- render 'social-icons', size: 'sm', gap: '6' -%}
       </div>
     {%- endif -%}
 
-    {%- if announcements_count > 0 -%}
+    {%- if announcement_block_count > 0 -%}
       <div class="announcement-bar h-full flex justify-center lg:justify-{{ section.settings.announcement_position }}{% unless section.settings.show_navigation %} without-nav{% endunless %} relative">
-        <announcement-bar id="Slider-{{ section.id }}" class="announcement__slides{% if announcements_count > 1 %} flex justify-center w-full h-full flickity{% endif %}"{% if section.settings.autoplay %} autoplay autoplay-speed="{{ section.settings.autoplay_speed }}"{% endif %}>
+        <announcement-bar id="Slider-{{ section.id }}" class="announcement__slides{% if announcement_block_count > 1 %} flex justify-center w-full h-full flickity{% endif %}"{% if section.settings.autoplay %} autoplay autoplay-speed="{{ section.settings.autoplay_speed }}"{% endif %}>
           {%- liquid
             assign with_gradient = false
             if section.settings.gradient_highlight != blank and section.settings.gradient_highlight != 'rgba(0,0,0,0)'
@@ -54,7 +54,11 @@
           -%}
           {%- for block in section.blocks -%}
             <div class="announcement__slide flex h-full"{% unless forloop.first %} aria-hidden="true"{% endunless %} {{ block.shopify_attributes }}>
-              {%- capture announcement__content -%}
+              {%- if block.settings.link != blank -%}
+                <a class="announcement__content flex items-center gap-2" href="{{ block.settings.link }}">
+              {%- else -%}
+                <div class="announcement__content flex items-center gap-2">
+              {%- endif -%}
                 {%- if block.settings.icon != 'none' -%}
                   <span class="announcement-icon{% if block.settings.hide_icon_mobile %} hidden md:block{% endif %}">
                     {%- render 'icon-announcement', icon: block.settings.icon, size: 'xs', class: 'stroke-1' -%}
@@ -73,29 +77,16 @@
                     {%- render 'highlighted-text', content: block.settings.text, style: block.settings.highlighted_text, scribble: block.settings.highlighted_scribble, gradient: with_gradient -%}
                   </p>
                 {%- endif -%}
-              {%- endcapture -%}
 
               {%- if block.settings.link != blank -%}
-                {%- liquid
-                  assign accessibility = true
-                  if announcements_count > 1
-                    unless forloop.first
-                      assign accessibility = false
-                    endunless
-                  endif
-                -%}
-                <a class="announcement__content flex items-center gap-2" href="{{ block.settings.link }}"{% unless accessibility %} tabindex="-1"{% endunless %}>
-                  {{- announcement__content -}}
                 </a>
               {%- else -%}
-                <div class="announcement__content flex items-center gap-2">
-                  {{- announcement__content -}}
                 </div>
               {%- endif -%}
             </div>
           {%- endfor -%}
         </announcement-bar>
-        {%- if section.settings.show_navigation and announcements_count > 1 -%}
+        {%- if section.settings.show_navigation and announcement_block_count > 1 -%}
           <button type="button" is="previous-button" class="fader left relative flex items-center justify-start h-full" aria-controls="Slider-{{ section.id }}" aria-label="{{ 'general.pagination.previous' | t | escape }}">
             <svg class="icon icon-arrow-left icon-xs transform" viewBox="0 0 15 14" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
               <path stroke-linecap="round" stroke-linejoin="round" d="M6.33333 2.91675L2.25 7.00004M2.25 7.00004L6.33333 11.0834M2.25 7.00004H12.75"></path>
@@ -132,10 +123,7 @@
       <div class="localization hidden lg:flex items-center h-full">
         {%- if enable_language_selector -%}
           <div class="localization__item h-full relative" role="combobox" aria-controls="LanguageLocalization-{{ section.id }}" aria-expanded="false" aria-label="{{ 'localization.language_label' | t | escape }}">
-            <button type="button" class="flex items-center gap-3 h-full z-2 relative">
-              {%- unless section_rendering_api -%}
-                <api-button class="api-only" data-id="announcement_localization_language_form" data-section-id="{{ section.id }}"></api-button>
-              {%- endunless -%}
+            <button type="button" class="flex items-center gap-3 h-full z-2 relative"{% unless section_rendering_api %} is="api-button" data-id="announcement_localization_language_form" data-section-id="{{ section.id }}"{% endunless %}>
               {%- render 'icon', icon: 'language', size: 'xs', class: 'stroke-1 hidden xl:block' -%}
               <span class="leading-tight">{{ localization.language.endonym_name | capitalize }}</span>
               {%- render 'icon', icon: 'chevron-down', size: 'xs' -%}
@@ -175,10 +163,7 @@
         {%- endif -%}
         {%- if enable_country_selector -%}
           <div class="localization__item h-full relative" role="combobox" aria-controls="CountryLocalization-{{ section.id }}" aria-expanded="false" aria-label="{{ 'localization.country_label' | t | escape }}">
-            <button type="button" class="flex items-center gap-3 h-full z-2 relative">
-              {%- unless section_rendering_api -%}
-                <api-button class="api-only" data-id="announcement_localization_country_form" data-section-id="{{ section.id }}"></api-button>
-              {%- endunless -%}
+            <button type="button" class="flex items-center gap-3 h-full z-2 relative"{% unless section_rendering_api %} is="api-button" data-id="announcement_localization_country_form" data-section-id="{{ section.id }}"{% endunless %}>
               {%- render 'icon', icon: 'currency', size: 'xs', class: 'stroke-1 hidden xl:block' -%}
               <span class="leading-tight">{{ localization.country.name }} ({{ localization.country.currency.iso_code }} {{ localization.country.currency.symbol }})</span>
               {%- render 'icon', icon: 'chevron-down', size: 'xs' -%}
@@ -216,7 +201,7 @@
         {%- endif -%}
       </div>
     {%- endif -%}
-  </nav>
+  </div>
 {%- endif -%}
 
 {% schema %}

@@ -1,13 +1,12 @@
-{%- doc -%}
-  Renders a footer logo block with optional social icons and Shop follow button.
+{%- comment -%}
+  Renders a logo block on the footer section
 
-  Displays brand logo, social media links, and Shop app integration in footer.
+  Accepts:
+  - block: {Object}
 
-  @param {object} block - Shopify block object with settings and attributes
-
-  @example
+  Usage:
   {% render 'footer-logo', block: block %}
-{%- enddoc -%}
+{%- endcomment -%}
 
 {%- if block.settings.logo or block.settings.show_social or shop.features.follow_on_shop? and block.settings.enable_follow_on_shop -%}
   <div class="footer__logo flex flex-col gap-10" {{ block.shopify_attributes }}>

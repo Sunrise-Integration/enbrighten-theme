@@ -123,7 +123,6 @@
       "note": {
         "title": "Tilaushuomautus",
         "caption": "Tilauksen erityisohjeet",
-        "placeholder": "Tilaushuomautus",
         "button": "Käytä"
       },
       "shipping_calculator": {
@@ -135,16 +134,6 @@
         "not_found": "Anteeksi, emme toimita osoitteeseesi.",
         "one_result": "Teidän osoitteellenne on yksi toimitushinta:",
         "multiple_results": "Osoitteellesi on useita toimitushintoja:"
-      },
-      "discount": {
-        "title": "Alennus",
-        "caption": "Alennus",
-        "placeholder": "Alennuskoodi",
-        "button": "Käytä",
-        "error": "Alennuskoodin lisääminen ostoskoriisi ei onnistu",
-        "shipping_error": "Toimitusalennukset näytetään kassalla osoitteen lisäämisen jälkeen",
-        "applied": "Käytetty alennuskoodi: {{ code }}",
-        "remove": "Poista alennus {{ code }}"
       },
       "recently_viewed": {
         "empty": "Äskettäin katsomasi on tyhjää."
@@ -169,11 +158,6 @@
     }
   },
   "sections": {
-    "announcements": {
-      "carousel": "Karuselli",
-      "announcement": "Ilmoitus",
-      "announcement_bar": "Ilmoituspalkki"
-    },
     "blog_posts": {
       "view_all": "Näytä kaikki"
     },
@@ -193,7 +177,6 @@
       "view_details": "Näytä tiedot"
     },
     "slideshow": {
-      "carousel": "Karuselli",
       "play_slideshow": "Toista diaesitys",
       "pause_slideshow": "Keskeytä diaesitys"
     },
@@ -403,7 +386,6 @@
       "payment_status": "Maksun tila",
       "shipping_address": "Toimitusosoite",
       "fulfillment_status": "Toteutustila",
-      "discounts": "Alennukset",
       "discount": "Alennus",
       "shipping": "Toimitus",
       "tax": "Verottaa",

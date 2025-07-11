@@ -43,9 +43,23 @@
             {%- for i in (1..section.settings.product_limit) -%}
               {%- capture placeholder -%}product-{% cycle '1', '2', '3', '4', '5', '6' %}{%- endcapture -%}
               {%- render 'product-card-placeholder',
-                placeholder: placeholder
+                lazy_load: false,
                 image_ratio: settings.product_image_ratio,
-                show_vendor: settings.product_vendor
+                image_fill: settings.product_image_fill,
+                show_secondary_image: settings.product_secondary_image,
+                show_vendor: settings.product_vendor,
+                show_rating: settings.product_rating,
+                show_color_swatches: settings.product_color_swatches,
+                show_countdown: settings.product_countdown,
+                show_quick_add: settings.product_quick_add,
+                show_quick_view: settings.product_quick_view,
+                show_save_amount: settings.product_save_amount,
+                save_type: settings.product_save_type,
+                picker_type: section.settings.picker_type,
+                enable_color_swatches: section.settings.enable_color_swatches,
+                color_swatch_type: section.settings.color_swatch_type,
+                controls: controls,
+                placeholder: placeholder
               -%}
             {%- endfor -%}
           {%- endfor -%}
@@ -64,7 +78,7 @@
                 <product-bundle-toggle-button class="product-bundle__toggle flex items-center justify-between gap-3" aria-controls="{{ controls }}">
                   <{{ section.settings.heading_tag }} class="heading {{ section.settings.heading_size }} leading-none tracking-tight">
                     {%- if section.settings.highlighted_text == 'none' -%}
-                      <split-words class="split-words js-invisible block" data-animate="fade-up-large">{{ section.settings.heading }}</split-words>
+                      <split-words class="split-words block" data-animate="fade-up-large">{{ section.settings.heading }}</split-words>
                     {%- else -%}
                       {%- liquid
                         assign with_gradient = false
@@ -585,7 +599,7 @@
   ],
   "presets": [
     {
-      "name": "t:sections.product-bundle.name"
+      "name": "t:sections.product-bundle.presets.name"
     }
   ],
   "disabled_on": {
