@@ -15,7 +15,7 @@
   {%- endunless -%}
   <script src="{{ 'mobile-dock.js' | asset_url }}" defer="defer"></script>
 
-  <mobile-dock class="mobile-dock mobile-dock--{{ section.blocks.size }}-col fixed z-25 left-0 bottom-0 w-full flex invisible{% if section.settings.divider %} section--divider{% endif %}{% if section.settings.rounded %} section--rounded{% endif %}">
+  <nav class="mobile-dock mobile-dock--{{ section.blocks.size }}-col fixed z-25 left-0 bottom-0 w-full flex invisible{% if section.settings.divider %} section--divider{% endif %}{% if section.settings.rounded %} section--rounded{% endif %}" is="mobile-dock">
     {%- for block in section.blocks -%}
       {%- case block.type -%}
         {%- when 'account' -%}
@@ -94,7 +94,7 @@
           </a>
       {%- endcase %}
     {%- endfor %}
-  </mobile-dock>
+  </nav>
 {%- endif -%}
 
 {% schema %}

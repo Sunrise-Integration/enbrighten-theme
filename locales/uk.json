@@ -123,6 +123,7 @@
       "note": {
         "title": "Примітка до замовлення",
         "caption": "Спеціальні інструкції до замовлення",
+        "placeholder": "Примітка до замовлення",
         "button": "Застосувати"
       },
       "shipping_calculator": {
@@ -134,6 +135,16 @@
         "not_found": "На жаль, ми не доставляємо на вашу адресу.",
         "one_result": "Для вашої адреси існує один тариф доставки:",
         "multiple_results": "Для вашої адреси існує кілька тарифів доставки:"
+      },
+      "discount": {
+        "title": "Знижка",
+        "caption": "Знижка", 
+        "placeholder": "Код знижки",
+        "button": "Застосувати",
+        "error": "Код знижки не може бути застосований до вашого кошика",
+        "shipping_error": "Знижки на доставку відображаються при оформленні замовлення після додавання адреси",
+        "applied": "Застосовано код знижки: {{ code }}",
+        "remove": "Видалити знижку {{ code }}"
       },
       "recently_viewed": {
         "empty": "Ваш список недавно переглянутих порожній."
@@ -158,6 +169,11 @@
     }
   },
   "sections": {
+    "announcements": {
+      "carousel": "Карусель",
+      "announcement": "Оголошення",
+      "announcement_bar": "Панель оголошень"
+    },
     "blog_posts": {
       "view_all": "Переглянути всі"
     },
@@ -177,6 +193,7 @@
       "auth_error_html": "Виникла проблема з автентифікацією вашого облікового запису Карт Google. Створіть і ввімкніть дозволи <a href=\"https://developers.google.com/maps/documentation/javascript/get-api-key\">JavaScript API</a> та <a href=\"https://developers.google.com/maps/documentation/geocoding/get-api-key\">Geocoding API</a> для вашої програми."
     },
     "slideshow": {
+      "carousel": "Карусель",
       "play_slideshow": "Відтворити слайд-шоу",
       "pause_slideshow": "Призупинити слайд-шоу"
     },
@@ -386,6 +403,7 @@
       "payment_status": "Статус платежу",
       "shipping_address": "Адреса доставки",
       "fulfillment_status": "Статус виконання",
+      "discounts": "Знижка",
       "discount": "Знижка",
       "shipping": "Доставка",
       "tax": "податок",

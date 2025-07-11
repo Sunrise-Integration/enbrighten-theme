@@ -181,6 +181,14 @@ if (!customElements.get('cart-items')) {
         if (miniCart) {
           const updatedElement = sectionToRender.querySelector(`#MiniCart-${this.sectionId}`);
           if (updatedElement) {
+            if (event.source === 'cart-discount') {
+              const cartDiscount = updatedElement.querySelector(`#CartDiscount-${this.sectionId}`);
+              if (cartDiscount) {
+                cartDiscount.hidden = false
+                cartDiscount.setAttribute('open', 'immediate');
+                cartDiscount.setAttribute('active', '');
+              }
+            }
             miniCart.innerHTML = updatedElement.innerHTML;
           }
         }
@@ -189,7 +197,27 @@ if (!customElements.get('cart-items')) {
         if (mainCart) {
           const updatedElement = sectionToRender.querySelector(`#MainCart-${this.sectionId}`);
           if (updatedElement) {
+            if (event.source === 'cart-discount') {
+              const cartDiscount = updatedElement.querySelector(`#CartDiscount-${this.sectionId}`);
+              if (cartDiscount) {
+                cartDiscount.hidden = false
+                cartDiscount.setAttribute('open', '');
+                cartDiscount.setAttribute('aria-expanded', 'true');
+              }
+            }
+            
+            const scrollTop = window.scrollY;
             mainCart.innerHTML = updatedElement.innerHTML;
+
+            if (event.source === 'cart-discount') {
+              requestIdleCallback(() => {
+                window.scrollTo({
+                  top: scrollTop,
+                  behavior: 'instant'
+                });
+              });
+              
+            }
           }
           else {
             mainCart.closest('.cart').classList.add('is-empty');
@@ -402,6 +430,7 @@ if (!customElements.get('shipping-calculator')) {
       }
 
       disconnectedCallback() {
+        this.abortController?.abort();
         this.submitButton.removeEventListener('click', this.onSubmitHandler);
       }
 
@@ -453,11 +482,11 @@ if (!customElements.get('shipping-calculator')) {
         const shippingRatesList = Object.keys(errors).map((errorKey) => {
           return `<li>${errors[errorKey]}</li>`;
         });
-        this.resultsElement.innerHTML = `
-          <div class="alert alert--error grid gap-2 text-sm leading-tight">
-            <p>${theme.shippingCalculatorStrings.error}</p>
-            <ul class="list-disc grid gap-2" role="list">${shippingRatesList.join('')}</ul>
-          </div>
+        this.resultsElement.classList.remove('alert--success');
+        this.resultsElement.classList.add('alert--error');
+        this.resultsElement.lastElementChild.innerHTML = `
+          <p>${theme.shippingCalculatorStrings.error}</p>
+          <ul class="list-disc grid gap-2" role="list">${shippingRatesList.join('')}</ul>
         `;
       }
 
@@ -465,14 +494,202 @@ if (!customElements.get('shipping-calculator')) {
         const shippingRatesList = shippingRates.map(({ presentment_name, currency, price }) => {
           return `<li>${presentment_name}: ${currency} ${price}</li>`;
         });
-        this.resultsElement.innerHTML = `
-          <div class="alert alert--${shippingRates.length === 0 ? 'error' : 'success'} grid gap-2 text-sm leading-tight">
-            <p>${shippingRates.length === 0 ? theme.shippingCalculatorStrings.notFound : shippingRates.length === 1 ? theme.shippingCalculatorStrings.oneResult : theme.shippingCalculatorStrings.multipleResults}</p>
-            ${shippingRatesList === '' ? '' : `<ul class="list-disc grid gap-2" role="list">${shippingRatesList.join('')}</ul>`}
-          </div>
+        if (shippingRates.length) {
+          this.resultsElement.classList.remove('alert--error');
+          this.resultsElement.classList.add('alert--success');
+        }
+        else {
+          this.resultsElement.classList.remove('alert--success');
+          this.resultsElement.classList.add('alert--error');
+        }
+        this.resultsElement.lastElementChild.innerHTML = `
+          <p>${shippingRates.length === 0 ? theme.shippingCalculatorStrings.notFound : shippingRates.length === 1 ? theme.shippingCalculatorStrings.oneResult : theme.shippingCalculatorStrings.multipleResults}</p>
+          ${shippingRatesList === '' ? '' : `<ul class="list-disc grid gap-2" role="list">${shippingRatesList.join('')}</ul>`}
         `;
-
       }
     }, { extends: 'form' }
+  );
+}
+
+if (!customElements.get('cart-discount')) {
+  customElements.define(
+    'cart-discount',
+    class CartDiscount extends HTMLFormElement {
+      constructor() {
+        super();
+
+        this.onApplyDiscount = this.applyDiscount.bind(this);
+      }
+
+      get sectionId() {
+        return this.getAttribute('data-section-id');
+      }
+      
+      connectedCallback() {
+        this.submitButton = this.querySelector('[type="submit"]');
+        this.resultsElement = this.lastElementChild;
+
+        this.submitButton.addEventListener('click', this.onApplyDiscount);
+      }
+
+      disconnectedCallback() {
+        this.abortController?.abort();
+        this.submitButton.removeEventListener('click', this.onApplyDiscount);
+      }
+
+      applyDiscount(event) {
+        event.preventDefault();
+
+        const discountCode = this.querySelector('[name="discount"]');
+        if (!(discountCode instanceof HTMLInputElement) || typeof this.getAttribute('data-section-id') !== 'string') return;
+
+        this.abortController?.abort();
+        this.abortController = new AbortController();
+
+        const discountCodeValue = discountCode.value.trim();
+        if (discountCodeValue === '') return;
+
+        const existingDiscounts = this.existingDiscounts();
+        if (existingDiscounts.includes(discountCodeValue)) return;
+
+        this.setDiscountError('');
+        this.submitButton.setAttribute('aria-busy', 'true');
+
+        const body = JSON.stringify({
+          discount: [...existingDiscounts, discountCodeValue].join(','),
+          sections: [this.sectionId]
+        });
+        
+        fetch(theme.routes.cart_update_url, { ...theme.utils.fetchConfig('json'), ...{ body }, signal: this.abortController.signal })
+          .then((response) => response.json())
+          .then((parsedState) => {
+            if (
+              parsedState.discount_codes.find((discount) => {
+                return discount.code === discountCodeValue && discount.applicable === false;
+              })
+            ) {
+              discountCode.value = '';
+              this.setDiscountError(theme.discountStrings.error);
+              return;
+            }
+
+            const newHtml = parsedState.sections[this.sectionId];
+            const parsedHtml = new DOMParser().parseFromString(newHtml, 'text/html');
+            const section = parsedHtml.getElementById(`shopify-section-${this.sectionId}`);
+            if (section) {
+              const discountCodes = section?.querySelectorAll('button[is="discount-remove"]') || [];
+              const codes = Array.from(discountCodes)
+                .map((element) => (element instanceof HTMLButtonElement ? element.getAttribute('data-discount') : null))
+                .filter(Boolean);
+
+              if (
+                codes.length === existingDiscounts.length &&
+                codes.every((code) => existingDiscounts.includes(code)) &&
+                parsedState.discount_codes.find((discount) => {
+                  return discount.code === discountCodeValue && discount.applicable === true;
+                })
+              ) {
+                discountCode.value = '';
+                this.setDiscountError(theme.discountStrings.shippingError);
+                return;
+              }
+            }
+
+            theme.pubsub.publish(theme.pubsub.PUB_SUB_EVENTS.cartUpdate, { source: 'cart-discount', cart: parsedState });
+          })
+          .catch((error) => {
+            if (error.name === 'AbortError') {
+              console.log('Fetch aborted by user');
+            }
+            else {
+              console.error(error);
+            }
+          })
+          .finally(() => {
+            this.submitButton.removeAttribute('aria-busy');
+          });
+      }
+
+      removeDiscount(event) {
+        if ((event instanceof KeyboardEvent && event.key !== 'Enter') || !(event instanceof MouseEvent)) {
+          return;
+        }
+
+        const discountCode = event.target.getAttribute('data-discount');
+        if (!discountCode) return;
+
+        const existingDiscounts = this.existingDiscounts();
+        const index = existingDiscounts.indexOf(discountCode);
+        if (index === -1) return;
+
+        existingDiscounts.splice(index, 1);
+
+        this.abortController?.abort();
+        this.abortController = new AbortController();
+
+        this.setDiscountError('');
+        event.target.setAttribute('loading', '');
+
+        const body = JSON.stringify({
+          discount: existingDiscounts.join(','),
+          sections: [this.sectionId]
+        });
+        
+        fetch(theme.routes.cart_update_url, { ...theme.utils.fetchConfig('json'), ...{ body }, signal: this.abortController.signal })
+          .then((response) => response.json())
+          .then((parsedState) => {
+            theme.pubsub.publish(theme.pubsub.PUB_SUB_EVENTS.cartUpdate, { source: 'cart-discount', cart: parsedState });
+          })
+          .catch((error) => {
+            if (error.name === 'AbortError') {
+              console.log('Fetch aborted by user');
+            }
+            else {
+              console.error(error);
+            }
+          })
+          .finally(() => {
+            event.target.removeAttribute('loading');
+          });
+      }
+
+      existingDiscounts() {
+        const discountCodes = [];
+        const discountPills = this.querySelectorAll('button[is="discount-remove"]');
+        for (const pill of discountPills) {
+          if (pill.hasAttribute('data-discount')) {
+            discountCodes.push(pill.getAttribute('data-discount'));
+          }
+        }
+        return discountCodes;
+      }
+
+      setDiscountError(error) {
+        this.resultsElement.lastElementChild.textContent = error;
+        this.resultsElement.hidden = error.length === 0;
+      }
+    }, { extends: 'form' }
+  );
+}
+
+if (!customElements.get('discount-remove')) {
+  customElements.define(
+    'discount-remove',
+    class DiscountRemove extends MagnetButton {
+      constructor() {
+        super();
+
+        this.addEventListener('click', this.onClick);
+      }
+
+      onClick(event) {
+        const form = this.closest('form[is="cart-discount"]') || document.querySelector('form[is="cart-discount"]');
+
+        if (form) {
+          event.preventDefault();
+          form.removeDiscount(event);
+        }
+      }
+    }, { extends: 'button' }
   );
 }
