@@ -16,6 +16,8 @@
           "type": "text",
           "disabled": true,
           "settings": {
+            "icon": "none",
+            "icon_width": 20,
             "text": "{{ product.vendor }}",
             "text_size": "text-base"
           }
@@ -63,11 +65,13 @@
         "collapsible_tab_W9ReA8": {
           "type": "collapsible_tab",
           "settings": {
+            "style": "with-border",
             "icon": "none",
             "heading": "Description",
             "content": "{{ product.description }}",
             "page": "",
-            "liquid": ""
+            "liquid": "",
+            "opened": false
           }
         },
         "countdown": {
@@ -103,9 +107,10 @@
           "type": "buy_buttons",
           "settings": {
             "show_quantity_selector": true,
+            "show_price": false,
             "show_dynamic_checkout": true,
             "show_gift_card_recipient": true,
-            "enable_back_in_stock": true,
+            "enable_back_in_stock": false,
             "show_back_in_stock_name": false,
             "show_back_in_stock_phone": false
           }
@@ -151,6 +156,24 @@
           "type": "shopify://apps/shop/blocks/shop-login-button-app-block/7cab7c4a-1dfc-4b7e-8e53-31f104f2fa4e",
           "disabled": true,
           "settings": {}
+        },
+        "text_g6G9ha": {
+          "type": "text",
+          "settings": {
+            "icon": "heart",
+            "icon_width": 20,
+            "text": "50% of Net Profits are Donated to Charity",
+            "text_size": "text-base"
+          }
+        },
+        "text_qMKLNQ": {
+          "type": "text",
+          "settings": {
+            "icon": "lightning",
+            "icon_width": 20,
+            "text": "Free and Fast Shipping Over $50",
+            "text_size": "text-base"
+          }
         }
       },
       "block_order": [
@@ -171,7 +194,9 @@
         "complementary",
         "sticky_buy_button",
         "back_in_stock_BXELgm",
-        "shop_shop_login_button_app_block_KUH6aw"
+        "shop_shop_login_button_app_block_KUH6aw",
+        "text_g6G9ha",
+        "text_qMKLNQ"
       ],
       "settings": {
         "enable_sticky_info": true,
