@@ -78,6 +78,6 @@ if (!customElements.get('mobile-dock')) {
       setHeight() {
         document.documentElement.style.setProperty('--mobile-dock-height', `${this.offsetHeight}px`);
       }
-    }
+    }, { extends: 'nav' }
   );
 }

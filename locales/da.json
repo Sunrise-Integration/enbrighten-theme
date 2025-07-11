@@ -123,7 +123,8 @@
       "note": {
         "title": "Besked",
         "caption": "Skriv din besked",
-        "button": "Gem"
+        "placeholder": "Besked",
+        "button": "Anvend"
       },
       "shipping_calculator": {
         "title": "Fragt",
@@ -134,6 +135,16 @@
         "not_found": "Vi sender ikke til din adresse",
         "one_result": "Der er ét resultat for din adresse",
         "multiple_results": "Der er flere resultater for din adresse"
+      },
+      "discount": {
+        "title": "Rabat",
+        "caption": "Rabat",
+        "placeholder": "Rabatkode",
+        "button": "Anvend",
+        "error": "Rabatkoden kan ikke anvendes i din indkøbskurv",
+        "shipping_error": "Forsendelsesrabatter vises ved betaling efter tilføjelse af en adresse",
+        "applied": "Anvendt rabatkode: {{ code }}",
+        "remove": "Fjern rabatten {{ code }}"
       },
       "recently_viewed": {
         "empty": "Din tidligere viste er tom"
@@ -158,6 +169,11 @@
     }
   },
   "sections": {
+    "announcements": {
+      "carousel": "Karrusel",
+      "announcement": "Meddelelse",
+      "announcement_bar": "Meddelelseslinje"
+    },
     "blog_posts": {
       "view_all": "Hvis kl"
     },
@@ -177,6 +193,7 @@
       "auth_error_html": "Fejl, google maps auth"
     },
     "slideshow": {
+      "carousel": "Karrusel",
       "play_slideshow": "Afspil diasshow",
       "pause_slideshow": "Sæt diasshow på pause"
     },
@@ -294,7 +311,7 @@
       "in_stock_only": "På lager",
       "clear": "Fjern \"{{ name }}\"",
       "clear_all": "Slet alt",
-      "apply": "Filtrer"
+      "apply": "Anvend"
     },
     "subcollections": {
       "all_products": "Alle {{ collection }}"
@@ -386,6 +403,7 @@
       "payment_status": "Betalingsstatus",
       "shipping_address": "Leveringsadresse",
       "fulfillment_status": "Leveringsstatus",
+      "discounts": "Rabatter",
       "discount": "Rabat",
       "shipping": "Fragt",
       "tax": "Skat",

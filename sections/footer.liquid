@@ -14,7 +14,7 @@
 -%}
 
 <div class="section section--padding{% if section.settings.divider %} section--divider{% endif %}{% if section.settings.rounded %} section--rounded{% endif %}"{% if section.settings.enable_parallax %} is="footer-parallax"{% endif %}>
-  <footer class="footer{% if enable_footer_info %}{% if section.settings.invert_newsletter_others %} footer--inverted{% endif %}{% else %} footer--no-info{% endif %} page-width{% if section.settings.full_width %} page-width--full{% endif %} relative grid">
+  <div class="footer{% if enable_footer_info %}{% if section.settings.invert_newsletter_others %} footer--inverted{% endif %}{% else %} footer--no-info{% endif %} page-width{% if section.settings.full_width %} page-width--full{% endif %} relative grid" role="region" aria-label="Footer">
     {%- if section.blocks.size > 0 -%}
       <div class="footer__left flex flex-col md:flex-row gap-10">
         {%- liquid
@@ -69,7 +69,7 @@
         {%- endif -%}
 
         {%- if section.settings.show_social -%}
-          <div class="footer__socials flex justify-start md:justify-end xl:justify-start">
+          <div class="footer__socials flex align-self-end justify-start md:justify-end xl:justify-start">
             {%- render 'social-icons', size: 'lg', gap: '7' -%}
           </div>
         {%- endif -%}
@@ -81,7 +81,7 @@
         {%- endif -%}
       </div>
     {%- endif -%}
-  </footer>
+  </div>
 
   {%- if section.settings.enable_parallax -%}
     <parallax-overlay class="footer-overlay hidden md:block z-20 absolute left-0 top-0 w-full pointer-events-none" data-target="height" data-start="100%" data-stop="0%"></parallax-overlay>

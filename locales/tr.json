@@ -123,6 +123,7 @@
       "note": {
         "title": "Sipariş notu",
         "caption": "Özel talimatlar sipariş edin",
+        "placeholder": "Sipariş notu",
         "button": "Uygula"
       },
       "shipping_calculator": {
@@ -134,6 +135,16 @@
         "not_found": "Üzgünüz, adresinize gönderim yapmıyoruz.",
         "one_result": "Adresiniz için tek bir gönderim ücreti vardır:",
         "multiple_results": "Adresiniz için birden fazla kargo ücreti var:"
+      },
+      "discount": {
+        "title": "İndirim",
+        "caption": "İndirim",
+        "placeholder": "İndirim kodu",
+        "button": "Uygula",
+        "error": "Sepetinize indirim kodu uygulanamıyor",
+        "shipping_error": "Kargo indirimleri, adres eklendikten sonra ödeme sayfasında gösterilir",
+        "applied": "Uygulanan indirim kodu: {{ code }}",
+        "remove": "{{ code }} indirimini kaldır"
       },
       "recently_viewed": {
         "empty": "Son görüntülenenleriniz boş."
@@ -158,6 +169,11 @@
     }
   },
   "sections": {
+    "announcements": {
+      "carousel": "Carousel",
+      "announcement": "Duyuru",
+      "announcement_bar": "Duyuru çubuğu"
+    },
     "blog_posts": {
       "view_all": "Hepsini gör"
     },
@@ -177,6 +193,7 @@
       "auth_error_html": "Google Haritalar hesabınızın kimliği doğrulanırken bir sorun oluştu. Uygulamanızın <a href=\"https://developers.google.com/maps/documentation/javascript/get-api-key\">JavaScript API</a> ve <a href=\"https://developers.google.com/maps/documentation/geocoding/get-api-key\">Geocoding API</a> izinlerini oluşturun ve etkinleştirin."
     },
     "slideshow": {
+      "carousel": "Carousel",
       "play_slideshow": "Slayt gösterisini oynat",
       "pause_slideshow": "Slayt gösterisini duraklat"
     },
@@ -386,6 +403,7 @@
       "payment_status": "Ödeme Durumu",
       "shipping_address": "Gönderi Adresi",
       "fulfillment_status": "Tamamlama Durumu",
+      "discounts": "İndirimler",
       "discount": "İndirim",
       "shipping": "Nakliye",
       "tax": "Vergi",

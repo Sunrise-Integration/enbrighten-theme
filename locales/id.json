@@ -123,7 +123,8 @@
       "note": {
         "title": "Catatan pesanan",
         "caption": "Instruksi khusus pesanan",
-        "button": "Menerapkan"
+        "placeholder": "Catatan pesanan",
+        "button": "Terapkan"
       },
       "shipping_calculator": {
         "title": "Pengiriman",
@@ -134,6 +135,16 @@
         "not_found": "Maaf, kami tidak mengirim ke alamat Anda.",
         "one_result": "Ada satu tarif pengiriman untuk alamat Anda:",
         "multiple_results": "Ada beberapa tarif pengiriman untuk alamat Anda:"
+      },
+      "discount": {
+        "title": "Diskon",
+        "caption": "Diskon",
+        "placeholder": "Kode diskon",
+        "button": "Terapkan",
+        "error": "Kode diskon tidak dapat diterapkan ke keranjang Anda",
+        "shipping_error": "Diskon biaya pengiriman akan ditampilkan saat checkout setelah menambahkan alamat",
+        "applied": "Kode diskon yang dipakai: {{ code }}",
+        "remove": "Hapus diskon {{ code }}"
       },
       "recently_viewed": {
         "empty": "Riwayat yang baru saja Anda lihat kosong."
@@ -158,6 +169,11 @@
     }
   },
   "sections": {
+    "announcements": {
+      "carousel": "Carousel",
+      "announcement": "Pengumuman",
+      "announcement_bar": "Bilah pengumuman"
+    },
     "blog_posts": {
       "view_all": "Lihat semua"
     },
@@ -177,6 +193,7 @@
       "view_details": "Lihat detailnya"
     },
     "slideshow": {
+      "carousel": "Carousel",
       "play_slideshow": "Putar tayangan slide",
       "pause_slideshow": "Jeda tayangan slide"
     },
@@ -294,7 +311,7 @@
       "in_stock_only": "Hanya tersedia",
       "clear": "Hapus filter \"{{ name }}\"",
       "clear_all": "Hapus semua",
-      "apply": "Menerapkan"
+      "apply": "Terapkan"
     },
     "subcollections": {
       "all_products": "Semua {{ collection }}"
@@ -386,6 +403,7 @@
       "payment_status": "Status Pembayaran",
       "shipping_address": "Alamat pengiriman",
       "fulfillment_status": "Status Pemenuhan",
+      "discounts": "Diskon",
       "discount": "Diskon",
       "shipping": "Pengiriman",
       "tax": "Pajak",

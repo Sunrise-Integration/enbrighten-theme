@@ -164,7 +164,7 @@
                             <option value="{{ option_2 }}">{{ option_2 }}</option>
                           {%- endfor -%}
                         </select>
-                        {%- render 'icon', icon: 'chevron-up', size: 'sm', class: 'absolute' -%}
+                        {%- render 'icon', icon: 'chevron-up', size: 'sm', class: 'absolute pointer-events-none' -%}
                       {%- endif -%}
                       <label class="label{% if options.size > 0 %} is-floating{% endif %}" for="ContactFormInput-{{ section.id }}-{{ block.id }}">{{ block.settings.title | escape }}</label>
                   {%- endcase -%}
@@ -215,7 +215,9 @@
                   if section.settings.image != blank
                     echo section.settings.image | image_url: width: section.settings.image.width | image_tag: loading: 'lazy', sizes: sizes, widths: '300,400,500,600,700,800,900,1000,1200,1400,1600', is: 'lazy-image', class: 'banner__image'
                   else
-                    echo 'lifestyle-1' | placeholder_svg_tag: 'banner__image banner__overlay placeholder'
+                    unless display_map
+                      echo 'lifestyle-1' | placeholder_svg_tag: 'banner__image banner__overlay placeholder'
+                    endunless
                   endif
                 -%}
               </picture>
@@ -714,14 +716,18 @@
         },
         {
           "label": "t:sections.global.settings.image_height.options__10.label",
-          "value": "850px"
+          "value": "800px"
         },
         {
           "label": "t:sections.global.settings.image_height.options__11.label",
-          "value": "900px"
+          "value": "850px"
         },
         {
           "label": "t:sections.global.settings.image_height.options__12.label",
+          "value": "900px"
+        },
+        {
+          "label": "t:sections.global.settings.image_height.options__13.label",
           "value": "100vh"
         }
       ],
@@ -1032,7 +1038,7 @@
   ],
   "presets": [
     {
-      "name": "t:sections.contact-with-map.presets.name"
+      "name": "t:sections.contact-with-map.name"
     }
   ],
   "disabled_on": {
