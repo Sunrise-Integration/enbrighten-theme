@@ -1,13 +1,12 @@
-{%- doc -%}
-  Renders a footer navigation menu with optional collapsible behavior.
+{%- comment -%}
+  Renders a menu block on the footer section
 
-  Displays menu links vertically, either static or within expandable section.
+  Accepts:
+  - block: {Object}
 
-  @param {object} block - Shopify block object with settings and attributes
-
-  @example
+  Usage:
   {% render 'footer-menu', block: block %}
-{%- enddoc -%}
+{%- endcomment -%}
 
 {%- if block.settings.menu != blank -%}
   {%- capture block_content -%}
