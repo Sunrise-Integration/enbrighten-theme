@@ -167,7 +167,6 @@
         "newsletter_heading_size": "md:title-lg",
         "newsletter_text": "<p>You'll love our emails and texts. Sign up now!</p>",
         "newsletter_logo_height": 50,
-        "newsletter_custom_form": "<script charset=\"utf-8\" type=\"text/javascript\" src=\"//js.hsforms.net/forms/embed/v2.js\"></script>\n<script>\n  hbspt.forms.create({\n    portalId: \"454248\",\n    formId: \"cedae278-6bce-486c-8042-4cf481bdd27b\"\n  });\n</script>",
         "show_social": true,
         "enable_follow_on_shop": false,
         "color_text": "#ffffff",

@@ -61,7 +61,6 @@
           "type": "subcollections",
           "settings": {
             "menu": "",
-            "per_row": 5,
             "show_count": true
           }
         }
@@ -128,9 +127,9 @@
           "type": "text",
           "settings": {
             "text": "<p>Give customers details about the banner image(s) or content on the template.</p>",
+            "text_font": "body",
             "text_size": "subtext-md",
             "text_max_size": 32,
-            "text_font": "body",
             "secondary_color": false,
             "highlighted_text": "none",
             "highlighted_scribble": "circle"

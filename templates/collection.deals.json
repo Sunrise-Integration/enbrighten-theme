@@ -59,9 +59,9 @@
           "type": "text",
           "settings": {
             "text": "<p><strong>All products below are clearance final sale items. No returns or exchanges.</strong></p>",
+            "text_font": "body",
             "text_size": "subtext-lg",
             "text_max_size": 32,
-            "text_font": "body",
             "secondary_color": false,
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
@@ -233,7 +233,6 @@
           "type": "subcollections",
           "settings": {
             "menu": "",
-            "per_row": 5,
             "show_count": true
           }
         }

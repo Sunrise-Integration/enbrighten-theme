@@ -61,7 +61,6 @@
           "type": "subcollections",
           "settings": {
             "menu": "",
-            "per_row": 5,
             "show_count": true
           }
         }
