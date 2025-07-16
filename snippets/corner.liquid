@@ -1,24 +1,14 @@
-{%- doc -%}
-  Renders decorative SVG curved corner elements for visual container enhancement.
+{%- comment -%}
+  Renders a corner component
 
-  Creates symmetrical left and right corner ornaments with optional border cutout.
+  Accepts:
+  - prefix: {String}
+  - dir: {String}
+  - border: {Boolean}
 
-  @param {string} prefix - Component namespace for CSS class generation
-    - Used to create BEM-style classes: '[prefix]__corner', '[prefix]__cutout'
-    - Examples: 'dropdown', 'header', 'modal', 'drawer'
-    - If blank, uses generic 'corner' and 'cutout' classes
-  @param {string} dir - Vertical positioning direction
-    - 'top' - Corners positioned at top of container
-    - 'bottom' - Corners positioned at bottom of container
-  @param {boolean} [border] - Include cutout border element
-
-  @example
-  {% render 'corner',
-     dir: 'bottom',
-     prefix: 'header',
-     border: true
-  %}
-{%- enddoc -%}
+  Usage:
+  {% render 'corner', prefix: 'header' %}
+{%- endcomment -%}
 
 {%- liquid
   if prefix != blank

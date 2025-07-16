@@ -1,13 +1,9 @@
-{%- doc -%}
-  Renders responsive header logo with white variants and SEO optimization.
+{%- comment -%}
+  Renders a header logo component
 
-  Displays site logo with mobile/desktop versions, overlay support, and text fallback.
-
-  @param {boolean} [logo_h1] - Wrap logo in H1 tag for homepage SEO
-
-  @example
-  {% render 'header-logo', logo_h1: true %}
-{%- enddoc -%}
+  Usage:
+  {% render 'header-logo' %}
+{%- endcomment -%}
 
 {%- liquid
   assign logo = settings.logo
@@ -17,7 +13,13 @@
   assign white_logo_mobile = settings.white_logo_mobile | default: white_logo
 -%}
 
-{%- capture logo_content -%}
+{%- if request.page_type == 'index' -%}
+  <h1 class="header__logo flex justify-center z-2" itemscope itemtype="http://schema.org/Organization">
+    <span class="sr-only">{{ shop.name }}</span>
+{%- else -%}
+  <div class="header__logo flex justify-center z-2" itemscope itemtype="http://schema.org/Organization">
+{%- endif -%}
+
   {%- if logo != blank -%}
     <a
       href="{{ routes.root_url }}"
@@ -61,14 +63,9 @@
   {%- else -%}
     <a href="{{ routes.root_url }}" itemprop="url" class="h3">{{ shop.name }}</a>
   {%- endif -%}
-{%- endcapture -%}
 
-{%- if request.page_type == 'index' and logo_h1 -%}
-  <h1 class="header__logo flex justify-center z-2" itemscope itemtype="http://schema.org/Organization">
-    {{- logo_content -}}
+{%- if request.page_type == 'index' -%}
   </h1>
 {%- else -%}
-  <div class="header__logo flex justify-center z-2" itemscope itemtype="http://schema.org/Organization">
-    {{- logo_content -}}
   </div>
 {%- endif -%}

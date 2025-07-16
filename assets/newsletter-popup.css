@@ -1,7 +1,3 @@
-.newsletter-section {
-  display: block;
-}
-
 .newsletter-modal .drawer__header {
   border-block-end: 0;
   padding-block-end: 0;
@@ -20,7 +16,7 @@
 }
 
 @media screen and (max-width: 639px) {
-  .js .newsletter-modal .drawer__inner {
+  html.js .newsletter-modal .drawer__inner {
     height: auto;
   }
 }
