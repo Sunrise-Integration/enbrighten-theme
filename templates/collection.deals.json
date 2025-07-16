@@ -1,1 +1,300 @@
-{"sections":{"main-collection-banner":{"type":"main-collection-banner","blocks":{"breadcrumb":{"type":"breadcrumb","disabled":true,"settings":{"show_collections_link":true}},"title":{"type":"title","settings":{"title_size":"title-lg tracking-heading"}}},"block_order":["breadcrumb","title"],"settings":{"transparent_header":false,"show_image":true,"image":"shopify:\/\/shop_images\/Enbrightenme.deals.png","image_height":"adapt","content_position":"md:items-center md:justify-center","text_alignment":"center","image_height_mobile":"250px","content_position_mobile":"items-end justify-start","text_alignment_mobile":"left","color_text":"#ffffff","color_overlay":"#000000","overlay_opacity":0,"padding_top":0,"padding_bottom":0,"divider":false,"full_width":true,"rounded":false,"enable_parallax":false,"parallax_direction":"vertical"}},"rich_text_jfTRGz":{"type":"rich-text","blocks":{"text_PAWftM":{"type":"text","settings":{"text":"<p><strong>All products below are clearance final sale items. No returns or exchanges.<\/strong><\/p>","text_size":"subtext-lg","text_max_size":32,"text_font":"body","secondary_color":false,"highlighted_text":"none","highlighted_scribble":"circle"}}},"block_order":["text_PAWftM"],"name":"t:sections.rich-text.presets.name","settings":{"text_alignment":"center","text_alignment_mobile":"center","heading":"","heading_size":"title-md","heading_alignment":"text-left md:items-end md:flex-row","heading_width":"small","heading_tag":"h2","subheading":"","description":"","button_label":"","button_link":"","button_external":false,"button_icon":true,"highlighted_text":"none","highlighted_scribble":"circle","color_text":"","color_background":"","gradient_background":"","color_highlight":"","gradient_highlight":"","color_button_text":"","color_button_background":"","color_button_gradient":"","padding_top":48,"padding_bottom":48,"divider":false,"narrow":true,"rounded":false}},"collection_list_f3wMry":{"type":"collection-list","blocks":{"collection_4RBNdB":{"type":"collection","settings":{"collection":"rope-lights","image":"shopify:\/\/shop_images\/enbrighten_categories_1.png","title":"","description":"","overlay_content":false,"color_text":"#ffffff","color_overlay":"#000000","overlay_opacity":30}},"collection_XYUWfL":{"type":"collection","settings":{"collection":"under-cabinet-lighting","image":"shopify:\/\/shop_images\/EnbrightenMe-Under_Cabinet_Lights01.jpg","title":"","description":"","overlay_content":false,"color_text":"#ffffff","color_overlay":"#000000","overlay_opacity":30}},"collection_M7zknU":{"type":"collection","settings":{"collection":"night-lights","image":"shopify:\/\/shop_images\/enbrighten_night_lights.png","title":"","description":"","overlay_content":false,"color_text":"#ffffff","color_overlay":"#000000","overlay_opacity":30}},"collection_EEVMzn":{"type":"collection","settings":{"collection":"ceiling-lighting","image":"shopify:\/\/shop_images\/EnbrightenMe-Ceiling_Lights02.jpg","title":"","description":"","overlay_content":false,"color_text":"#ffffff","color_overlay":"#000000","overlay_opacity":30}},"collection_wnThMb":{"type":"collection","settings":{"collection":"lamps","image":"shopify:\/\/shop_images\/enbrighten_categories.png","title":"","description":"","overlay_content":false,"color_text":"#ffffff","color_overlay":"#000000","overlay_opacity":30}},"collection_ftAmzQ":{"type":"collection","settings":{"collection":"bathroom-lighting","image":"shopify:\/\/shop_images\/77233-1.8.jpg","title":"","description":"","overlay_content":false,"color_text":"#ffffff","color_overlay":"#000000","overlay_opacity":30}}},"block_order":["collection_4RBNdB","collection_XYUWfL","collection_M7zknU","collection_EEVMzn","collection_wnThMb","collection_ftAmzQ"],"disabled":true,"settings":{"columns":3,"carousel_on_desktop":false,"image_type":"collection","image_ratio":"square","show_products_count":true,"show_view_all":false,"columns_mobile":"1","swipe_on_mobile":true,"heading":"Outdoor Lighting Categories","heading_size":"title-md","heading_alignment":"text-center md:items-center","heading_tag":"h2","subheading":"","description":"","highlighted_text":"none","highlighted_scribble":"circle","color_text":"","color_background":"","gradient_background":"","color_highlight":"","gradient_highlight":"","color_button_text":"","color_button_background":"","color_button_gradient":"","padding_top":88,"padding_bottom":88,"divider":false,"full_width":false,"rounded":false}},"main-collection":{"type":"main-collection","blocks":{"subcollections":{"type":"subcollections","settings":{"menu":"","per_row":5,"show_count":true}}},"block_order":["subcollections"],"settings":{"products_per_page":16,"columns":5,"columns_mobile":"1","pagination":"click","enable_filtering":true,"filter_collapsed":true,"filter_type":"sidebar","filter_color_swatches":true,"enable_sorting":true,"padding_top":40,"padding_bottom":100,"divider":false,"full_width":false,"rounded":true}},"recently-viewed":{"type":"recently-viewed","settings":{"product_limit":6,"columns":4,"carousel_on_desktop":true,"columns_mobile":"1","swipe_on_mobile":true,"heading":"Recently Viewed","heading_size":"title-md","heading_alignment":"text-left md:items-end md:flex-row","heading_tag":"h2","subheading":"","description":"","highlighted_text":"none","highlighted_scribble":"circle","color_text":"","color_background":"","gradient_background":"","color_highlight":"","gradient_highlight":"","color_button_text":"","color_button_background":"","color_button_gradient":"","padding_top":72,"padding_bottom":80,"divider":false,"full_width":false,"rounded":true}}},"order":["main-collection-banner","rich_text_jfTRGz","collection_list_f3wMry","main-collection","recently-viewed"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main-collection-banner": {
+      "type": "main-collection-banner",
+      "blocks": {
+        "breadcrumb": {
+          "type": "breadcrumb",
+          "disabled": true,
+          "settings": {
+            "show_collections_link": true
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "title-lg tracking-heading"
+          }
+        }
+      },
+      "block_order": [
+        "breadcrumb",
+        "title"
+      ],
+      "settings": {
+        "transparent_header": false,
+        "show_image": true,
+        "image": "shopify://shop_images/Enbrightenme.deals.png",
+        "image_height": "adapt",
+        "content_position": "md:items-center md:justify-center",
+        "text_alignment": "center",
+        "image_height_mobile": "250px",
+        "content_position_mobile": "items-end justify-start",
+        "text_alignment_mobile": "left",
+        "color_text": "#ffffff",
+        "color_overlay": "#000000",
+        "overlay_opacity": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "rich_text_jfTRGz": {
+      "type": "rich-text",
+      "blocks": {
+        "text_PAWftM": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>All products below are clearance final sale items. No returns or exchanges.</strong></p>",
+            "text_size": "subtext-lg",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "text_PAWftM"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "text_alignment": "center",
+        "text_alignment_mobile": "center",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
+    "collection_list_f3wMry": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_4RBNdB": {
+          "type": "collection",
+          "settings": {
+            "collection": "rope-lights",
+            "image": "shopify://shop_images/enbrighten_categories_1.png",
+            "title": "",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_XYUWfL": {
+          "type": "collection",
+          "settings": {
+            "collection": "under-cabinet-lighting",
+            "image": "shopify://shop_images/EnbrightenMe-Under_Cabinet_Lights01.jpg",
+            "title": "",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_M7zknU": {
+          "type": "collection",
+          "settings": {
+            "collection": "night-lights",
+            "image": "shopify://shop_images/enbrighten_night_lights.png",
+            "title": "",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_EEVMzn": {
+          "type": "collection",
+          "settings": {
+            "collection": "ceiling-lighting",
+            "image": "shopify://shop_images/EnbrightenMe-Ceiling_Lights02.jpg",
+            "title": "",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_wnThMb": {
+          "type": "collection",
+          "settings": {
+            "collection": "lamps",
+            "image": "shopify://shop_images/enbrighten_categories.png",
+            "title": "",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_ftAmzQ": {
+          "type": "collection",
+          "settings": {
+            "collection": "bathroom-lighting",
+            "image": "shopify://shop_images/77233-1.8.jpg",
+            "title": "",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "collection_4RBNdB",
+        "collection_XYUWfL",
+        "collection_M7zknU",
+        "collection_EEVMzn",
+        "collection_wnThMb",
+        "collection_ftAmzQ"
+      ],
+      "disabled": true,
+      "settings": {
+        "columns": 3,
+        "carousel_on_desktop": false,
+        "image_type": "collection",
+        "image_ratio": "square",
+        "show_products_count": true,
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "Outdoor Lighting Categories",
+        "heading_size": "title-md",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 88,
+        "padding_bottom": 88,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "subcollections": {
+          "type": "subcollections",
+          "settings": {
+            "menu": "",
+            "per_row": 5,
+            "show_count": true
+          }
+        }
+      },
+      "block_order": [
+        "subcollections"
+      ],
+      "settings": {
+        "products_per_page": 16,
+        "columns": 5,
+        "columns_mobile": "1",
+        "pagination": "click",
+        "enable_filtering": true,
+        "filter_collapsed": true,
+        "filter_type": "sidebar",
+        "filter_color_swatches": true,
+        "enable_sorting": true,
+        "padding_top": 40,
+        "padding_bottom": 100,
+        "divider": false,
+        "full_width": false,
+        "rounded": true
+      }
+    },
+    "recently-viewed": {
+      "type": "recently-viewed",
+      "settings": {
+        "product_limit": 6,
+        "columns": 4,
+        "carousel_on_desktop": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "Recently Viewed",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 80,
+        "divider": false,
+        "full_width": false,
+        "rounded": true
+      }
+    }
+  },
+  "order": [
+    "main-collection-banner",
+    "rich_text_jfTRGz",
+    "collection_list_f3wMry",
+    "main-collection",
+    "recently-viewed"
+  ]
+}
