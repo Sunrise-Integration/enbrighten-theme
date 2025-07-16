@@ -20,13 +20,12 @@
   {%- render 'social-feed-heading', section: section -%}
   
   <div class="page-width{% if section.settings.full_width %} page-width--full{% endif %} relative">
-    <slider-element id="Slider-{{ section.id }}" class="shop-the-feed grid slider{% if section.settings.carousel_on_desktop %} slider--desktop{% endif %}{% if section.settings.swipe_on_mobile %} slider--tablet{% endif %}" selector=".card-grid>.card">
+    <slider-element id="Slider-{{ section.id }}" class="shop-the-feed grid slider{% if section.settings.carousel_on_desktop %} slider--desktop{% endif %}{% if section.settings.swipe_on_mobile %} slider--tablet{% endif %}" selector=".card-grid>.card"{% if section.settings.carousel_on_desktop or section.settings.swipe_on_mobile %} tabindex="0"{% endif %}>
       <motion-list class="card-grid card-grid--{{ section.settings.columns }} mobile:card-grid--{{ section.settings.columns_mobile }} grid">
         {%- for block in section.blocks -%}
           {%- render 'social-feed-card',
             section: section,
             block: block,
-            collection: collection,
             show_vendor: section.settings.show_vendor,
             show_price: section.settings.show_price,
             image_ratio: section.settings.image_ratio,

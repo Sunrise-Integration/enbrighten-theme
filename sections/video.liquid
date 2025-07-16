@@ -1,4 +1,14 @@
 {%- liquid
+  if section.index == 1
+    assign loading = 'eager'
+    assign fetchpriority = 'high'
+    assign lazyimage = null
+  else
+    assign loading = 'lazy'
+    assign fetchpriority = 'low'
+    assign lazyimage = 'lazy-image'
+  endif
+
   assign poster = section.settings.video.preview_image | default: section.settings.cover_image
   assign video_mobile = section.settings.video_mobile | default: section.settings.video
 
@@ -25,13 +35,16 @@
     }
   {% endif -%}
 </style>
-{% if video_mobile != blank %}
+
 <div class="section section--padding{% if section.settings.divider %} section--divider{% endif %}{% if section.settings.rounded %} section--rounded relative{% endif %}"{% if section.settings.transparent_header %} allow-transparent-header{% endif %}>
   <div class="{% unless section.settings.full_width %}page-width {% endunless %}relative">
     <div class="video-hero banner media--{{ section.settings.image_height }} mobile:media--{{ section.settings.image_height_mobile }} relative">
       {%- capture sizes -%}{% if section.settings.full_width %}100vw{% else %}min({{ settings.page_width }}px, 100vw){% endif %}{%- endcapture -%}
       {%- if section.settings.video_mobile or section.settings.video_url_mobile -%}
         {%- render 'video',
+          loading: loading,
+          fetchpriority: fetchpriority,
+          lazyimage: lazyimage,
           sizes: sizes,
           video: section.settings.video_mobile,
           video_url: section.settings.video_url_mobile,
@@ -47,6 +60,9 @@
       {%- endif -%}
 
       {%- render 'video',
+        loading: loading,
+        fetchpriority: fetchpriority,
+        lazyimage: lazyimage,
         sizes: sizes,
         video: section.settings.video,
         video_url: section.settings.video_url,
@@ -61,7 +77,7 @@
     </div>
   </div>
 </div>
-{% endif %}
+
 {% schema %}
 {
   "name": "t:sections.video.name",
@@ -161,14 +177,18 @@
         },
         {
           "label": "t:sections.global.settings.image_height.options__10.label",
-          "value": "850px"
+          "value": "800px"
         },
         {
           "label": "t:sections.global.settings.image_height.options__11.label",
-          "value": "900px"
+          "value": "850px"
         },
         {
           "label": "t:sections.global.settings.image_height.options__12.label",
+          "value": "900px"
+        },
+        {
+          "label": "t:sections.global.settings.image_height.options__13.label",
           "value": "100vh"
         }
       ],
@@ -285,7 +305,7 @@
   ],
   "presets": [
     {
-      "name": "t:sections.video.presets.name"
+      "name": "t:sections.video.name"
     }
   ],
   "disabled_on": {
