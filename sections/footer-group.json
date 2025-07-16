@@ -177,6 +177,7 @@
         "color_button_gradient": "",
         "padding_top": 72,
         "padding_bottom": 72,
+        "newsletter_custom_form": "<script charset=\"utf-8\" type=\"text/javascript\" src=\"//js.hsforms.net/forms/embed/v2.js\"></script>\n<script>\n  hbspt.forms.create({\n    portalId: \"454248\",\n    formId: \"cedae278-6bce-486c-8042-4cf481bdd27b\"\n  });\n</script>",
         "divider": false,
         "full_width": false,
         "rounded": true,
