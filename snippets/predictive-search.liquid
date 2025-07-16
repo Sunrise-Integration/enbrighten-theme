@@ -1,3 +1,20 @@
+{%- doc -%}
+  Renders a search form with optional predictive search and curated recommendations.
+
+  Features live search suggestions, typewriter effects, and multi-resource results.
+
+  @param {string} section_id - Unique section ID for targeting and AJAX updates
+  @param {string} context - Form context identifier ('page', 'drawer', 'header', etc.)
+  @param {object} [search] - Search results object (available on search.liquid template)
+  @param {object} [predictive_search] - Live search results (auto-populated via AJAX)
+
+  @example
+  {% render 'predictive-search',
+     section_id: section.id,
+     context: 'drawer'
+  %}
+{%- enddoc -%}
+
 <form class="search__form flex flex-col gap-8 h-full relative" action="{{ routes.search_url }}" method="GET" role="search"
   {%- if settings.predictive_search_enabled %}
     is="predictive-search"
@@ -109,7 +126,8 @@
                   show_vendor: settings.predictive_search_show_vendor,
                   show_price: settings.predictive_search_show_price,
                   show_quick_add: false,
-                  show_quick_view: false
+                  show_quick_view: false,
+                  accessibility: true
                 -%}
               {%- endfor -%}
             </div>

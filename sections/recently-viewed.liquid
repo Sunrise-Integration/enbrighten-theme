@@ -44,7 +44,7 @@
         {%- render 'section-heading', section: section, section_button: indicators -%}
         
         {%- if recent_results != blank -%}
-          <slider-element id="Slider-{{ section.id }}" class="grid slider{% if section.settings.carousel_on_desktop %} slider--desktop{% endif %}{% if section.settings.swipe_on_mobile %} slider--tablet{% endif %}" selector=".card-grid>.card">
+          <slider-element id="Slider-{{ section.id }}" class="grid slider{% if section.settings.carousel_on_desktop %} slider--desktop{% endif %}{% if section.settings.swipe_on_mobile %} slider--tablet{% endif %}" selector=".card-grid>.card"{% if section.settings.carousel_on_desktop or section.settings.swipe_on_mobile %} tabindex="0"{% endif %}>
             <motion-list class="card-grid card-grid--{{ section.settings.columns }} mobile:card-grid--{{ section.settings.columns_mobile }} grid">
               {{- recent_results -}}
             </motion-list>
@@ -403,7 +403,7 @@
   ],
   "presets": [
     {
-      "name": "t:sections.recently-viewed.presets.name"
+      "name": "t:sections.recently-viewed.name"
     }
   ],
   "disabled_on": {

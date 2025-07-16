@@ -110,19 +110,6 @@
       }
     },
     "cart": {
-      "shipping_calculator": {
-        "multiple_results": "Постоји више цена испоруке за вашу адресу:",
-        "title": "Достава",
-        "caption": "Процените цене испоруке",
-        "tooltip": "Достава и порези ће се обрачунати при одласку",
-        "button": "Израчунај",
-        "error": "Дошло је до једне или више грешака при преузимању цена испоруке:",
-        "not_found": "Жао нам је, не шаљемо на вашу адресу.",
-        "one_result": "Постоји једна цена испоруке за вашу адресу:"
-      },
-      "recently_viewed": {
-        "empty": "Ваш недавно прегледан је празан."
-      },
       "title": "Царт",
       "view_cart": "Прикажи корпу",
       "cart_count": {
@@ -136,7 +123,31 @@
       "note": {
         "title": "Напомена о наруџбини",
         "caption": "Наручите посебна упутства",
-        "button": "Пријавите се"
+        "placeholder": "Напомена о наруџбини",
+        "button": "Примени"
+      },
+      "shipping_calculator": {
+        "multiple_results": "Постоји више цена испоруке за вашу адресу:",
+        "title": "Достава",
+        "caption": "Процените цене испоруке",
+        "tooltip": "Достава и порези ће се обрачунати при одласку",
+        "button": "Израчунај",
+        "error": "Дошло је до једне или више грешака при преузимању цена испоруке:",
+        "not_found": "Жао нам је, не шаљемо на вашу адресу.",
+        "one_result": "Постоји једна цена испоруке за вашу адресу:"
+      },
+      "discount": {
+        "title": "Попуст",
+        "caption": "Попуст", 
+        "placeholder": "Код за попуст",
+        "button": "Примени",
+        "error": "Kod za popust ne može biti primenjen na vašu korpu",
+        "shipping_error": "Popusti za dostavu se prikazuju pri plaćanju nakon dodavanja adrese",
+        "applied": "Primenjen kod za popust: {{ code }}",
+        "remove": "Ukloni popust {{ code }}"
+      },
+      "recently_viewed": {
+        "empty": "Ваш недавно прегледан је празан."
       }
     },
     "drawers": {
@@ -158,6 +169,11 @@
     }
   },
   "sections": {
+    "announcements": {
+      "carousel": "Карусел",
+      "announcement": "Најава",
+      "announcement_bar": "Трака за најаве"
+    },
     "blog_posts": {
       "view_all": "Погледај све"
     },
@@ -177,6 +193,7 @@
       "back": "Назад"
     },
     "slideshow": {
+      "carousel": "Карусел",
       "play_slideshow": "Пусти пројекцију слајдова",
       "pause_slideshow": "Паузирајте пројекцију слајдова"
     },
@@ -294,7 +311,7 @@
       "in_stock_only": "Само на лагеру",
       "clear": "Уклони филтер \" {{ name }} \"",
       "clear_all": "Обриши све",
-      "apply": "Пријавите се"
+      "apply": "Примени"
     },
     "subcollections": {
       "all_products": "Сва {{ collection }}"
@@ -386,6 +403,7 @@
       "payment_status": "Статус плаћања",
       "shipping_address": "Адреса за испоруку",
       "fulfillment_status": "Статус испуњења",
+      "discounts": "Попусти",
       "discount": "Попуст",
       "shipping": "Достава",
       "tax": "Порез",

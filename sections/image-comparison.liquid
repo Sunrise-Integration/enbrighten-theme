@@ -33,7 +33,6 @@
   }
 </style>
 
-{% if before_image.settings.image != blank and after_image.settings.image != blank %}
 <div class="section section--padding{% if section.settings.divider %} section--divider{% endif %}{% if section.settings.rounded %} section--rounded relative{% endif %}">
   <div class="page-width{% if section.settings.full_width %} page-width--full{% endif %} relative">
     {%- render 'section-heading', section: section -%}
@@ -117,7 +116,6 @@
     </image-comparison>
   </div>
 </div>
-{% endif %}
 
 {% schema %}
 {
@@ -178,18 +176,22 @@
         },
         {
           "label": "t:sections.global.settings.image_height.options__10.label",
-          "value": "850px"
+          "value": "800px"
         },
         {
           "label": "t:sections.global.settings.image_height.options__11.label",
-          "value": "900px"
+          "value": "850px"
         },
         {
           "label": "t:sections.global.settings.image_height.options__12.label",
-          "value": "100vh"
+          "value": "900px"
         },
         {
           "label": "t:sections.global.settings.image_height.options__13.label",
+          "value": "100vh"
+        },
+        {
+          "label": "t:sections.global.settings.image_height.options__14.label",
           "value": "adapt"
         }
       ],
@@ -593,7 +595,7 @@
   ],
   "presets": [
     {
-      "name": "t:sections.image-comparison.presets.name",
+      "name": "t:sections.image-comparison.name",
       "blocks": [
         {
           "type": "image"
