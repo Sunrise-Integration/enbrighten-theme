@@ -1,30 +1,35 @@
 (() => {
+  if (!theme || !theme.tabAttentionStrings) return;
+
   const originalTitle = document.title;
-  const delay = theme.tabAttentionStrings.messageDelay * 1000;
-  let timer;
+  const strings = theme.tabAttentionStrings;
+  const delay = parseInt(strings.messageDelay) * 1000;
 
-  const goNextMessage = (isFirstMessage) => {
-    const message = isFirstMessage ? theme.tabAttentionStrings.firstMessage : theme.tabAttentionStrings.nextMessage;
+  // If no delay or no messages, exit early
+  if (delay <= 0 || (!strings.firstMessage && !strings.nextMessage)) return;
 
-    if (message) {
-      document.title = message;
-    }
+  let timer = null;
+  let isFirstMessage = true;
 
-    if (theme.tabAttentionStrings.nextMessage) {
-      timer = setTimeout(() => {
-        goNextMessage(!isFirstMessage);
-      }, delay);
-    }
+  const handleBlur = () => {
+    if (timer) clearTimeout(timer);
+    timer = setTimeout(toggleMessage, delay);
+  };
+  
+  const handleFocus = () => {
+    if (timer) clearTimeout(timer);
+    document.title = originalTitle;
   };
 
-  window.addEventListener('blur', () => {
-    timer = setTimeout(() => {
-      goNextMessage(true);
-    }, delay);
-  });
+  function toggleMessage() {
+    document.title = isFirstMessage ? strings.firstMessage : strings.nextMessage;
+    
+    if (strings.nextMessage) {
+      isFirstMessage = !isFirstMessage;
+      timer = setTimeout(toggleMessage, delay);
+    }
+  }
 
-  window.addEventListener('focus', () => {
-    clearTimeout(timer);
-    document.title = originalTitle;
-  });
+  window.addEventListener('blur', handleBlur);
+  window.addEventListener('focus', handleFocus);
 })();

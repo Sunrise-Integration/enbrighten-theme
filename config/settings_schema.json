@@ -3,7 +3,7 @@
     "name": "theme_info",
     "theme_name": "Concept",
     "theme_author": "RoarTheme",
-    "theme_version": "3.1.0",
+    "theme_version": "4.3.0",
     "theme_documentation_url": "https://roartheme.co/blogs/concept",
     "theme_support_url": "https://haloroar.ticksy.com"
   },
@@ -939,6 +939,7 @@
         "label": "t:settings_schema.products.settings.enable_color_swatches.label"
       },
       {
+        "visible_if": "{{ settings.product_color_swatches == true }}",
         "type": "range",
         "id": "product_max_color_swatches",
         "min": 1,
@@ -948,6 +949,7 @@
         "default": 4
       },
       {
+        "visible_if": "{{ settings.product_color_swatches == true }}",
         "type": "select",
         "id": "product_color_swatch_type",
         "options": [
@@ -975,6 +977,7 @@
         "default": true
       },
       {
+        "visible_if": "{{ settings.product_save_amount == true }}",
         "type": "select",
         "id": "product_save_type",
         "label": "t:settings_schema.products.settings.save_type.label",
@@ -993,6 +996,40 @@
             "label": "t:settings_schema.products.settings.save_type.options__3.label"
           }
         ]
+      },
+      {
+        "type": "header",
+        "content": "t:settings_schema.products.settings.header__icon_list.content",
+        "info": "t:settings_schema.products.settings.header__icon_list.info"
+      },
+      {
+        "type": "text",
+        "id": "product_icon_list_metafield",
+        "label": "t:settings_schema.products.settings.product_icon_list_metafield.label",
+        "info": "t:settings_schema.products.settings.product_icon_list_metafield.info"
+      },
+      {
+        "type": "checkbox",
+        "id": "product_icon_list",
+        "default": false,
+        "label": "t:settings_schema.products.settings.product_icon_list.label"
+      },
+      {
+        "visible_if": "{{ settings.product_icon_list == true }}",
+        "type": "range",
+        "id": "product_icon_list_max",
+        "min": 2,
+        "max": 6,
+        "step": 1,
+        "label": "t:settings_schema.products.settings.product_icon_list_max.label",
+        "default": 4
+      },
+      {
+        "visible_if": "{{ settings.product_icon_list == true }}",
+        "type": "checkbox",
+        "id": "product_icon_list_carousel",
+        "default": false,
+        "label": "t:settings_schema.products.settings.product_icon_list_carousel.label"
       },
       {
         "type": "header",
@@ -1071,6 +1108,7 @@
         "default": true
       },
       {
+        "visible_if": "{{ settings.predictive_search_enabled == true }}",
         "type": "range",
         "id": "predictive_search_limit",
         "min": 1,
@@ -1080,17 +1118,20 @@
         "label": "t:settings_schema.search.settings.predictive_search_limit.label"
       },
       {
+        "visible_if": "{{ settings.predictive_search_enabled == true }}",
         "type": "link_list",
         "id": "predictive_search_recommendation",
         "label": "t:settings_schema.search.settings.predictive_search_recommendation.label"
       },
       {
+        "visible_if": "{{ settings.predictive_search_enabled == true }}",
         "type": "checkbox",
         "id": "predictive_search_show_vendor",
-        "default": true,
+        "default": false,
         "label": "t:settings_schema.search.settings.predictive_search_show_vendor.label"
       },
       {
+        "visible_if": "{{ settings.predictive_search_enabled == true }}",
         "type": "checkbox",
         "id": "predictive_search_show_price",
         "default": true,
@@ -1107,6 +1148,7 @@
         "default": false
       },
       {
+        "visible_if": "{{ settings.typewriter_effect_enabled == true }}",
         "type": "text",
         "id": "typewriter_starter_text",
         "label": "t:settings_schema.search.settings.typewriter_starter_text.label"
@@ -1254,18 +1296,21 @@
         "default": false
       },
       {
+        "visible_if": "{{ settings.enable_tab_attention == true }}",
         "type": "text",
         "id": "tab_attention_message_1",
         "label": "t:settings_schema.advanced.settings.tab_attention_message_1.label",
         "default": "Something we said?"
       },
       {
+        "visible_if": "{{ settings.enable_tab_attention == true }}",
         "type": "text",
         "id": "tab_attention_message_2",
         "label": "t:settings_schema.advanced.settings.tab_attention_message_2.label",
         "default": "We're still here!"
       },
       {
+        "visible_if": "{{ settings.enable_tab_attention == true }}",
         "type": "range",
         "id": "tab_attention_message_delay",
         "label": "t:settings_schema.advanced.settings.tab_attention_message_delay.label",
